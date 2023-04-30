@@ -1,0 +1,14 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Javafest"
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details: 
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[security]
+enableInlineShortcodes = true
+[security.funcs]
+getenv = ['^HUGO_','CONTEXT','BUILD_PRODUCTION']

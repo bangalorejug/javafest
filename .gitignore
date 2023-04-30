@@ -1,0 +1,5 @@
+.hugo/
+public/
+resources/
+themes/
+*.backup
