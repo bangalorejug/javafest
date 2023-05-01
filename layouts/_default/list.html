@@ -1,0 +1,28 @@
+{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
+<div class="container">
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Ranges through content/posts/*.md -->
+    {{ range .Pages }}
+    <div class="col">
+		  <div class="card h-100">
+			<iframe width="100%" height="225" src="https://www.youtube.com/embed/YPVYWkRxytc" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			<div class="card-body">
+				<strong class="d-inline-block mb-2 text-success">Bangalore JUG</strong>
+			  <h5 class="card-title">{{ .Title }}</h5>
+			  <p class="card-text">{{ .Summary }}</p>
+			</div>
+			<div class="card-footer">
+			  <small class="text-muted float-right"><i class="fa fa-download"
+				aria-hidden="true"></i></small>
+			</div>
+		  </div>
+		</div>
+
+    {{ end }}
+    </div>
+
+</div>
+{{ end }}
