@@ -1,24 +1,27 @@
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
 <div class="container">
-
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+	<div class="row mb-2 ">
     <!-- Ranges through content/posts/*.md -->
     {{ range .Pages }}
-    <div class="col">
-		  <div class="card h-100">
-			<iframe width="100%" height="225" src="https://www.youtube.com/embed/YPVYWkRxytc" frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
-			<div class="card-body">
-				<strong class="d-inline-block mb-2 text-success">Bangalore JUG</strong>
-			  <h5 class="card-title">{{ .Title }}</h5>
-			  <p class="card-text">{{ .Summary }}</p>
+ 
+
+
+    <div class="col-md-4 mt-3">
+			<div class="card border rounded shadow-sm h-100 g-2">
+				<div class="card-body">
+					<a href="{{ .Permalink }}"  class="card-title h5">{{ .Title }}</a>
+					<p class="card-subtitle mb-2 text-info">Admin <small class="text-muted">March 27, 2020</small></p>
+					<p class="card-text">{{ .Summary }}</p>
+
+				</div>
+				<div class="card-footer bg-transparent border-0 ribbon">
+					<span class="badge rounded-pill bg-info">BangaloreJUG</span>
+					<span class="badge rounded-pill bg-info">JVM</span>
+					<span class="ribbon5 "><i class="text-white fab fa-youtube"></i></span>
+					<!-- <span class="text-end"><i class="text-white fab fa-youtube p-2"></i></span> -->
+				</div>
 			</div>
-			<div class="card-footer">
-			  <small class="text-muted float-right"><i class="fa fa-download"
-				aria-hidden="true"></i></small>
-			</div>
-		  </div>
+			
 		</div>
 
     {{ end }}
