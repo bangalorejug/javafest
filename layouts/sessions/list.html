@@ -1,5 +1,5 @@
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<div class="container">
+<div class="container-fluid">
 	<div class="row mb-2 ">
     <!-- Ranges through content/posts/*.md -->
     {{ range .Pages }}
@@ -10,15 +10,21 @@
 			<div class="card border rounded shadow-sm h-100 g-2">
 				<div class="card-body">
 					<a href="{{ .Permalink }}"  class="card-title h5">{{ .Title }}</a>
-					<p class="card-subtitle mb-2 text-info">Admin <small class="text-muted">March 27, 2020</small></p>
+					<p class="card-subtitle mb-2">
+						By <small>
+						{{- range $index, $element := .Params.speakers }}
+        {{ if gt $index 0 }} & {{ end }}
+        <a href="/speakers/{{ urlize . }}">{{ . }}</a>
+      {{ end }}
+
+	</small>
+					</p>
 					<p class="card-text">{{ .Summary }}</p>
 
 				</div>
 				<div class="card-footer bg-transparent border-0 ribbon">
-					<span class="badge rounded-pill bg-info">BangaloreJUG</span>
-					<span class="badge rounded-pill bg-info">JVM</span>
-					<span class="ribbon5 "><i class="text-white fab fa-youtube"></i></span>
-					<!-- <span class="text-end"><i class="text-white fab fa-youtube p-2"></i></span> -->
+					<span class="badge rounded-pill bg-info">Cloudnative</span>
+					
 				</div>
 			</div>
 			
