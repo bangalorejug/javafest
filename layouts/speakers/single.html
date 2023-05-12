@@ -12,12 +12,21 @@
 </div>
 
 <h4>Sessions</h4>
+<ul>
+  {{ $username := .File.BaseFileName  }}
+{{ range (where .Site.Pages "Section" "sessions") }}
+   {{ range .Pages }}
 
-{{ range .Data.Pages }}
-  {{ .Title }}
+   {{ if in .Params.speakers $username }}
+   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+   {{ end }}
+
+
+      
+   {{ end }}
 {{ end }}
 
-
+</ul>
 </div>
 {{ end }}
 
