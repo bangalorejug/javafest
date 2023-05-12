@@ -2,6 +2,9 @@
 title: 'Serverless Enterprise Monoliths – The IaC and IfC way'
 speakers:
   - nagkumar
+topics:
+  - serverless
+  - microservices
 date: 2017-03-23
 publishdate: 2017-03-24
 ---

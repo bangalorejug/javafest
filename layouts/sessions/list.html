@@ -22,9 +22,10 @@
 					<p class="card-text">{{ .Summary }}</p>
 
 				</div>
-				<div class="card-footer bg-transparent border-0 ribbon">
-					<span class="badge rounded-pill bg-info">Cloudnative</span>
-					
+				<div class="card-footer bg-transparent border-0">
+					{{ range .Params.topics }}
+					<span class="badge rounded-pill bg-info">{{ . }}</span>
+					{{ end }}
 				</div>
 			</div>
 			

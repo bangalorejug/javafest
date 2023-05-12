@@ -2,6 +2,8 @@
 title: 'The Future of Java Persistence: Cloud Native Persistent Technology'
 speakers:
   - sathishk
+topics:
+  - cloudnative
 date: 2017-03-23
 publishdate: 2017-03-24
 ---
