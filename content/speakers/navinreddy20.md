@@ -1,7 +1,7 @@
 ---
-title: 'Aditya Sharma'
-jobTitle: 'Open Source Enthusiast | ASF Member'
-company: 'Apache Foundation'
+title: 'Navin Reddy'
+jobTitle: 'Tech Educator, Youtuber'
+company: 'Telusko'
 date: 2017-03-23
 weight: 1
 ---

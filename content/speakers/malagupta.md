@@ -3,7 +3,7 @@ title: 'Mala Gupta'
 jobTitle: 'Java Champion'
 company: 'Jetbrains'
 date: 2017-03-23
-publishdate: 2017-03-24
+weight: 1
 ---
 
 I'm passionate about making people employable by bridging the gap between their existing and required skills. In my quest to fulfill this mission, I've authored books to help IT professionals and students succeed on industry-recognized Oracle Java Certifications.

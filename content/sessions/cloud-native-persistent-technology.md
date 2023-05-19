@@ -5,7 +5,7 @@ speakers:
 topics:
   - cloudnative
 date: 2017-03-23
-publishdate: 2017-03-24
+weight: 3
 ---
 
 Over the past two decades, the way we access relational databases from Java has evolved significantly. Starting with JDBC programming, we moved on to using SQL mappers and later adopted full-fledged ORM frameworks. However, modern architectures, such as cloud-native, microservices, and serverless, present new challenges that traditional persistence technologies may not fully address.
