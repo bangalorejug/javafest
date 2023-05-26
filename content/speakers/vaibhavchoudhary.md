@@ -1,6 +1,6 @@
 ---
 title: 'Vaibhav Choudry'
-jobTitle: 'Architect'
+jobTitle: 'Engineer'
 company: 'Salesforce'
 date: 2017-03-23
 weight: 1
