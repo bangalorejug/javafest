@@ -1,5 +1,8 @@
 ---
 title: 'Bridging the Gap: Exploring Mutual Expectations between Industry and Academia'
+speakers:
+  - vivsridh4
+  - navinreddy20
 topics:
   - serverless
   - microservices
