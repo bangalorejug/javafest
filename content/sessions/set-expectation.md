@@ -1,7 +1,5 @@
 ---
 title: 'Bridging the Gap: Exploring Mutual Expectations between Industry and Academia'
-speakers:
-  - malagupta
 topics:
   - serverless
   - microservices
