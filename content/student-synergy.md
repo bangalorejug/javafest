@@ -1,5 +1,5 @@
 ---
-title: 'Reinvent Your Career and Overcome the Challenges of Recession'
+title: 'Student Synergy'
 ---
 
 An initiative by JavaFest for you Students.
