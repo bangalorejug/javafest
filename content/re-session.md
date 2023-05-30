@@ -17,3 +17,5 @@ With "#recession Classes," we offer a comprehensive program that combines free t
 To enroll in "Recession Classes" at #javafest, simply register for the #conference and indicate your interest in the program during the registration process. Please note that availability is limited, so early registration is highly recommended.
 
 Join us as we reinvent careers, empower individuals, and seize new opportunities in the face of adversity. Together, let's turn the recession into a "re-session" of #growth and #success .
+
+LinkedIn: https://www.linkedin.com/feed/update/urn:li:activity:7068085771496271872

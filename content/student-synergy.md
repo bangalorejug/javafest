@@ -23,3 +23,5 @@ Participant Details:
 𝘈𝘵𝘵𝘦𝘯𝘥𝘦𝘦𝘴 𝘴𝘩𝘰𝘶𝘭𝘥 𝘤𝘢𝘳𝘳𝘺 𝘐𝘋 𝘗𝘳𝘰𝘰𝘧𝘴 𝘰𝘯 𝘵𝘩𝘦 𝘥𝘢𝘺 𝘰𝘧 𝘵𝘩𝘦 𝘦𝘷𝘦𝘯𝘵 𝘧𝘰𝘳 𝘴𝘦𝘤𝘶𝘳𝘪𝘵𝘺 𝘤𝘩𝘦𝘤𝘬𝘴.
 
 Join us to not only expand your technical knowledge but also to get a platform to network with industry professionals and other bright minds from leading colleges.
+
+LinkedIn: https://www.linkedin.com/feed/update/urn:li:activity:7068238392429334528/

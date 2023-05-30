@@ -26,3 +26,5 @@ Be a part of #javafest, where you'll gain invaluable insights, network with indu
 Join us in this celebration of collaboration, innovation, and growth. Together, we can bridge the gap and ensure that all startups have the opportunity to thrive in the ever-evolving tech landscape.
 
 Remember, #javafest is not just another conference—it's a community-driven event dedicated to empowering #startups like yours. Don't miss out on this chance to connect, learn, and grow!
+
+LinkedIn: https://www.linkedin.com/feed/update/urn:li:activity:7068057494442430464
