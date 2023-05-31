@@ -6,19 +6,19 @@ JavaFest is entirely supported by individuals from the community. We have alread
 
 ### Platinum Sponsor: ($5000) - 1
 
-- Exclusive Logo placement on the Conference Stage
+- Exclusive Standee placement on the Conference Stage
 - Exclusive Logo placement in all video recordings
-- Access to Job seekers from Re-Sessions Initiative and registrations
-- 5 minutes of Stage Time at the Main Hall
+- Access to Job seekers from [Re-Sessions Initiative](https://www.linkedin.com/posts/javafest_javafest-economicimpact-recession-activity-7068085771496271872-OJiN?utm_source=share&utm_medium=member_desktop) and registrations
+- 5 minutes of Stage Time at the Main Hall without presentation
 - Booth at the venue
-- 5 Conference Tickets
+- 10 Conference Tickets
 
 ### Gold Sponsor: ($4000) - 1
 
 - Exclusive Logo placement on the T-Shirts
 - Access to Job seekers from [Re-Sessions Initiative](https://www.linkedin.com/posts/javafest_javafest-economicimpact-recession-activity-7068085771496271872-OJiN?utm_source=share&utm_medium=member_desktop) and registrations
 - Booth at the venue
-- 5 Conference Tickets
+- 8 Conference Tickets
 
 ### Silver Sponsor: ($2000) - 1
 
