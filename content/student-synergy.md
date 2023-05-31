@@ -11,7 +11,8 @@ This event will feature a series of 𝐞𝐧𝐠𝐚𝐠𝐢𝐧𝐠 𝐰𝐨�
 
 Confirm your college's participation by sending an email to the below email addresses with the following subject & details:
 
-Email Addressed to : jayashree@javafest.org
+Reach out to [Jayashree S Kumar](https://www.linkedin.com/in/jayashree-s-kumar-18b6941a/)  the following details:
+
 Email Subject - Registration | JavaFest Student Synergy Participant
 
 Participant Details:
