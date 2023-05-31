@@ -2,7 +2,7 @@
 title: 'Sponsors'
 ---
 
-JavaFest is entirely supported by individuals from the community. We have already secured the venue through [Christ University](https://en.m.wikipedia.org/wiki/File:Christ_University_Auditorium.jpg), and our [esteemed speakers](/speakers/) are chosen from within the community. However, we are in need of sponsorship to cover the expenses associated with the event, such as food, audio-visual equipment, travel, and accommodation. We have designed **six sponsorship slots**, each offering different benefits and opportunities:
+JavaFest is entirely supported by individuals from the community. We have already secured the venue through [Christ University](https://en.m.wikipedia.org/wiki/File:Christ_University_Auditorium.jpg), and our [esteemed speakers](/speakers/) are chosen from within the community. JavaFest is non-for-profit community driven event, and all the proceedings will be spent on the event's swag and/or scholarships. We have designed **six sponsorship slots**, each offering different benefits and opportunities:
 
 ### Platinum Sponsor: ($5000) - 1
 
