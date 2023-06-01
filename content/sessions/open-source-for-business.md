@@ -1,7 +1,7 @@
 ---
 title: 'Open(source) for Business: Exploring the Benefits of Open Source Software'
 speakers:
-  - adityasharma7
+  - [Aditya Sharma](adityasharma7)
 topics:
   - serverless
   - microservices

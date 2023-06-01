@@ -1,7 +1,7 @@
 ---
 title: 'The Future of Java Persistence: Cloud Native Persistent Technology'
 speakers:
-  - sathishk
+  -[Sathish Kumar Thiyagarajan](sathishk)
 topics:
   - cloudnative
 date: 2017-03-23
