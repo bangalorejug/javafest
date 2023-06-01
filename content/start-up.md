@@ -2,29 +2,36 @@
 title: 'Breaking Barriers: Empowering Small Startups'
 ---
 
-Opportunity should be accessible to all, regardless of location or financial constraints. That's why we are thrilled to introduce #javafest, a technology conference organized by developers for developers, with a special focus on supporting small startups!
+JAVAFEST, a not for profit, community driven technology conference organized by developers for developers, with a special focus on supporting small startups. We believe that every individual should have equal access to opportunities, regardless of their location or financial constraints. Therefore, we are excited to extend this invitation to you and your startup to be a part of #javafest.
 
-At #javafest, we believe in empowering smaller companies in #tier2 cities to thrive and connect with the #techcommunity . We understand that attending conferences can be challenging due to limited resources, which is why we are offering FREE tickets exclusively for small #startups !
+#### Exclusive Benefits for Your Startup at #javafest
 
-If your #startup
+By attending #javafest, your startup will gain access to exclusive benefits that can accelerate your growth and success. Here's what you can expect:
 
-1. Located outside #bengaluru
+1. Exclusive Access to Jobseekers: Connect with talented professionals who are passionate about the technologies your startup works on. Access to Job seekers from [Re-Sessions Initiative](/re-session/) and registrations.
+2. Exclusive Access to Speakers and Architects: Based on the technologies your startup works on, #javafest provides you with the opportunity to engage with [industry-leading speakers and architects](/speakers/). Learn from their expertise, gather insights, and gain inspiration to drive your business forward.
+
+#### Criteria to Attend #javafest
+
+To qualify for attendance at #javafest, your startup must meet the following criteria:
+
+1. Located outside Bengaluru
 2. Employs less than 50 engineers
-3. work on any of the following #springboot #java #microservices #serverless #dataengineering #gcpcloud #awscloud #azurecloud #postgresql #mysql #quarkus #kafka #datamesh
+3. Works on any of the following technologies: Spring Boot, Java, Microservices, Serverless, Data Engineering, GCP Cloud, AWS Cloud, Azure Cloud, PostgreSQL, MySQL, Quarkus, Kafka, Data Mesh
 
-Then. Here's how you can secure your spot:
+#### Registration Instructions
 
-Reach out to [Sathish Kumar Thiyagarajan](https://www.linkedin.com/in/sathishkumarthiyagarajan/)  the following details:
+To secure your spot at #javafest and avail these exclusive benefits, Reach out to [Sathish Kumar Thiyagarajan](https://www.linkedin.com/in/sathishkumarthiyagarajan/) with the following details:
 
-1. Number of tickets needed (maximum 3 per startup)
+1. Number of tickets needed (maximum **3 Engineers** per startup)
 2. Technical Abstract that describes your work
-3. Your actual Need ( Recruitment / Technology Access )
+3. Your actual need (Recruitment/Technology Access)
 4. Travel and contact information
 
-Be a part of #javafest, where you'll gain invaluable insights, network with industry experts, and explore the latest advancements in technology—all without financial burden.
+By attending #javafest, you will gain invaluable insights, network with industry experts, and explore the latest advancements in technology—all without the burden of financial constraints.
 
 Join us in this celebration of collaboration, innovation, and growth. Together, we can bridge the gap and ensure that all startups have the opportunity to thrive in the ever-evolving tech landscape.
 
-Remember, #javafest is not just another conference—it's a community-driven event dedicated to empowering #startups like yours. Don't miss out on this chance to connect, learn, and grow!
+Remember, #javafest is not just another conference—it’s a community-driven event dedicated to empowering startups like yours. Don’t miss out on this chance to connect, learn, and grow!
 
-LinkedIn: https://www.linkedin.com/feed/update/urn:li:activity:7068057494442430464
+We look forward to your participation at #javafest and seeing you there!
