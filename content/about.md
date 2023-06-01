@@ -16,8 +16,8 @@ Our organizing committee are working hard on differnt "Initiatives" as we want t
  We have arranged interactive workshops where attendees can participate in hands-on learning experiences. Concludig with QUIZ to win participation certificates.Led by Naveen of Telusko fame. These workshops are designed to enhance practical skills and provide attendees with an opportunity to deepen their understanding of specific Java-related concepts. 
   
 3. For Startups: [Networking Opportunities](https://javafest.org/start-up/)
- We understand the importance of networking in professional development. Here attendees can interact with industry experts, fellow developers, and potential collaborators.
+ We understand the importance of networking in professional development. Here attendees can interact with industry experts, fellow developers, available talent pool and potential collaborators.
 
-4. For OpenToWork Professionals: [Recession Classes](https://javafest.org/re-session/)
+4. For OpenToWork Professionals: [Re-Sessions Classes](https://javafest.org/re-session/)
  We offer a comprehensive program that combines free training and placement assistance, led by industry expert Raghavan. The initiative is subject to availability and limited slots.
   

@@ -14,7 +14,10 @@ With "#recession Classes," we offer a comprehensive program that combines free t
 
 4️⃣ #communitysupport : Join a supportive community of individuals who are going through similar career transitions. Engage in meaningful discussions, share experiences, and find inspiration in the collective journey towards reinvention.
 
-To enroll in "Recession Classes" at #javafest, simply register for the #conference and indicate your interest in the program during the registration process. Please note that availability is limited, so early registration is highly recommended.
+To enroll in "Recession Classes" at #javafest:
+- Register and attend JavaFest
+- On July 15th visit the re-session booth set-up in Christ University and register in-person for the training session and assitance.  
+Please note that availability is limited, so early registration is highly recommended.
 
 Join us as we reinvent careers, empower individuals, and seize new opportunities in the face of adversity. Together, let's turn the recession into a "re-session" of #growth and #success .
 
