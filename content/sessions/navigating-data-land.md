@@ -1,7 +1,7 @@
 ---
 title: 'Navigating the Data Landscape: From Fundamentals to the Future'
 speakers:
-  - [Steve Mann](stevemann2705)
+  - stevemann2705
 topics:
   - data
   - scalable

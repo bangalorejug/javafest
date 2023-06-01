@@ -1,7 +1,7 @@
 ---
 title: 'Scaling up your Java Application'
 speakers:
-  - [Vaibhav Choudry](vaibhavchoudhary)
+  - vaibhavchoudhary
 topics:
   - java
   - performance

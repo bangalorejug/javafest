@@ -1,7 +1,7 @@
 ---
 title: 'Serverless Enterprise Monoliths – The IaC and IfC way'
 speakers:
-  - [Raja Nagendra Kumar](nagkumar)
+  - nagkumar
 topics:
   - serverless
   - microservices
