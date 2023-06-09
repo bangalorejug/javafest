@@ -1,22 +1,26 @@
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<div class="container">
-	<div class="row mb-2 ">
-    <!-- Ranges through content/posts/*.md -->
+
+<div class="container mt-3">
+	<div class="row">
+ <!-- Ranges through content/posts/*.md -->
     {{ range .Pages }}
- 
-
-		<div class="col">
-			<img src="https://github.com/{{.File.BaseFileName}}.png" class="rounded-circle mb-3" style="width: 150px;"
-			alt="Avatar" />
-		  
-			<div><a href="{{ .Permalink }}" class="mb-2 h5"><strong>{{ .Title }}</strong></a>
-				<h6 class="mb-2 pb-1" style="color: #2b2a2a;">{{ .Params.jobTitle }},<small class="px-3">{{ .Params.company }}</small></h6>
-	  </div>
-			
-	  </div>
-
-    {{ end }}
+    	<div class="col-6">			  
+        	 <div class="card mb-3 p-4">
+				  <div class="row g-0">  
+						<div class="col-4">          
+							<img src="https://github.com/{{.File.BaseFileName}}.png" class="rounded-circle mb-3" style="width: 150px;"
+								alt="Avatar" />    
+						</div>     
+						<div class="col-8">
+						  <div class="card-body">
+							<h2 class="card-title"><a href="{{ .Permalink }}" class="mb-2 h5"><strong>{{ .Title }}</strong></a></h2>
+							<h4 class="card-text">{{ .Params.jobTitle }},<small class="px-3">{{ .Params.company }}</small> </h4>        
+						  </div>
+						</div>
+				  </div>
+			</div>
+        </div>
+		{{ end }}
     </div>
-
 </div>
 {{ end }}
