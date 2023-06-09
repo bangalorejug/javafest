@@ -17,7 +17,7 @@ Upcoming events:
 
 Request the participants to confirm their participation by sending an email to the below email addresses with the following subject & details:
 
-**Email Addressed to :** [sathish [at] javafest [dot]  org](mailto:sathish@javafest.org?subject=Registration%20|%20JavaFest%20Community%20Participant)
+**Email Addressed to :** [jayashree [at] javafest [dot]  org](mailto:jayashree@jvaafest.org?subject=Registration%20|%20JavaFest%20Community%20Participant)
 
 **Email Subject** - Registration | JavaFest Community Participant
 
