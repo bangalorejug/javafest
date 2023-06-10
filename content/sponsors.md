@@ -2,8 +2,13 @@
 title: 'Sponsors'
 ---
 
-Java Fest is a not-for-profit community driven event supported by individuals & organizations like you. [Christ University](https://en.m.wikipedia.org/wiki/File:Christ_University_Auditorium.jpg) has graciously offered to be our venue partner. Our [esteemed speakers](/speakers/), chosen from the community are offering their valuable time as a gift of knowledge & paying forward. 
-All the sponsor contributions will be spent on the event's swag and/or expenses. We have designed **six sponsorship slots**, each offering different benefits and opportunities: 
+Sponsoring JAVAFEST offers unique advantages compared to other conferences:
+
+1. **Quality Audience:** JAVAFEST attracts a select group of developers who are genuinely interested in expanding their Java-related knowledge. Our invite-only event ensures that attendees are dedicated and engaged, seeking meaningful connections and learning opportunities.
+2. **Cost-Effective:** We offer affordable sponsorship packages that provide excellent value for your investment. By sponsoring JAVAFEST, you can reach a quality developer community without breaking the bank.
+3. **Limited Slots for Better Visibility:** To maximize your brand's visibility, we offer a limited number of sponsorship slots. This exclusivity ensures that your company stands out and receives the attention it deserves from our targeted audience.
+
+By sponsoring JAVAFEST, you gain access to a quality audience, cost-effective opportunities for brand exposure, and enhanced visibility compared to other conferences. We have designed six sponsorship slots, each offering different benefits and opportunities:
 
 
 ### Platinum Sponsor: ($5000) - 1
