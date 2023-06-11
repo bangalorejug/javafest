@@ -2,7 +2,7 @@
 title: 'Architecture’s Birds of a Feather (BoF)'
 ---
 
-**Architecture's Birds of a Feather (BoF) **talks at conferences are informal gatherings where participants with shared interests discuss specific topics in an interactive and open format, allowing them to connect with like-minded individuals and exchange knowledge in a relaxed setting. These talks play a crucial role in fostering networking, knowledge exchange, and community building around subjects of mutual interest.
+**Architecture's Birds of a Feather (BoF)** talks at conferences are informal gatherings where participants with shared interests discuss specific topics in an interactive and open format, allowing them to connect with like-minded individuals and exchange knowledge in a relaxed setting. These talks play a crucial role in fostering networking, knowledge exchange, and community building around subjects of mutual interest.
 
 The goals of the Architecture's Birds of a Feather (BoF) initiative at JAVAFEST are as follows:
 
