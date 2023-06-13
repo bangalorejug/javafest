@@ -13,30 +13,31 @@ By sponsoring JAVAFEST, you gain access to a quality audience, cost-effective op
 
 ### Platinum Sponsor: ($5000) - 1
 
-- Exclusive Standee placement on the Conference Stage
 - Exclusive Logo placement in all video recordings
+- Standee placement on the Conference Stage
 - Access to Job seekers from [Re-Sessions Initiative](https://www.linkedin.com/posts/javafest_javafest-economicimpact-recession-activity-7068085771496271872-OJiN?utm_source=share&utm_medium=member_desktop) and registrations
 - 5 minutes of Stage Time at the Main Hall without presentation
 - Booth at the venue
-- 10 Conference Tickets
+- 10 Conference Tickets for Developers
 
 ### Gold Sponsor: ($4000) - 1
 
 - Exclusive Logo placement on the T-Shirts
+- Standee placement on the Conference Stage
 - Access to Job seekers from [Re-Sessions Initiative](https://www.linkedin.com/posts/javafest_javafest-economicimpact-recession-activity-7068085771496271872-OJiN?utm_source=share&utm_medium=member_desktop) and registrations
 - Booth at the venue
-- 8 Conference Tickets
+- 8 Conference Tickets for Developers
 
 ### Silver Sponsor: ($2000) - 1
 
 - Exclusive Logo placement at participation certificates
 - Booth at the venue
-- 5 Conference Tickets
+- 5 Conference Tickets for Developers
 
 ### Bronze Sponsor: ($1000) - 3
 
 - Booth at the venue
-- 3 Conference Tickets
+- 3 Conference Tickets for Developers
 
 We anticipate a diverse range of developers from all over India, comprising developers from various experience levels and backgrounds. You can gain an understanding of our registered JUG members by visiting [Our Meetup Page](https://www.meetup.com/bangalorejug/members/).
 
