@@ -1,6 +1,6 @@
 ---
 title: 'Prashant Hegde'
-jobTitle: 'Senior Principal Architect @ Sabre Corporation'
+jobTitle: 'Senior Principal Architect'
 company: 'Sabre Corporation'
 date: 2017-03-23
 weight: 2

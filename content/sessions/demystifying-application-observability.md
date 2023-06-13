@@ -1,7 +1,10 @@
 ---
 title: 'Demystifying Application Observability: Spring boot observability'
+speakers:
+  - prashant332
 topics:
   - observablity
+  - springboot
 date: 2017-03-23
 weight: 7
 ---
