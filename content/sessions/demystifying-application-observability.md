@@ -1,5 +1,5 @@
 ---
-title: 'Demystifying Application Observability: Unveiling Core Concepts and Spring Boot 3 Implementation'
+title: 'Demystifying Application Observability: Spring boot observability'
 topics:
   - observablity
 date: 2017-03-23
@@ -8,8 +8,12 @@ weight: 7
 
 Application Observability has emerged as a hot topic in the software development community, presenting a paradigm shift in monitoring and understanding complex systems. While traditionally, the responsibility for implementing observability fell on developers, recent developments have witnessed frameworks incorporating built-in support for this crucial feature.
 
-In this enlightening session, we will delve into the core concepts underlying Application Observability, ensuring a solid foundation before leveraging the latest advancements in Spring Boot 3. By demystifying the idea behind observability, we will explore the significance of this feature in enabling comprehensive insights into system behavior and performance.
+As you know Observability is the ability to understand the state of a system from the outside. It is essential for troubleshooting problems, identifying performance bottlenecks, and ensuring the reliability of applications. Spring Boot provides a number of features that make it easy to implement observability in your applications.
 
-Furthermore, this talk will focus on the implementation of Application Observability within the context of Spring Boot 3, one of the leading frameworks in the Java ecosystem. We will dive into the practical aspects of integrating observability into Spring Boot applications, leveraging the framework's built-in capabilities and exploring best practices.
+In this talk, we will discuss the following topics:
 
-Join us on this knowledge-packed journey, where we bridge the gap between theory and implementation, equipping attendees with the necessary understanding and tools to harness the power of Application Observability in their own projects.
+    What is observability?
+    Why is observability important?
+    How to implement observability in Spring Boot applications
+    Tools and frameworks for observability
+    Best practices for observability

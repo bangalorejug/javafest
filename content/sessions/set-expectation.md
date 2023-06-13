@@ -3,6 +3,7 @@ title: 'Bridging the Gap: Exploring Mutual Expectations between Industry and Aca
 speakers:
   - vivsridh4
   - navinreddy20
+  - murali
 topics:
   - serverless
   - microservices
