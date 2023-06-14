@@ -1,6 +1,6 @@
 ---
 title: 'Bhuvana Venkataramanan'
-jobTitle: 'Senior Principal Software Architect'
+jobTitle: 'Principal Enterprise Architect'
 company: 'Sabre Corporation'
 date: 2017-03-23
 weight: 2
