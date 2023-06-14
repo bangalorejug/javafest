@@ -8,8 +8,8 @@ title: 'Register'
 we would like them to attend the upcoming online or in-person BoJUG meet-up, personally connect with JavaFest Organizer [Parvez in cc] , give in their required details and get their registration confirmed.
 
 Upcoming events:
-1. Online : June 10th https://www.meetup.com/bangalorejug/events/293512783/
-2. In-person: June 24th https://www.meetup.com/bangalorejug/events/293816896/ [Oracle Tech Hub office]
+
+1. In-person: June 24th https://www.meetup.com/bangalorejug/events/293816896/ [Oracle Tech Hub office]
 3. In-person: July 1st https://www.meetup.com/bangalorejug/events/293817246/ [Microsoft reactor]
 4. Any of our online Ression classes starting from 12th June 8PM - 9PM. : https://www.linkedin.com/feed/update/urn:li:activity:7072462331783311361
 
