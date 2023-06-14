@@ -2,6 +2,7 @@
 title: 'Demystifying Application Observability: Spring boot observability'
 speakers:
   - prashant332
+  - bhuvanavenkataramanan
 topics:
   - observablity
   - springboot
