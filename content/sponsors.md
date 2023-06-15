@@ -22,6 +22,8 @@ By sponsoring JAVAFEST, you gain access to a quality audience, cost-effective op
 
 ### Gold Sponsor: ($4000) - EPAM
 
+![Alt text](/images/epam.png "EPAM Systems")
+
 - Exclusive Logo placement on the T-Shirts
 - Standee placement on the Conference Stage
 - Access to Job seekers from [Re-Sessions Initiative](https://www.linkedin.com/posts/javafest_javafest-economicimpact-recession-activity-7068085771496271872-OJiN?utm_source=share&utm_medium=member_desktop) and registrations
