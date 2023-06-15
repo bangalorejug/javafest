@@ -20,7 +20,7 @@ By sponsoring JAVAFEST, you gain access to a quality audience, cost-effective op
 - Booth at the venue
 - 10 Conference Tickets for Developers
 
-### Gold Sponsor: ($4000) - 1
+### Gold Sponsor: ($4000) - EPAM
 
 - Exclusive Logo placement on the T-Shirts
 - Standee placement on the Conference Stage
