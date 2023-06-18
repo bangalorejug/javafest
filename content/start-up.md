@@ -16,9 +16,8 @@ By attending JAVAFEST, your startup will gain access to exclusive benefits that 
 
 To qualify for attendance at JAVAFEST, your startup must meet the following criteria:
 
-1. Located outside Bengaluru
-2. Employs less than 50 engineers
-3. Works on any of the following technologies: Spring Boot, Java, Microservices, Serverless, Data Engineering, GCP Cloud, AWS Cloud, Azure Cloud, PostgreSQL, MySQL, Quarkus, Kafka, Data Mesh
+1. Employs less than 50 engineers
+2. Works on any of the following technologies: Spring Boot, Java, Microservices, Serverless, Data Engineering, GCP Cloud, AWS Cloud, Azure Cloud, PostgreSQL, MySQL, Quarkus, Kafka, Data Mesh
 
 #### Registration Instructions
 
