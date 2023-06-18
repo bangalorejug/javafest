@@ -23,7 +23,7 @@ To qualify for attendance at JAVAFEST, your startup must meet the following crit
 
 To secure your spot at JAVAFEST and avail these exclusive benefits, Reach out to [Badri Narayanan](https://www.linkedin.com/in/pvbadri/) with the following details:
 
-1. Number of tickets needed (maximum **3 Engineers** per startup)
+1. Number of tickets needed
 2. Technical Abstract that describes your work
 3. Your actual need (Recruitment/Technology Access)
 4. Travel and contact information
