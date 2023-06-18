@@ -22,7 +22,7 @@ To qualify for attendance at JAVAFEST, your startup must meet the following crit
 
 #### Registration Instructions
 
-To secure your spot at JAVAFEST and avail these exclusive benefits, Reach out to [Sathish Kumar Thiyagarajan](https://www.linkedin.com/in/sathishkumarthiyagarajan/) with the following details:
+To secure your spot at JAVAFEST and avail these exclusive benefits, Reach out to [Badri Narayanan](https://www.linkedin.com/in/pvbadri/) with the following details:
 
 1. Number of tickets needed (maximum **3 Engineers** per startup)
 2. Technical Abstract that describes your work
