@@ -11,6 +11,7 @@ By attending JAVAFEST, your startup will gain access to exclusive benefits that 
 1. **Exclusive Access to Jobseekers:** Connect with talented professionals who are passionate about the technologies your startup works on. Access to Job seekers from [Re-Sessions Initiative](/re-session/) and registrations.
 2. **Exclusive Access to Speakers and Architects:** Based on the technologies your startup works on, JAVAFEST provides you with the opportunity to engage with [industry-leading speakers and architects](/speakers/). Learn from their expertise, gather insights, and gain inspiration to drive your business forward.
 3. **Access to Startup Programs and Offers:** As part of JAVAFEST, we will provide you with information about startup-specific initiatives from the government as well as startup programs and offers from technology companies. Stay updated on opportunities tailored to the needs of startups like yours.
+4.**Promotions** We will provide a slot for the founders to announce their brand and area of expertise
 
 #### Criteria to Attend JAVAFEST
 
