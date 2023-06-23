@@ -32,14 +32,14 @@ By sponsoring JAVAFEST, you gain access to a quality audience, cost-effective op
 
 ### Silver Sponsor: ($2000) - GUVI
 
-![Alt text](https://www.guvi.in/build/images/guvi-logo.e8ad68fbd8dc0a5fc2f7c4ffd580c54d.png "Guvi")
+![Alt text](/images/guvi-logo.webp "Guvi")
 
 - Exclusive Logo placement at participation certificates
 - Booth at the venue
 - 5 Conference Tickets for Developers
 
 ### Bronze Sponsor: ($1000) - 3
-
+![Alt text](/images/google-logo.svg "Google")
 - Booth at the venue
 - 3 Conference Tickets for Developers
 
