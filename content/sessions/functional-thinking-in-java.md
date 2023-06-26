@@ -1,5 +1,5 @@
 ---
-title: '[Student Synergy] Lets Get 'Fun'ky' with Functional Progamming'
+title: '[Student Synergy] Lets Get Funky with Functional Progamming'
 speakers:
   - ganeshsamarthyam
 topics:
