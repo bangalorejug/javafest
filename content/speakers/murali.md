@@ -3,7 +3,7 @@ title: 'Muralidhar Rao'
 jobTitle: 'Retired Snr. Director'
 company: 'Oracle'
 date: 2017-03-23
-weight: 5
+weight: 2
 ---
 Murali is a highly accomplished retired senior executive with over three decades of experience in the global software industry.
 
