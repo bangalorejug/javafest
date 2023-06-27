@@ -4,6 +4,7 @@ speakers:
   - vivsridh4
   - navinreddy20
   - murali
+  - reach2arunprakash
 topics:
   - serverless
   - microservices
