@@ -5,16 +5,5 @@ company: 'Oracle'
 date: 2017-03-23
 weight: 4
 ---
-
-Conference Talking Timeline: 
-1. EclipseCon Europe, 2018 [ Why Kotlin is becoming my faviroute functional programming language]
-https://www.eclipsecon.org/europe2018/sessions/why-kotlin-my-favourite-example-functional-programming
-
-2. GIDS Bangalore, 2019[Wading into ANSIBLE : The DevOps Darling] in 
-https://developermarch.com/developersummit/presentations.html
-
-3. KCDC Kansas, 2019 [Modern Java: Do you want to Know it all]
-https://www.kcdc.info/speaker/spk-2fa76004-1cbe-4296-9ab5-76d3d7e6f01c
-
-4. DevConf Bangalore, 2019 [Java9+ Helps you React: Reactive Programming]
-https://devconfin19.sched.com/event/RVNN/java9-helps-you-react-reactive-programming
+Jayashree S Kumar is a Principal Member Technical Staff in the Java Platforms Group at Oracle. In a career spanning over 12 years, she has worked extensively on JDK development. Her favourite part of the job is looking at the challenge through the lens of 3 W’s & H when in dilemma: What? Why? When? How. She has authored several disclosures and was an evaluator in IBM's Invention Development Team. She has also been a speaker at international conferences including EclipseCon, KCDC, DevNexus and GIDS. 
+In her minimally available free time, after looking after her naughty son, she organizes tech talks at the Bangalore Java User Group.
