@@ -1,5 +1,5 @@
 ---
-title: 'Open(source) for Business: Exploring the Benefits of Open Source Software'
+title: 'Open Source: What's for you?'
 speakers:
   - adityasharma7
 topics:
