@@ -1,5 +1,5 @@
 ---
-title: 'Open Source: What's for you?'
+title: 'Open Source: Whats for you?'
 speakers:
   - adityasharma7
 topics:
