@@ -1,6 +1,6 @@
 ---
 title: 'Dr Ashok Immanuel V'
-jobTitle: 'Head, Department of Computer Science'
+jobTitle: 'Professor & Head, Department of Computer Science'
 company: 'CHRIST (Deemed to be University)'
 date: 2017-03-23
 weight: 3
