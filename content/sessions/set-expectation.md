@@ -5,6 +5,7 @@ speakers:
   - navinreddy20
   - murali
   - reach2arunprakash
+  - ashok
 topics:
   - serverless
   - microservices

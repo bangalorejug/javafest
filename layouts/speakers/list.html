@@ -12,6 +12,10 @@
 							<img src="/images/Murali.jpg" class="rounded-circle mb-3" style="width: 150px;"
 								alt="Avatar" /> 
 							{{ else }}  
+							{{ if eq .File.BaseFileName "ashok" }}     
+							<img src="/images/Ashok.jpeg" class="rounded-circle mb-3" style="width: 150px;"
+								alt="Avatar" /> 
+							{{ else }}  
 							<img src="https://github.com/{{.File.BaseFileName}}.png" class="rounded-circle mb-3" style="width: 150px;"
 								alt="Avatar" />    
 							{{ end }}
