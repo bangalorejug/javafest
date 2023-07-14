@@ -1,5 +1,5 @@
 ---
-title: '[WORKSHOP] Microsoft Azure Well-Architected Framework'
+title: 'Microsoft Azure Well-Architected Framework'
 speakers:
   - vivsridh4
 topics:

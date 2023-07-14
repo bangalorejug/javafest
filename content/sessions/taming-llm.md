@@ -1,7 +1,7 @@
 ---
 title: '[WORKSHOP] Taming Large Language Models for Real-World Use Cases'
 speakers:
-  - joinalahmed
+  - vagrantism
 topics:
   - llm
   - hands-on
