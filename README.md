@@ -1,4 +1,7 @@
 # JAVAFEST Conference Website
+![image](https://github.com/adityasharma7/javafest/assets/15027245/bc489910-8805-4d60-93f8-542a5635c4b5)
+
+
 This is the repository used to build and publish the official JAVAFEST website.
 
 ## Quick start
