@@ -1,6 +1,6 @@
 ---
 title: 'Sponsors'
-year: 2024
+year: 2023
 ---
 
 Sponsoring JAVAFEST offers unique advantages compared to other conferences:
@@ -12,7 +12,7 @@ Sponsoring JAVAFEST offers unique advantages compared to other conferences:
 By sponsoring JAVAFEST, you gain access to a quality audience, cost-effective opportunities for brand exposure, and enhanced visibility compared to other conferences. We have designed six sponsorship slots, each offering different benefits and opportunities:
 
 
-### Platinum Sponsor: ($5000)
+### Platinum Sponsor: ($5000) - 1
 
 - Exclusive Logo placement in all video recordings
 - Standee placement on the Conference Stage
@@ -21,8 +21,9 @@ By sponsoring JAVAFEST, you gain access to a quality audience, cost-effective op
 - Booth at the venue
 - 10 Conference Tickets for Developers
 
-### Gold Sponsor: ($4000)
+### Gold Sponsor: ($4000) - EPAM
 
+![Alt text](/images/epam.png "EPAM Systems")
 
 - Exclusive Logo placement on the T-Shirts
 - Standee placement on the Conference Stage
@@ -30,13 +31,16 @@ By sponsoring JAVAFEST, you gain access to a quality audience, cost-effective op
 - Booth at the venue
 - 8 Conference Tickets for Developers
 
-### Silver Sponsor: ($2000)
+### Silver Sponsor: ($2000) - GUVI
+
+![Alt text](/images/guvi-logo.webp "Guvi")
 
 - Exclusive Logo placement at participation certificates
 - Booth at the venue
 - 5 Conference Tickets for Developers
 
-### Bronze Sponsor: ($1000)
+### Bronze Sponsor: ($1000) - 3
+![Alt text](/images/google-logo.svg "Google")
 - Booth at the venue
 - 3 Conference Tickets for Developers
 

@@ -1,6 +1,7 @@
 ---
 title: 'About'
-year: 2024
+year: 2023
+slug: 'about'
 ---
 
 
