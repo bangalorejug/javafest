@@ -1,0 +1,583 @@
+---
+title: 'Schedule'
+year: 2023
+---
+<style>
+    .schedule-nav .nav-item span {
+        display: block
+    }
+
+    .schedule-nav .nav-item .heading {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.25rem
+    }
+
+    .schedule-nav .nav-item .meta {
+        -webkit-opacity: .8;
+        -moz-opacity: .8;
+        opacity: .8
+    }
+
+    .schedule-nav .nav-link {
+        background: #f0f6fa;
+        border-radius: 0;
+        border-right: rgba(0, 0, 0, 0.1);
+        text-decoration: none
+    }
+
+    .schedule-tab-content {
+        padding: 2rem 0
+    }
+
+    .schedule-tab-content .tab-pane {
+        position: relative
+    }
+
+    .schedule-tab-content .tab-pane:after {
+        content: "";
+        display: block;
+        background: #e5ecf4;
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        left: 196px;
+        top: 5px
+    }
+
+    .schedule-tab-content .tab-pane.no-timeline:after {
+        display: none
+    }
+
+    .schedule-tab-content .item {
+        position: relative;
+        margin-bottom: 2rem
+    }
+
+    .item-talk {
+        min-height: 165px
+    }
+
+    .schedule-tab-content .item:after {
+        content: "" ;
+        display: inline-block;
+        position: absolute;
+        z-index: 5;
+        left: 190px;
+        top: 5px;
+        width: 16px;
+        height: 16px;
+        border: 4px solid #098dcf;
+        background: white;
+        border-radius: 50%
+    }
+
+    .schedule-tab-content .item .meta {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px;
+        padding: 1rem;
+        padding-top: 0;
+        text-align: center;
+        font-size: 0.875rem
+    }
+
+    .schedule-tab-content .item .meta .time {
+        font-size: 1.25rem;
+        color: #098dcf
+    }
+
+    .schedule-tab-content .item .meta .location {
+        font-weight: bold
+    }
+
+    .schedule-tab-content .item .profile-image {
+        width: 80px
+    }
+
+    .schedule-tab-content .item .content {
+        padding-left: 240px
+    }
+
+    .schedule-tab-content .item .content .title {
+        font-size: 1.25rem
+    }
+</style>
+<div class="container">
+
+    <!-- Nav tabs -->
+    <ul class="schedule-nav nav nav-pills nav-fill" id="myTab" role="tablist">
+        <li class="nav-item me-2" role="presentation">
+            <a class="nav-link active" id="tab-1" data-bs-toggle="tab" href="#tab-1-content" role="tab"
+                aria-controls="tab-1-content" aria-selected="true">
+                <span class="heading">Industry Track</span>
+            </a>
+        </li>
+        <li class="nav-item me-2" role="presentation">
+            <a class="nav-link" id="tab-2" data-bs-toggle="tab" href="#tab-2-content" role="tab"
+                aria-controls="tab-2-content" aria-selected="false" tabindex="-1">
+                <span class="heading">Academic Track</span>
+            </a>
+        </li>
+        <li class="nav-item me-2" role="presentation">
+            <a class="nav-link" id="tab-3" data-bs-toggle="tab" href="#tab-3-content" role="tab"
+                aria-controls="tab-3-content" aria-selected="false" tabindex="-1">
+                <span class="heading">Workshop</span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="schedule-tab-content tab-content">
+        <div class="tab-pane active" id="tab-1-content" role="tabpanel" aria-labelledby="tab-1">
+
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">8:00 </h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Registration </h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Ground Floor, Audi Block</div>
+                    <div class="desc"> Validate you registration and Get your conference badge for the event. And if you are the an early bird[by 8.45am] </div>
+                </div><!--//content-->
+            </div><!--//item-->
+            
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">8:50 - 9:00</h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Prayer &amp; Opening Note </h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc"> Prayer </div>
+                </div><!--//content-->
+            </div><!--//item-->
+            
+            
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:00 - 9:30</h4>
+                    <div class="profile">
+                        <a href="/speakers/adityasharma7" >
+                            <img class="profile-image rounded-circle  mb-2" src="https://github.com/adityasharma7.png" alt=""></a>
+                        <div class="name">
+                            <a class="theme-link" href="/speakers/adityasharma7/">Aditya Sharma</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="/sessions/open-source-for-business/">Open Source: What's for you?</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc">In this session, Aditya will share his experiences with open source software and highlight its benefits in terms of innovation, collaboration, and cost savings.</div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:30 - 9:40</h4>
+                    <div class="profile">
+                        <a href="speakers/jaysk1/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/jaysk1.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/jaysk1/" >Jayashree S Kumar</a><br><a class="theme-link" href="speakers/">Dr Gobi</a></div>
+                     </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3"> Welcome Note</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc"> Christ university and JavaFest, Welcomes the Gathering </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:40 - 10:20</h4>
+                    <div class="profile">
+                        <a href="speakers/navinreddy20/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/navinreddy20.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/navinreddy20/" >Navin Reddy</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/set-expectation/">[Panel Discussion] Bridging the Gap: Exploring Mutual Expectations between Industry and Academia</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc">Panel discussion featuring equal representation from industry and academia. Our panelists, representing diverse backgrounds and perspectives, will explore the mutual expectations that exist between these two sectors and discuss ways to bridge the gap between them. </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-other">
+                <div class="meta">
+                    <h4 class="time mb-3">10:20 - 10:35</h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Snack Break &amp; Split Up</h3>
+                    <div class="desc"> Have some Coffee,Tea,Snacks and Split up to your respective tracks- Industry/Academic </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">10:35 - 11:20</h4>
+                    <div class="profile">
+                        <a href="speakers/vaibhavchoudhary/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/vaibhavchoudhary.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/vaibhavchoudhary/" >Vaibhav Choudry</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/scaling-up-java-apps/">Scaling up your Java Application</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc">Did you know? 28years young language like Java provides scalability by design? Attend the talk to understand few parameter and modern techniques which provides your application super scalable. </div>
+                </div><!--//content-->      
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">11:20 - 12:05</h4>
+                    <div class="profile">
+                        <a href="speakers/nagkumar/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/nagkumar.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/nagkumar/" >Raja Nagendra Kumar</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/iac-and-ifc-way/">Serverless Enterprise Monoliths – The IaC and IfC way</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc">Amazon internal case study has caused some surprise and amusement in the developer community. Come to see its frank assessment of how to save money . </div>
+                </div><!--//content-->      
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">12:05 - 12:45</h4>
+                    <div class="profile">
+                        <a href="speakers/sathishk/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/sathishk.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/sathishk/" >Sathish Kumar Thiyagarajan</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/cloud-native-persistent-technology/">The Future of Java Persistence: Cloud Native Persistent Technology</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc">Explore the history, theory, and technology behind the evolution of persistence technologies for Java applications. </div>
+                </div><!--//content-->      
+            </div><!--//item-->
+    
+            <div class="item item-other">
+                <div class="meta">
+                    <h4 class="time mb-3">12:45 - 13:30</h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Lunch Break</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Gourmet, Basement, Central Block</div>
+                    <div class="desc"> Lets be fed and watered and revive to take the next dose of technology </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">13:30 - 14:15</h4>
+                    <div class="profile">
+                        <a href="speakers/prashant332/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/prashant332.png" alt=""></a>
+                        <a href="speakers/bhuvanavenkataramanan/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/bhuvanavenkataramanan.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/prashant332" >Prashant Hegde</a><br><a class="theme-link" href="speakers/bhuvanavenkataramanan/">Bhuvana Venkataramanan</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/demystifying-application-observability/">Demystifying Application Observability: Spring boot observability</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc"> Want to know "How to implement observability in Spring Boot applications ?" Join Prashant Hegde & Bhuvana Venkataramanan they'll take you through the details. </div>
+                </div><!--//content-->      
+            </div><!--//item-->
+
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">14:15 - 15:00</h4>
+                    <div class="profile">
+                        <a href="speakers/stevemann2705/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/stevemann2705.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/stevemann2705/" >Steve Mann</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/navigating-data-land/">Navigating the Data Landscape: From Fundamentals to the Future</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc">Discover why data is crucial for driving business success and innovation. </div>
+                </div><!--//content-->      
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">15:00 - 15:45</h4>
+                    <div class="profile">
+                        <a href="speakers/indianarcher/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/indianarcher.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/indianarcher/" >Venkat Seshasai</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/springboot3-migration/">Modernize Your Applications: A Guide to Spring Boot 3 Migration</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc">Contemplating how to embark on your Spring Boot 3 migration journey? Venkat will help you get started. </div>
+                </div><!--//content-->      
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">15:45 - 16:25</h4>
+                    <div class="profile">
+                        <a href="speakers/vivsridh4/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/vivsridh4.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/vivsridh4/" >Vivek Sridhar</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/well-architected-framework/">Microsoft Azure Well-Architected Framework</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc">Imagine building a new system on the cloud or migrating an existing one to the cloud. How do you instil confidence in your customers that their data is secure? Can your architecture handle a spike in traffic if a media report goes viral? Can your architecture handle the failure of one or more critical components? Are you using resources most efficiently?. Join here to find answers </div>
+                </div><!--//content-->      
+            </div><!--//item-->
+    
+            <div class="item item-other">
+                <div class="meta">
+                    <h4 class="time mb-3">16:30 - 17:30</h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Tea &amp; Networking </h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Gourmet, Basement, Central Block</div>
+                    <div class="desc"> Take back the wealth of Networking </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+         
+        </div>
+        <!--//tab-1-content-->
+        <div class="tab-pane active fade in" id="tab-2-content" role="tabpanel" aria-labelledby="tab-2">
+
+            
+        
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">8:00 </h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Registration </h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Ground Floor, Audi Block</div>
+                    <div class="desc">  Security Check and Badge Collection for the event </div>
+                </div><!--//content-->
+            </div><!--//item-->
+            
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">8:50 - 9:00</h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Prayer &amp; Opening Note </h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc">  Prayer </div>
+                </div><!--//content-->
+            </div><!--//item-->
+            
+            
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:00 - 9:30</h4>
+                    <div class="profile">
+                        <a href="/speakers/adityasharma7" >
+                            <img class="profile-image rounded-circle  mb-2" src="https://github.com/adityasharma7.png" alt=""></a>
+                        <div class="name">
+                            <a class="theme-link" href="/speakers/adityasharma7/">Aditya Sharma</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="/sessions/open-source-for-business/">Open Source: What's for you?</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc">In this session, Aditya will share his experiences with open source software and highlight its benefits in terms of innovation, collaboration, and cost savings.</div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:30 - 9:40</h4>
+                    <div class="profile">
+                        <a href="speakers/jaysk1/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/jaysk1.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/jaysk1/" >Jayashree S Kumar</a><br><a class="theme-link" href="speakers/">Dr Gobi</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3"> Welcome Note</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc"> Christ university and JavaFest, Welcomes the Gathering </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:40 - 10:20</h4>
+                    <div class="profile">
+                        <a href="speakers/navinreddy20/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/navinreddy20.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/navinreddy20/" >Navin Reddy</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/set-expectation/">[Panel Discussion] Bridging the Gap: Exploring Mutual Expectations between Industry and Academia</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Main Auditorium, 3rd Floor, Audi Block</div>
+                    <div class="desc">Panel discussion featuring equal representation from industry and academia. Our panelists, representing diverse backgrounds and perspectives, will explore the mutual expectations that exist between these two sectors and discuss ways to bridge the gap between them. </div>
+                </div><!--//content-->
+            </div><!--//item-->
+            
+            <div class="item item-other">
+                <div class="meta">
+                    <h4 class="time mb-3">10:20 - 10:40</h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Snack Break &amp; Split Up</h3>
+                    <div class="desc"> Have some Coffee,Tea,Snacks and Split up to your respective tracks - Industry/Academic </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">10:45 - 11:15</h4>
+                    <div class="profile">
+                        <a href="speakers/navinreddy20/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/navinreddy20.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/navinreddy20/" >Navin Reddy</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/java-past-present-future/">Java: The Past, Present and Future</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Room 911, 9th Floor, Central Block</div>
+                    <div class="desc">Embark on a concise yet captivating journey through Java's newest features in this 30-minute session</div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">11:15 - 11:30</h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Ice Breaker Session</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Room 911, 9th Floor, Central Block</div>
+                    <div class="desc">Get to know the people around you</div>
+                </div><!--//content-->
+            </div><!--//item-->
+            
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">11:30 - 12:45</h4>
+                    <div class="profile">
+                        <a href="speakers/navinreddy20/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/navinreddy20.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/navinreddy20/" >Navin Reddy</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/java-in-real-world/">Java in Real World</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Room 911, 9th Floor, Central Block</div>
+                    <div class="desc">Uncover the widespread usage of Java in industry and explore its two most popular frameworks, Spring and Hibernate. </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-other">
+                <div class="meta">
+                    <h4 class="time mb-3">12:45 - 13:30</h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Lunch Break</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Gourmet, Basement, Central Block</div>
+                    <div class="desc"> Lets be fed and watered and revie to take the next does of technology </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">13:30 - 14:00</h4>
+                    <div class="profile">
+                        <a href="speakers/ganeshsamarthyam/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/ganeshsamarthyam.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/ganeshsamarthyam/" >Ganesh Samarthyam</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/functional-thinking-in-java/">Lets Get 'Funky' with Functional Progamming</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Room 911, 9th Floor, Central Block</div>
+                    <div class="desc">Moving to functional programming can result in significantly better code and productivity gains. However, it requires a paradigm shift: you need to move away from imperative and object-oriented thinking to start thinking functionally.  </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">14:00 - 15:30</h4>
+                    <div class="profile">
+                        <a href="speakers/navinreddy20/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/navinreddy20.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/navinreddy20/" >Navin Reddy</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/building-cloud-project/">Building a Project and deploy on cloud</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Room 911, 9th Floor, Central Block</div>
+                    <div class="desc">In this interactive session, participants will have the opportunity to build a basic working project using Java.  </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">15:30 - 16:30</h4>
+                    <div class="profile">
+                        <a href="speakers/navinreddy20/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/navinreddy20.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/navinreddy20/" >Navin Reddy</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Student's Synergy QUIZ</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Room 911, 9th Floor, Central Block</div>
+                    <div class="desc"> Lets find out all that you have learnt </div>
+                </div><!--//content-->
+            </div><!--//item-->
+    
+            <div class="item item-other">
+                <div class="meta">
+                    <h4 class="time mb-3">16:30 - 17:30</h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Tea &amp; Networking </h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Gourmet, Basement, Central Block</div>
+                    <div class="desc"> Take back the wealth of Networking </div>
+                </div><!--//content-->
+            </div><!--//item-->
+            
+        </div>
+        <!--//tab-2-content-->
+
+        <div class="tab-pane active fade in" id="tab-3-content" role="tabpanel" aria-labelledby="tab-3">
+
+            
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">8:00 </h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Registration </h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Ground Floor, Audi Block</div>
+                    <div class="desc">  Security Check and Badge Collection for the event </div>
+                </div><!--//content-->
+            </div><!--//item-->
+
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:00 - 10:15</h4>
+                    <div class="profile">
+                        <a href="speakers/vagrantism/" ><img class="profile-image rounded-circle  mb-2" src="https://github.com/vagrantism.png" alt=""></a>
+                        <div class="name"><a class="theme-link" href="speakers/joinalahmed/" >Madhup Sukoon</a></div>
+                    </div><!--//profile-->
+                </div><!--//meta-->
+                <div class="content">
+                    <a class="title h3 mb-3" href="sessions/taming-llm/">[Workshop] Taming Large Language Models for Real-World Use Cases</a>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i> <!---->Room 105, 1st Floor, Central Block</div>
+                    <div class="desc">Hands-on on LLMs </div>
+                </div><!--//content-->
+            </div><!--//item-->
+
+            <div class="item item-other">
+                <div class="meta">
+                    <h4 class="time mb-3">10:20 - 10:40</h4>
+                </div><!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Snack Break &amp; Split Up</h3> 
+                    <div class="desc"> Have some Coffee,Tea,Snacks and Split up to your respective tracks- Industry/Academic </div>
+                </div><!--//content-->
+            </div><!--//item-->
+
+
+        </div> <!--//tab-3-content-->
+
+</div>

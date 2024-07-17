@@ -1,0 +1,42 @@
+{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
+<div class="container">
+	<div class="row mb-2 ">
+    <!-- Ranges through content/posts/*.md -->
+    {{ range .Pages }}
+ 
+
+
+    <div class="col-md-4 mt-3">
+			<div class="card border rounded shadow-sm h-100 g-2">
+				<div class="card-body px-4 pt-4">
+					<a href="{{ .Permalink }}"  class="card-title h5">{{ .Title }}</a>
+					<p class="card-text pt-3">{{ .Summary }}</p>
+				
+					<p class="card-subtitle mb-2">
+						By <small>
+						{{- range $index, $element := .Params.speakers }} 
+        {{ if gt $index 0 }} & {{ end }}
+        <a href="/speakers/{{ urlize . }}">{{ . }}</a>
+      {{ end }}
+
+	</small>
+					</p>
+				</div>
+				
+				<div class="card-footer bg-transparent border-0 pb-3">
+					{{ range .Params.topics }}
+					<span class="badge rounded-pill bg-info">{{ . }}</span>
+					
+					{{ end }}
+					
+				</div>
+				
+			</div>
+			
+		</div>
+
+    {{ end }}
+    </div>
+
+</div>
+{{ end }}
