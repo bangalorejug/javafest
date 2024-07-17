@@ -8,9 +8,25 @@ This is the repository used to build and publish the official JAVAFEST website.
 We use [Hugo](https://gohugo.io/) to build and render the site. 
 
 ### Run development server using Docker
+
+#### Unix-like systems (Ubuntu, Mac etc)
 ```
 docker run --rm -it -v $(pwd):/src -p 1313:1313 klakegg/hugo server -D
 ```
+
+#### Windows
+
+Using PowerShell
+```
+docker run --rm -it -v ${PWD}:/src -p 1313:1313 klakegg/hugo server -D
+```
+
+Using Command Prompt
+```
+docker run --rm -it -v C:\path\to\your\project:/src -p 1313:1313 klakegg/hugo server -D
+```
+
+
 
 ### Run development server using [Hugo wrapper](https://github.com/khos2ow/hugo-wrapper)
 ```sh
