@@ -53,7 +53,6 @@
     {{end}} 
     {{ block "main" . }}{{end}}
     {{ block "footer" . }}
-
       {{ if .Page.Params.year }}
       {{ partial (print .Page.Params.year "/footer.html") . }}
     {{ else }}
