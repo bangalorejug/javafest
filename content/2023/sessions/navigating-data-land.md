@@ -12,6 +12,9 @@ date: 2023-07-08
 publishdate: 2017-03-24
 year: 2023
 ---
+
+{{<youtube gf5xIVZRnZA>}}
+
 This session unveils the power of data and its transformative impact on organisations. Join us as we explore key topics, including data-intensive application development, reliable and scalable architectures, diverse data models, query languages, storage and retrieval strategies, replication methods, data pipelines, and future data trends.
 
 Discover why data is crucial for driving business success and innovation. Gain insights into building reliable and scalable applications capable of handling vast amounts of data. Explore different data models such as relational, document, and graph, and learn about their use cases. Delve into query languages and storage options, including in-memory databases, data warehouses, data lakes and lake houses.

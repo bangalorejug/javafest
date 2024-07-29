@@ -11,6 +11,7 @@ year: 2023
 ---
 
 
+{{<youtube fv358KjUhdk>}}
 
 An Amazon internal case study has caused some surprise and amusement in the developer community, thanks to its frank assessment of how to save money by moving from a microservices architecture to a monolith.
 
@@ -55,5 +56,4 @@ Best practices for building scalable, reliable, and secure serverless monolith a
 In addition to these specific topics, attendees will also learn about the latest trends in serverless computing and how they can be applied to their own messaging applications. They can also ask questions and get feedback from the speaker.
 
 I hope to see you there!
-
 

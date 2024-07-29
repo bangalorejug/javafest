@@ -11,6 +11,9 @@ weight: 7
 year: 2023
 ---
 
+
+{{<youtube U5qukJSDnn0>}}
+
 Application Observability has emerged as a hot topic in the software development community, presenting a paradigm shift in monitoring and understanding complex systems. While traditionally, the responsibility for implementing observability fell on developers, recent developments have witnessed frameworks incorporating built-in support for this crucial feature.
 
 As you know Observability is the ability to understand the state of a system from the outside. It is essential for troubleshooting problems, identifying performance bottlenecks, and ensuring the reliability of applications. Spring Boot provides a number of features that make it easy to implement observability in your applications.
