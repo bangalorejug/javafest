@@ -17,6 +17,8 @@ weight: 1
 year: 2023
 ---
 
+{{<youtube OTu4pnJFfa0>}}
+
 Join us for a dynamic panel discussion featuring equal representation from industry and academia. Our panelists, representing diverse backgrounds and perspectives, will explore the mutual expectations that exist between these two sectors and discuss ways to bridge the gap between them. 
 
 The discussion will be led by Mr. Naveen Reddy, a popular YouTuber and Tech Educator, who will guide the conversation and ensure that everyone has a chance to share their insights.

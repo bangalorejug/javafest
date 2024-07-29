@@ -10,6 +10,9 @@ date: 2017-03-23
 weight: 7
 year: 2023
 ---
+
+{{<youtube 4qta9yAQeI0>}}
+
 In today's rapidly evolving technological landscape, keeping your applications up-to-date and leveraging the latest frameworks is crucial for maintaining a competitive edge. Spring Boot, one of the most popular frameworks for Java-based web development, has recently released its highly anticipated third version, offering an array of new features, performance enhancements, and security updates.
 
 In this session Venkat will throw light on 

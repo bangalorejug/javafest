@@ -13,6 +13,8 @@ weight: 2
 year: 2023
 ---
 
+{{<youtube F3BMfcblHLY>}}
+
 Join us for a thought-provoking discussion on the benefits of open source software for businesses. While many people view open source as a form of charity work, it actually offers numerous advantages for developers, students, and businesses alike. 
 
 In this session, Aditya will share his experiences with open source software and highlight its benefits in terms of innovation, collaboration, and cost savings. 
