@@ -3,6 +3,8 @@ title: "Schedule"
 year: 2024
 ---
 
+{{< rawhtml >}}
+
 <style>
   .schedule-nav .nav-item span {
     display: block;
@@ -229,3 +231,4 @@ year: 2024
     </div>
   </div>
 </div>
+{{< /rawhtml >}}
