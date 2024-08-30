@@ -22,6 +22,11 @@ year: 2024
         border: 0;
 
     }
+    @media(max-width: 1025px) {
+        .gform-container {
+            padding-bottom: 200.25%;
+        }
+    }
 </style>
 <div class="gform-container">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSem_HhGLDKYPqnXOVBqQyKsv64xBnX5a--r4zuYh3Q0YymL2A/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
