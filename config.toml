@@ -12,6 +12,3 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 enableInlineShortcodes = true
 [security.funcs]
 getenv = ['^HUGO_','CONTEXT','BUILD_PRODUCTION']
-
-[params]
-  defaultYear = "2024"

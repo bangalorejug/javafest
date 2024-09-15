@@ -1,3 +1,3 @@
 ---
-title: 'Speakers'
+title: 'Sessions'
 ---
