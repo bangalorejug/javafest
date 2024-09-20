@@ -1,7 +1,7 @@
 ---
 title: 'Java roadmap and the role of Java community'
 speakers:
-  - praveen-mohan-cs
+  - pravemoh
 topics:
   - java
   - students
