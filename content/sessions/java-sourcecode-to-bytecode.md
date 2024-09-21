@@ -2,6 +2,7 @@
 title: 'From Java Sourcecode to Bytecode - Secrets Unveiled!'
 speakers:
   - varada1110
+  - ashwinms17
 topics:
   - cloudnative
 date: 2017-03-23
