@@ -1,26 +1,20 @@
 <header class="mb-auto">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid d-flex">
-      <div class="logo">
-        <a class="navbar-brand d-flex align-items-center" href="/" style="
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="/" style="
             width: 200px;
         ">
           <img src="/images/Logo.png" width="60" height="60" alt="" loading="lazy" style="
               vertical-align: top;
           ">
-          <div style="
-              display: inline-block;
-          "><span class="h4 text-uppercase">JavaFest</span></div>
+          <div class="align-baseline px-2"><span class="h4 text-uppercase">JavaFest</span></div>
         </a>
-
-      </div>
-      <!-- <div class="nav-links"> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link text-dark" href="/schedule">Schedule</a>
@@ -42,21 +36,12 @@
           <li class="nav-item">
             <a class="nav-link text-dark" href="/about">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="/cfp">Call for papers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="/register">Register</a>
-          </li>
         </ul>
+        <form role="search">
+          <a href="/cfp" class="btn btn-outline-secondary">Submit Talk</a>
+          <a href="/register" class="px-2 btn btn-primary">Tickets</a>
+        </form>
       </div>
-
-      <!-- </div> -->
-
-
-
-
-
     </div>
   </nav>
 
