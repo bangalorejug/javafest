@@ -1,5 +1,5 @@
 ---
-title: 'Unlocking Concurrency: Mastering Java Virtual Threads'
+title: 'Virtual Threads in Java - A Primer'
 speakers:
   - vaibhavchoudhary
 topics:
@@ -8,5 +8,10 @@ date: 2017-03-23
 weight: 5
 ---
 
+In this talk, we will explore the intricacies of Java virtual threads, a revolutionary feature in modern Java development aimed at simplifying concurrency and improving performance. Unlike typical discussions that focus on how to use virtual threads, this session will take a deep dive into the internals of the Java runtime, shedding light on what happens under the hood when you work with virtual threads.
 
-Join us for an immersive workshop on Java Virtual Threads, a groundbreaking feature of Project Loom that redefines concurrency in Java. In this session, we’ll explore the concept of lightweight threads and how they simplify writing, maintaining, and scaling concurrent applications. Participants will learn about the architecture of virtual threads, practical use cases, and performance benefits compared to traditional threading models. Through hands-on exercises, attendees will gain practical experience in integrating virtual threads into their projects. Whether you’re a seasoned developer or just starting out, this workshop will equip you with the knowledge to leverage Java Virtual Threads for more efficient and responsive applications. Don’t miss this opportunity to enhance your skills in modern Java development!
+We will start by examining the traditional thread model in Java and its limitations, setting the stage for understanding the motivations behind the introduction of virtual threads. We will dissect the core design decisions that the Java development team made to enable virtual threads to scale effortlessly, providing lightweight concurrency while maintaining the familiar Java threading model.
+
+The heart of this session will be a detailed exploration of the inner workings of virtual threads: how they differ from platform threads, how the Java runtime manages them, and how they interact with the underlying operating system and hardware. We will discuss the architecture and mechanisms that enable virtual threads to minimise overhead and optimise resource usage, including the role of continuations, thread scheduling, and task management.
+
+By the end of this talk, attendees will gain a deeper understanding of the power and flexibility that virtual threads bring to the table, the design philosophies that guided their development, and how this knowledge can influence their approach to concurrency in Java applications. Whether you are a seasoned Java developer or just beginning to explore the world of concurrency, this session will provide valuable insights that go beyond surface-level usage, equipping you to make informed decisions about incorporating virtual threads into your projects.
