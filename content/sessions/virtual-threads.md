@@ -2,6 +2,7 @@
 title: 'Virtual Threads in Java - A Primer'
 speakers:
   - vaibhavchoudhary
+  - ram-bgl
 topics:
   - cloudnative
 date: 2017-03-23
