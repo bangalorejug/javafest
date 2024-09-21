@@ -2,7 +2,7 @@
 title: 'Register'
 ---
 
-Both Workshop and Regular tickets will include `T-Shirt, Lunch and Snacks`
+Both Workshop and Talk tickets will include `T-Shirt, Lunch and Snacks`
 
 
 {{< rawhtml >}}
