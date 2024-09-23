@@ -3,7 +3,7 @@ title: 'Building Modular Monoliths using Spring Modulith'
 speakers:
   - sivaprasadreddy
 topics:
-  - cloudnative
+  - workshop
 date: 2017-03-23
 weight: 3
 ---

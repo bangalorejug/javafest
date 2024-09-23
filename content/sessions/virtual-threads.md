@@ -4,7 +4,7 @@ speakers:
   - vaibhavchoudhary
   - ram-bgl
 topics:
-  - cloudnative
+  - workshop
 date: 2017-03-23
 weight: 5
 ---

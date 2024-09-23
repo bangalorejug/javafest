@@ -3,7 +3,7 @@ title: 'Powering Machine Learning in Java'
 speakers:
   - rajaduraikrishna
 topics:
-  - cloudnative
+  - tech talk
 date: 2017-03-23
 weight: 4
 ---

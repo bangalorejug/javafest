@@ -3,7 +3,7 @@ title: 'Debugging and Resolving Performance Issues in Real World Java Applicatio
 speakers:
   - vaibhavchoudhary
 topics:
-  - cloudnative
+  - tech talk
 date: 2017-03-23
 weight: 10
 ---

@@ -2,8 +2,9 @@
 title: 'Hands-On Guide to Building RAG Chatbot'
 speakers:
   - lohith46
+  - rohanjnr
 topics:
-  - cloudnative
+  - workshop
 date: 2017-03-23
 weight: 4
 ---

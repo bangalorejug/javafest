@@ -3,7 +3,7 @@ title: 'Day in a life of modern Java developer'
 speakers:
   - jaysk1
 topics:
-  - cloudnative
+  - tech talk
 date: 2017-03-23
 weight: 2
 ---

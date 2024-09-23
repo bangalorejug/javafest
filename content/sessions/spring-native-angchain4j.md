@@ -3,7 +3,7 @@ title: 'How Java can productionize the generative AI buzz with Spring Native, La
 speakers:
   - abiramisukumaran
 topics:
-  - cloudnative
+  - tech talk
 date: 2017-03-23
 weight: 4
 ---

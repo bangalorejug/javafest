@@ -3,8 +3,7 @@ title: 'Java roadmap and the role of Java community'
 speakers:
   - pravemoh
 topics:
-  - java
-  - students
+  - techtalk
 date: 2017-03-23
 weight: 1
 ---

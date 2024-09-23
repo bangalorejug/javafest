@@ -4,7 +4,7 @@ speakers:
   - varada1110
   - ashwinms17
 topics:
-  - cloudnative
+  - tech talk
 date: 2017-03-23
 weight: 3
 ---

@@ -3,7 +3,7 @@ title: 'Missing Pieces in Java Persistence for Modern Development'
 speakers:
   - hari-nikesh-r
 topics:
-  - cloudnative
+  - tech talk
 date: 2017-03-23
 weight: 4
 ---
