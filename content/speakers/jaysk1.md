@@ -1,6 +1,6 @@
 ---
 title: 'Jayashree S Kumar'
-jobTitle: 'Principal Member Technical Staff'
+jobTitle: 'Java Platform Team, PMTS'
 company: 'Oracle'
 date: 2017-03-23
 weight: 3
