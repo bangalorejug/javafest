@@ -8,13 +8,9 @@
    <!-- Open Graph Tags -->
     
    {{ if strings.HasPrefix .RelPermalink "/speakers" }}
-   <meta property="og:title" content="JavaFest Speaker: {{ .Title }}" />
-    {{ if and .Params.jobTitle .Params.company }}
-        <meta property="og:description" content="{{ .Params.jobTitle }} {{ .Params.company }}" />
-    {{ end }}
-     
-  <meta name="og:image" content="https://github.com/{{.File.BaseFileName}}.png" />
-  <meta property="og:image:secure_url" content="https://github.com/{{.File.BaseFileName}}.png" />
+   <meta property="og:image" content="https://avatars.githubusercontent.com/u/1736813?v=4?s=400" /><meta property="og:image:alt" content="Lead Software Developer. sathishk has 22 repositories available. Follow their code on GitHub." /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="profile" /><meta property="og:title" content="sathishk - Overview" /><meta property="og:url" content="https://github.com/sathishk" /><meta property="og:description" content="Lead Software Developer. sathishk has 22 repositories available. Follow their code on GitHub." /><meta property="profile:username" content="sathishk" />
+  
+
   {{ else }}
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Baeldung" />
