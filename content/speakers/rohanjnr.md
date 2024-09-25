@@ -1,14 +1,12 @@
 ---
-title: 'Rohan J'
-jobTitle: 'Principal engineer'
-company: 'Sahaj'
+title: 'Rohan Reddy Alleti'
+jobTitle: 'Solution Consultant'
+company: 'Sahaj Software'
 date: 2017-03-23
 weight: 12
 linkedin: 'https://www.linkedin.com/in/rohanalleti/'
 ---
 
-Hello there! My name is Rohan, a self-taught programmer, and a university student.
+Hello there, I’m Rohan Reddy Alleti, a self-taught programmer and Solution Consultant at Sahaj Software, with expertise in backend development, cloud computing, and RAG (Retrieval-Augmented Generation) pipelines. With a B.Tech in Mechanical Engineering and a minor in Computer Science from PES University, I’ve developed a strong technical foundation through both formal education and independent learning.
 
-Though I might not have any professional experience in programming, I have contributed to many open-source projects which have considerably increased my programming skill.
-Currently working on Web Development, with the Django web framework.
-Also learning JavaScript and Kotlin.
+At Sahaj, I focus on designing and implementing RAG pipelines. I’m passionate about collaboration and enjoy working closely with teams to communicate ideas and deliver effective solutions. I’ve also contributed to open-source projects and led web development efforts using technologies like Django, FastAPI.
