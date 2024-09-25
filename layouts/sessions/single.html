@@ -7,7 +7,7 @@
     <h3>{{- .Title -}}</h3>
     <p>by {{- range $index, $element := .Params.speakers }}
         {{ if gt $index 0 }} & {{ end }}
-        {{ . }}
+        <a href="/speakers/{{ urlize . }}">{{ . }}</a>
       {{ end }}</p>
 <article class="col-lg-12">
   {{- .Content -}}
