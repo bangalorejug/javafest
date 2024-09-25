@@ -4,6 +4,7 @@ jobTitle: 'Principal engineer'
 company: 'Sahaj'
 date: 2017-03-23
 weight: 12
+linkedin: 'https://www.linkedin.com/in/rohanalleti/'
 ---
 
 Hello there! My name is Rohan, a self-taught programmer, and a university student.

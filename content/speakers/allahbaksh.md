@@ -4,6 +4,7 @@ jobTitle: 'Architect at Strategic Technology Group (STG)'
 company: 'Infosys'
 date: 2017-03-23
 weight: 9
+linkedin: 'https://www.linkedin.com/in/allahbaksh-ab-asadullah-9275674/'
 ---
 
 Allahbaksh has over 19 years of diverse industry experience and is Principal Product Architect at Strategic Technology Group at Infosys Ltd. In his present role, he is responsible for evaluating key technological bets for Infosys. His day to day focus is on delivering high quality and massive scale cloud products where the key is to build robust, cloud-native platforms and applications through rapid and continuous iterations. Prior to this in Corporate Technology Unit, he was responsible for the design and development of special strategic projects and platforms. 

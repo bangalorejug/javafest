@@ -4,6 +4,7 @@ jobTitle: 'Sr. Backend Developer'
 company: 'Gujarat JUG'
 date: 2017-03-23
 weight: 12
+linkedin: 'https://www.linkedin.com/in/vikasrajputin/'
 ---
 
 "If you've to live for 1000 more years, then what is that one thing that you'll keep doing?"

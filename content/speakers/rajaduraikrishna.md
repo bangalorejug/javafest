@@ -4,6 +4,7 @@ jobTitle: 'Solution Architect'
 company: 'Ourkadai| Member - Board Of Studies VIT'
 date: 2017-03-23
 weight: 7
+linkedin: 'https://www.linkedin.com/in/rajaduraikrishnamoorthy/'
 ---
 
 Experienced Principal Software Architect with a demonstrated history of working in highly scalable enterprise systems and ecommerce apps. Strong engineering professional skilled in Architecture, Microservices, Problem solving and Design patterns. 

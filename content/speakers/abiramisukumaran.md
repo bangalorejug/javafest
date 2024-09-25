@@ -5,6 +5,7 @@ company: 'Google'
 date: 2017-03-23
 weight: 6
 description: "JavaFest Speaker: Abirami Sukumaran"
+linkedin: 'https://www.linkedin.com/in/abiramisukumaran/'
 ---
 
 Empowering developers with technology:
