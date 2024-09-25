@@ -2,40 +2,30 @@
 
 <div class="container mt-3">
 	<div class="row">
- <!-- Ranges through content/posts/*.md -->
-    {{ range .Pages }}
-    	<div class="col-6">			  
-        	 <div class="card mb-3 p-4">
-				  <div class="row g-0">  
-						<div class="col-4">   
-							{{ if eq .File.BaseFileName "murali" }}     
-							<img src="/images/Murali.jpg" class="rounded-circle mb-3" style="width: 150px;"
-								alt="Avatar" /> 
-							{{ else }}  
-								{{ if eq .File.BaseFileName "ashok" }}     
-								<img src="/images/Ashok.jpeg" class="rounded-circle mb-3" style="width: 150px;"
-									alt="Avatar" /> 
-								{{ else }}  
-								{{ if eq .File.BaseFileName "rajeev" }}     
-								<img src="/images/Rajeev.png" class="rounded-circle mb-3" style="width: 150px;"
-									alt="Avatar" /> 
-								{{ else }}  
-								<img src="https://github.com/{{.File.BaseFileName}}.png" class="rounded-circle mb-3" style="width: 150px;"
-									alt="Avatar" />    
-								{{ end }}
-								{{ end }}
-							{{ end }}
-						</div>     
-						<div class="col-8">
-						  <div class="card-body">
-							<h2 class="card-title"><a href="{{ .Permalink }}" class="mb-2 h5"><strong>{{ .Title }}</strong></a></h2>
-							<h4 class="card-text">{{ .Params.jobTitle }},<small class="px-3">{{ .Params.company }}</small> </h4>        
-						  </div>
-						</div>
-				  </div>
-			</div>
-        </div>
+
+		{{ range .Pages }}
+
+		<div class="col-6 col-lg-3 mb-4">
+			<div class="card rounded-0">
+				<a href="/speakers/{{.File.BaseFileName}}"><img src="https://github.com/{{.File.BaseFileName}}.png" class="card-img-top rounded-0" alt=""></a>
+				<div class="card-body">
+					<h5 class="card-title mb-2">{{ .Title }}</h5>
+					<div class="card-text mb-3">
+						<div class="meta">{{ .Params.jobTitle }}</div>
+						<div class="meta">{{ .Params.company }}</div>
+					</div><!--//card-text-->
+					<a href="/speakers/{{.File.BaseFileName}}">Read more →</a>
+				</div><!--//card-->
+				<div class="card-footer text-muted">
+					<ul class="social-list list-inline mb-0">
+						<li class="list-inline-item"><a href="{{ .Params.linkedin }}"><svg class="svg-inline--fa fa-linkedin-in fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg><!-- <i class="fa-brands fa-linkedin-in fa-fw"></i> Font Awesome fontawesome.com --></a></li>
+					</ul><!--//social-list-->
+				</div>
+			</div><!--//card-->
+		</div>
+
 		{{ end }}
-    </div>
+
+	</div>
 </div>
 {{ end }}
