@@ -14,9 +14,10 @@
 				
 					<p class="card-subtitle mb-2">
 						By <small>
-						{{- range $index, $element := .Params.speakers }} 
-        {{ if gt $index 0 }} & {{ end }}
-        <a href="/speakers/{{ urlize . }}">{{ . }}</a>
+							{{- range $index, $speaker := .Params.speakers }} 
+                            {{ if gt $index 0 }} & {{ end }}
+                            {{ $speakerPage := $.Site.GetPage "speakers" (urlize $speaker) }}
+                            <a href="{{ $speakerPage.Permalink }}">{{ $speakerPage.Title }}</a>
       {{ end }}
 
 	</small>
