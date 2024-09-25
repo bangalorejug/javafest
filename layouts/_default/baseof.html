@@ -5,6 +5,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
+   <!-- Open Graph Tags -->
+    
+   {{ if strings.HasPrefix .RelPermalink "/speakers" }}
+   <meta property="og:title" content="JavaFest Speaker: {{ .Title }}" />
+    {{ if and .Params.jobTitle .Params.company }}
+        <meta property="og:description" content="{{ .Params.jobTitle }} {{ .Params.company }}" />
+    {{ end }}
+     
+  <meta name="og:image" content="https://github.com/{{.File.BaseFileName}}.png" />
+  <meta property="og:image:secure_url" content="https://github.com/{{.File.BaseFileName}}.png" />
+  {{ else }}
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Params.description }}" />
+  <meta name="og:image" content="https://javafest.org/images/Logo.png" />
+  <meta property="og:image:secure_url" content="https://javafest.org/images/Logo.png" />
+ {{ end }}
+
+ <!-- <meta property="og:url" content="{{ .Permalink }}" /> -->
+ <meta property="og:type" content="website" />
+
   <meta charset="utf-8" />
     <link
       rel="apple-touch-icon"
@@ -25,27 +45,7 @@
     />
     <link rel="manifest" href="/images/site.webmanifest" />
 
-     <!-- Open Graph Tags -->
     
-     {{ if strings.HasPrefix .RelPermalink "/speakers" }}
-       <meta property="og:title" content="JavaFest Speaker: {{ .Title }}" />
-        {{ if and .Params.jobTitle .Params.company }}
-            <meta property="og:description" content="{{ .Params.jobTitle }} {{ .Params.company }}" />
-        {{ end }}
-         
-      <meta name="og:image" content="https://github.com/{{.File.BaseFileName}}.png" />
-      <meta property="og:image:secure_url" content="https://github.com/{{.File.BaseFileName}}.png" />
-      {{ else }}
-      <meta property="og:title" content="{{ .Title }}" />
-      <meta property="og:description" content="{{ .Params.description }}" />
-      <meta name="og:image" content="https://javafest.org/images/Logo.png" />
-      <meta property="og:image:secure_url" content="https://javafest.org/images/Logo.png" />
-     {{ end }}
-     <meta property="og:image:type" content="image/png" /> 
-      <meta property="og:image:width" content="400" /> 
-      <meta property="og:image:height" content="300" />
-     <!-- <meta property="og:url" content="{{ .Permalink }}" /> -->
-     <meta property="og:type" content="website" />
  
      <!-- Twitter Card Tags -->
      <!-- <meta name="twitter:card" content="summary_large_image" /> -->
