@@ -4,6 +4,7 @@ jobTitle: 'Developer Advogate'
 company: 'Jetbrains'
 date: 2017-03-23
 weight: 1
+linkedin: 'https://www.linkedin.com/in/ksivaprasadreddy/'
 ---
 
 I am K. Siva Prasad Reddy and I have more than 16+ years of experience in building enterprise software systems on the Java platform. I have worked on building scalable distributed enterprise applications in banking and e-commerce domains using Java, Spring, RESTful web services, JPA, and NoSQL technologies. 
