@@ -31,7 +31,7 @@
      {{ if strings.HasPrefix .RelPermalink "/speakers" }}
       <meta name="og:image" content="https://github.com/{{.File.BaseFileName}}.png" />
       {{ else }}
-      <meta name="og:image" content="{{ '/images/Logo.png' | relURL }}" />
+      <meta name="og:image" content="{{ "/images/Logo.png" | relURL }}" />
      {{ end }}
      <meta property="og:image" content="{{ .Params.featured_image }}" />
      <!-- <meta property="og:url" content="{{ .Permalink }}" /> -->
@@ -44,7 +44,7 @@
      {{ if strings.HasPrefix .RelPermalink "/speakers" }}
       <meta name="twitter:image" content="https://github.com/{{.File.BaseFileName}}.png" />
       {{ else }}
-      <meta name="twitter:image" content="{{ '/images/Logo.png' | relURL }}" />
+      <meta name="twitter:image" content="{{ "/images/Logo.png" | relURL }}" />
      {{ end }}
     
     <meta charset="utf-8" />
