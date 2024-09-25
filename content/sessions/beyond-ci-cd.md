@@ -1,9 +1,9 @@
 ---
-title: 'Hands-On Guide to Building RAG Chatbot'
+title: 'Taming Technical Debt: A CI/CD Upgrade Strategy'
 speakers:
-  - vijayraja
+  - vijaywhat
 topics:
-  - workshop
+  - tech talk
 date: 2017-03-23
 weight: 12
 ---
