@@ -12,6 +12,11 @@
     
 <article class="col-lg-12">
   {{- .Content -}}
+  {{ if .Params.linkedin }}
+      <p>
+        <a href="{{ .Params.linkedin }}" target="_blank" class="btn btn-link">LinkedIn Profile</a>
+      </p>
+      {{ end }}
 </article>
 </div>
 
