@@ -7,4 +7,4 @@ weight: 14
 linkedin: 'https://www.linkedin.com/in/vijay-raja42/'
 ---
 
-Self Learning Software Engineer and Open source contriputor, passionate about technology and programming languages with a focus on C, Java and Python specialized in R&D and POC.
+A self-learning Software Engineer and open-source contributor with a strong passion for programming languages like C, Java, and Python. Specializing in R&D and creating proofs of concept (POCs), they have expertise in software development, backend systems, and data engineering. Proficient in technologies such as Frond-end and Database languages, they focus on building robust and scalable solutions. Their technical skill set is complemented by experience in backend development and multimedia projects, showcasing a well-rounded approach to modern software challenges.
