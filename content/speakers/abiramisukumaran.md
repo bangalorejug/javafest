@@ -4,6 +4,7 @@ jobTitle: 'Lead Developer Advocate'
 company: 'Google'
 date: 2017-03-23
 weight: 6
+description: "JavaFest Speaker: Abirami Sukumaran"
 ---
 
 Empowering developers with technology:
