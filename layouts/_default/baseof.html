@@ -29,6 +29,10 @@
      <meta property="og:title" content="{{ .Title }}" />
      <meta property="og:description" content="{{ .Params.description }}" />
      {{ if strings.HasPrefix .RelPermalink "/speakers" }}
+       <meta property="og:title" content="JavaFest Speaker: {{ .Title }}" />
+        {{ if and .Params.jobTitle .Params.company }}
+            <meta property="og:description" content="{{ .Params.jobTitle }} {{ .Params.company }}" />
+        {{ end }}
       <meta name="og:image" content="https://github.com/{{.File.BaseFileName}}.png" />
       {{ else }}
       <meta name="og:image" content="{{ "/images/Logo.png" | relURL }}" />
@@ -41,6 +45,10 @@
      <meta name="twitter:title" content="{{ .Title }}" />
      <meta name="twitter:description" content="{{ .Params.description }}" />
      {{ if strings.HasPrefix .RelPermalink "/speakers" }}
+     <meta property="twitter:title" content="JavaFest Speaker: {{ .Title }}" />
+      {{ if and .Params.jobTitle .Params.company }}
+          <meta property="twitter:description" content="{{ .Params.jobTitle }} {{ .Params.company }}" />
+      {{ end }}
       <meta name="twitter:image" content="https://github.com/{{.File.BaseFileName}}.png" />
       {{ else }}
       <meta name="twitter:image" content="{{ "/images/Logo.png" | relURL }}" />
