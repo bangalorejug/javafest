@@ -16,10 +16,16 @@
   <meta name="og:image" content="https://github.com/{{.File.BaseFileName}}.png" />
   <meta property="og:image:secure_url" content="https://github.com/{{.File.BaseFileName}}.png" />
   {{ else }}
-  <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:description" content="{{ .Params.description }}" />
-  <meta name="og:image" content="https://javafest.org/images/Logo.png" />
-  <meta property="og:image:secure_url" content="https://javafest.org/images/Logo.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Baeldung" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="A Guide to Spring JdbcClient API | Baeldung" />
+  <meta property="og:description" content="Learn about the JdbcClient interface, the latest addition to Spring Framework 6.1." />
+  <meta property="og:url" content="https://www.baeldung.com/spring-6-jdbcclient-api/" />
+  <meta property="og:image" content="https://www.baeldung.com/wp-content/uploads/2021/09/Java-7-Featured.png" />
+  <meta property="og:image:secure_url" content="https://www.baeldung.com/wp-content/uploads/2021/09/Java-7-Featured.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="628" />
  {{ end }}
 
  <!-- <meta property="og:url" content="{{ .Permalink }}" /> -->
