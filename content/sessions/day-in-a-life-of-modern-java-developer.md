@@ -4,7 +4,7 @@ speakers:
   - jaysk1
 topics:
   - core
-date: 2017-03-23
+time: 11:30 AM - 01:00 PM
 weight: 2
 ---
 

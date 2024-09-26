@@ -5,7 +5,7 @@ speakers:
   - rohanjnr
 topics:
   - workshop
-date: 2017-03-23
+time: 10:30 AM - 11:30 AM
 weight: 4
 ---
 

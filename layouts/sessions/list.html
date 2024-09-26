@@ -34,8 +34,7 @@
 							{{ if in  .Params.topics "core" }}
 
                             <li class="d-flex flex-column flex-md-row py-4">
-                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">9:00
-                                    AM - 10:00 AM</span>
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">{{ .Params.time }}</span>
                                 <div class="flex-grow-1 ps-4 border-start border-3">
                                     <a class="h4" href="{{ .Permalink }}"  class="card-title h5">{{ .Title }}</a>
                                     <p class="mb-0">
@@ -56,8 +55,7 @@
 							{{ if in  .Params.topics "enterprise" }}
 
                             <li class="d-flex flex-column flex-md-row py-4">
-                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">9:00
-                                    AM - 10:00 AM</span>
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">{{ .Params.time }}</span>
                                 <div class="flex-grow-1 ps-4 border-start border-3">
                                     <a class="h4" href="{{ .Permalink }}"  class="card-title h5">{{ .Title }}</a>
                                     <p class="mb-0">
@@ -80,8 +78,7 @@
 							{{ if in  .Params.topics "workshop" }}
 
                             <li class="d-flex flex-column flex-md-row py-4">
-                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">9:00
-                                    AM - 10:00 AM</span>
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">{{ .Params.time }}</span>
                                 <div class="flex-grow-1 ps-4 border-start border-3">
                                     <a class="h4" href="{{ .Permalink }}"  class="card-title h5">{{ .Title }}</a>
                                     <p class="mb-0">
