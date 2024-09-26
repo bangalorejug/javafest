@@ -2,7 +2,7 @@
 title: 'Powering Machine Learning in Java'
 speakers:
   - rajaduraikrishna
-  - ThamaraiP
+  - thamaraip
 topics:
   - enterprise
 time: 10:30 AM - 11:30 AM
