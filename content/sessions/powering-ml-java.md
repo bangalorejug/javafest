@@ -2,6 +2,7 @@
 title: 'Powering Machine Learning in Java'
 speakers:
   - rajaduraikrishna
+  - ThamaraiP
 topics:
   - tech talk
 date: 2017-03-23
