@@ -3,7 +3,7 @@ title: 'Day in a life of modern Java developer'
 speakers:
   - jaysk1
 topics:
-  - tech talk
+  - core
 date: 2017-03-23
 weight: 2
 ---

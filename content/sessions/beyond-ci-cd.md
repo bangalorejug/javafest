@@ -3,7 +3,7 @@ title: 'Taming Technical Debt: A CI/CD Upgrade Strategy'
 speakers:
   - vijaywhat
 topics:
-  - tech talk
+  - enterprise
 date: 2017-03-23
 weight: 12
 ---

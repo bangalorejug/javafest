@@ -3,7 +3,7 @@ title: 'Exploring the Java Ecosystem for AI'
 speakers:
   - allahbaksh
 topics:
-  - tech talk
+  - enterprise
 date: 2017-03-23
 weight: 4
 ---
