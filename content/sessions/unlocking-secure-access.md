@@ -3,7 +3,7 @@ title: 'Unlocking Secure Access: Passwordless Logins with WebAuthn & JWT'
 speakers:
   - nagarajapalla
 topics:
-  - tech talk
+  - enterprise
 date: 2017-03-23
 weight: 10
 ---

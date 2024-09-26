@@ -1,43 +1,114 @@
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<div class="container">
-	<div class="row mb-2 ">
-    <!-- Ranges through content/posts/*.md -->
-    {{ range .Pages }}
- 
 
 
-    <div class="col-md-4 mt-3">
-			<div class="card border rounded shadow-sm h-100 g-2">
-				<div class="card-body px-4 pt-4">
-					<a href="{{ .Permalink }}"  class="card-title h5">{{ .Title }}</a>
-					<p class="card-text pt-3">{{ .Summary }}</p>
+<div class="container py-9 py-lg-11 position-relative z-index-1">
+    <div class="row">
+		<div class="col-lg-5 mb-5 mb-lg-0">
+                
+			<div class="nav nav-pills flex-column aos-init aos-animate" id="myTab" role="tablist" data-aos="fade-up">
+				<button class="nav-link px-4 text-start mb-3 active" id="d1-tab" data-bs-toggle="tab" data-bs-target="#day1" type="button" role="tab" aria-controls="day1" aria-selected="true">
+					<span class="d-block fs-5 fw-bold">Track 1</span>
+					<span class="small">Core Java</span>
+				</button>
 				
-					<p class="card-subtitle mb-2">
-						By <small>
-							{{- range $index, $speaker := .Params.speakers }} 
-                            {{ if gt $index 0 }} & {{ end }}
-                            {{ $speakerPage := $.Site.GetPage "speakers" (urlize $speaker) }}
-                            <a href="{{ $speakerPage.Permalink }}">{{ $speakerPage.Title }}</a>
-      {{ end }}
+				<button class="nav-link px-4 text-start mb-3" id="d2-tab" data-bs-toggle="tab" data-bs-target="#day2" type="button" role="tab" aria-controls="day2" aria-selected="false" tabindex="-1">
+					<span class="d-block fs-5 fw-bold">Track 2</span>
+					<span class="small">Enterprise Java</span>
+				</button>
 
-	</small>
-					</p>
-				</div>
-				
-				<div class="card-footer bg-transparent border-0 pb-3">
-					{{ range .Params.topics }}
-					<span class="badge rounded-pill bg-info">{{ . }}</span>
-					
-					{{ end }}
-					
-				</div>
-				
+                <button class="nav-link px-4 text-start" id="d3-tab" data-bs-toggle="tab" data-bs-target="#day3" type="button" role="tab" aria-controls="day3" aria-selected="false" tabindex="-1">
+					<span class="d-block fs-5 fw-bold">Workshop</span>
+					<span class="small">Hands on workshop</span>
+				</button>
+
 			</div>
-			
 		</div>
+            
+            <div class="col-lg-7 col-xl-6">
+                <div data-aos="fade-up" class="tab-content aos-init aos-animate" id="myTabContent">
+                    <div class="tab-pane fade active show" id="day1" role="tabpanel" aria-labelledby="d1-tab">
+                        <ul class="pt-4 list-unstyled mb-0">
 
-    {{ end }}
-    </div>
+							{{ range .Pages }}
 
+							{{ if in  .Params.topics "core" }}
+
+                            <li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">9:00
+                                    AM - 10:00 AM</span>
+                                <div class="flex-grow-1 ps-4 border-start border-3">
+                                    <a class="h4" href="{{ .Permalink }}"  class="card-title h5">{{ .Title }}</a>
+                                    <p class="mb-0">
+                                        {{ .Content | strings.Truncate 300 }}
+                                    </p>
+                                </div>
+                            </li>
+							
+							{{ end }}
+
+							{{ end }}
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="d2-tab">
+                        <ul class="pt-4 list-unstyled mb-0">
+                            {{ range .Pages }}
+
+							{{ if in  .Params.topics "enterprise" }}
+
+                            <li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">9:00
+                                    AM - 10:00 AM</span>
+                                <div class="flex-grow-1 ps-4 border-start border-3">
+                                    <a class="h4" href="{{ .Permalink }}"  class="card-title h5">{{ .Title }}</a>
+                                    <p class="mb-0">
+                                        {{ .Content | strings.Truncate 300 }}
+                                    </p>
+                                </div>
+                            </li>
+							
+							{{ end }}
+
+							{{ end }}
+
+                       
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="day3" role="tabpanel" aria-labelledby="d3-tab">
+                        <ul class="pt-4 list-unstyled mb-0">
+                            {{ range .Pages }}
+
+							{{ if in  .Params.topics "workshop" }}
+
+                            <li class="d-flex flex-column flex-md-row py-4">
+                                <span class="flex-shrink-0 width-13x me-md-4 d-block mb-3 mb-md-0 small text-muted">9:00
+                                    AM - 10:00 AM</span>
+                                <div class="flex-grow-1 ps-4 border-start border-3">
+                                    <a class="h4" href="{{ .Permalink }}"  class="card-title h5">{{ .Title }}</a>
+                                    <p class="mb-0">
+                                        {{ .Content | strings.Truncate 300 }}
+                                    </p>
+                                </div>
+                            </li>
+							
+							{{ end }}
+
+							{{ end }}
+
+                       
+                        </ul>
+                    </div>
+                    
+                
+                </div>
+            </div>
+        </div>
 </div>
+
+
+
+
+
+
+
+
 {{ end }}

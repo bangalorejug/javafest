@@ -4,7 +4,7 @@ speakers:
   - rajaduraikrishna
   - ThamaraiP
 topics:
-  - tech talk
+  - enterprise
 date: 2017-03-23
 weight: 4
 ---
