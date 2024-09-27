@@ -1,10 +1,10 @@
 ---
 title: 'Tejesh R'
-jobTitle: 'Principal Member Technical Staff'
+jobTitle: 'Senior Member Technical Staff'
 company: 'Oracle'
 date: 2017-03-23
 weight: 7
 linkedin: 'https://www.linkedin.com/in/tejesh-r-989b23b0/'
 ---
 
-Passionate and result oriented developer worked in applications developed in QT framework and C++ language, on WINDOWS and LINUX (RHEL 7+) platforms. Profound experience in delivering quality and secure software applications integrated to large systems with power PC boards, Standalone Computers with internal networks.
+Currently working for the JDK client library development team handling Swing and AWT  libraries. Reviewer for open JDK client libraries contributions. Experienced with an end-to-end product development life cycle, maintenance, and sustenance. My passion for technology couldn't stop me from learning React, HTML, CSS, problem-solving, HLD, lld, and system designing concepts. Working experience in QT, CPP, and C languages on power pc boards for the defense sector.
