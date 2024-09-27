@@ -106,6 +106,19 @@
     {{ $stylesheet := .Site.Data.webpack.main }} {{ with $stylesheet.css }}
     <link href="{{ relURL . }}" rel="stylesheet" />
     {{ end }}
+    <style>
+      .social-media-icons {
+        color: #736658;
+      }
+      .register-button {
+        background-color: #736658;
+        border-color: #736658;
+      }
+      .register-button:hover {
+        background-color: #736658;
+        border-color: #736658;
+      }
+    </style>
   </head>
 
   <body class="text-dark bg-light">
