@@ -1,13 +1,13 @@
 ---
 title: 'K. Siva Prasad Reddy'
-jobTitle: 'Developer Advogate'
-company: 'Jetbrains'
+jobTitle: 'Developer Advocate'
+company: 'JetBrains'
 date: 2017-03-23
 weight: 1
 linkedin: 'https://www.linkedin.com/in/ksivaprasadreddy/'
 ---
 
-I am K. Siva Prasad Reddy and I have more than 16+ years of experience in building enterprise software systems on the Java platform. I have worked on building scalable distributed enterprise applications in banking and e-commerce domains using Java, Spring, RESTful web services, JPA, and NoSQL technologies. 
+I am K. Siva Prasad Reddy and I have more than 18+ years of experience in building enterprise software systems on the Java platform. I have worked on building scalable distributed enterprise applications in banking and e-commerce domains using Java, Spring, RESTful web services, JPA, and NoSQL technologies. 
 
 My core expertise lies in building JVM-based, scalable data-driven applications using Java/Kotlin, Spring, SpringBoot, Hibernate/JPA technologies. My current technical focus is on modern architectures including microservices, continuous integration and continuous delivery (CI/CD), and DevOps. I enjoy coding in Java, Kotlin, and Spring Boot, and has a passion for automating repetitive work. I am a firm believer in Agile practices and Test Driven Development (TDD).
 
