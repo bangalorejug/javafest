@@ -5,7 +5,7 @@ speakers:
   - rohanjnr
 topics:
   - workshop
-time: 10:20 AM – 11:10 AM
+time: 11:45 AM – 01:45 PM
 weight: 4
 ---
 

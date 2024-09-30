@@ -5,7 +5,7 @@ speakers:
   - ram-bgl
 topics:
   - workshop
-time: 11:25 AM – 12:15 PM
+time: 02:20 PM – 04:40 PM
 weight: 5
 ---
 
