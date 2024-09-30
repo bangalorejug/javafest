@@ -4,7 +4,7 @@ speakers:
   - pravemoh
 topics:
   - core
-time: 10:00 AM - 11:30 AM
+time: 09:30 AM – 10:20 AM
 weight: 1
 ---
 

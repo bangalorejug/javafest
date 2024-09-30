@@ -4,7 +4,7 @@ speakers:
   - jaysk1
 topics:
   - core
-time: 11:30 AM - 01:00 PM
+time: 10:20 AM – 11:10 AM
 weight: 2
 ---
 

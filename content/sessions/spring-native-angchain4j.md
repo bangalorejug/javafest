@@ -4,7 +4,7 @@ speakers:
   - abiramisukumaran
 topics:
   - enterprise
-time: 10:30 AM - 11:30 AM
+time: 10:20 AM – 11:10 AM
 weight: 4
 ---
 

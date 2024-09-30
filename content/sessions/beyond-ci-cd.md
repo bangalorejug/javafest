@@ -4,7 +4,7 @@ speakers:
   - vijaywhat
 topics:
   - enterprise
-time: 10:30 AM - 11:30 AM
+time: 02:30 PM – 03:20 PM
 weight: 12
 ---
 

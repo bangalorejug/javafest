@@ -4,7 +4,7 @@ speakers:
   - vaibhavchoudhary
 topics:
   - core
-time: 10:30 AM - 11:30 AM
+time: 01:40 PM – 02:30 PM
 weight: 10
 ---
 

@@ -4,7 +4,7 @@ speakers:
   - hari-nikesh-r
 topics:
   - enterprise
-time: 10:30 AM - 11:30 AM
+time: 11:25 AM – 12:15 PM
 weight: 4
 ---
 

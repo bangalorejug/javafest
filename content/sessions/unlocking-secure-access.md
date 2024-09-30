@@ -4,7 +4,7 @@ speakers:
   - nagarajapalla
 topics:
   - enterprise
-time: 10:30 AM - 11:30 AM
+time: 12:15 PM – 01:05 PM
 weight: 10
 ---
 
