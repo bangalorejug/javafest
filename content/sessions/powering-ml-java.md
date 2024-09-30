@@ -4,7 +4,7 @@ speakers:
   - rajaduraikrishna
   - thamaraip
 topics:
-  - enterprise
+  - core
 time: 10:30 AM - 11:30 AM
 weight: 4
 ---

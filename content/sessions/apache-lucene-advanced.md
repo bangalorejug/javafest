@@ -3,7 +3,7 @@ title: 'Using Native Java Capabilities for Speeding Apache Lucene'
 speakers:
   - atris
 topics:
-  - enterprise
+  - core
 time: 10:30 AM - 11:30 AM
 weight: 12
 ---
