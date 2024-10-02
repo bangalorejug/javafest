@@ -1,6 +1,6 @@
 ---
 title: 'Vijay Raja'
-jobTitle: 'Junior Software developer'
+jobTitle: 'Junior Software developer and Open source contriputor'
 company: 'Usis Technologies'
 date: 2017-03-23
 weight: 14
