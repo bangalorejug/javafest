@@ -1,5 +1,5 @@
 ---
-title: 'Guarding Your Microservices: Essential Security Strategies for 2024'
+title: 'Modern Approach for Securing Your Java Web Applications in 2024'
 speakers:
   - vikasrajputin
 topics:
@@ -8,34 +8,45 @@ time: 01:40 PM – 02:30 PM
 weight: 11
 ---
 
-Explore 2024's top security strategies for microservices, including Zero Trust, mutual TLS, service meshes, and automation, to protect your architecture against modern threats.
+Explore the latest strategies and tools that Java developers can use to secure their web applications against emerging threats in 2024 along with practical approaches, modern standards, and automation techniques to ensure your applications are robust and resilient
 
 Key Highlights:
 
-- Zero Trust Architecture:
+- Authentication & Authorization:
+Embrace OAuth 2.1 for enhanced security and OpenID Connect (OIDC) with Authorization Code Flow in modern Single Page Applications (SPAs).
 
-This section will cover how to implement Zero Trust in a microservices environment, focusing on identity management, least privilege access, and continuous verification.
-
-- Securing Service-to-Service Communication:
-
-We'll discuss the importance of mutual TLS (mTLS) for encrypting data in transit and authenticating services. You’ll learn how to implement mTLS effectively across your microservices using tools like Istio or Linkerd.
+- JWT Best Practices:
+Follow best practices for secure JWT handling, including encrypting payloads, shortening token expiry, and secure storage in HttpOnly cookies.
 
 - API Gateway Security:
+Use API gateways to centralize security features such as authentication, rate limiting, and logging.
 
-We'll explore how API gateways can act as the first line of defense for your microservices, handling authentication, authorization, rate limiting, and other security measures. This section will include a discussion on OAuth2 and OpenID Connect for securing API endpoints.
+- Dependency Scanning:
+Use tools like OWASP Dependency-Check, Snyk, and GitHub Dependabot to identify vulnerabilities in third-party libraries and enforce supply chain security. Automate dependency updates using tools like Renovate and Dependabot to ensure timely vulnerability patches.
 
-- Service Mesh for Enhanced Security:
+- Secret Management:
+Avoid storing secrets in source control. Use modern secret management tools and learn to automate secret detection in CI/CD pipelines.
 
-We'll examine how service meshes like Istio can automate security features such as mTLS, traffic management, and policy enforcement across your services.
+- Container Security:
+Use distroless containers and runtime modern security tools to minimize attack surfaces.
 
-- Securing Data at Rest and in Transit:
+- Monitoring & Observability:
+Shift towards observability using tools like OpenTelemetry, ELK Stack, and Datadog for real-time threat detection.
 
-We'll discuss best practices for encrypting data at rest using cloud-native tools like AWS KMS or Azure Key Vault. We’ll also cover how to manage secrets and configurations securely with HashiCorp Vault or Kubernetes Secrets.
+- Secure CI/CD Pipelines:
+Integrate security scans like SAST, DAST, and dependency scanning early in your CI/CD pipelines to enforce "shift-left" security.
 
-- Automating Security with DevSecOps:
+- Code Review & OWASP Top 10:
+Utilize modern code review tools with security checks, update practices based on the 2021 OWASP Top 10, and emphasize the importance of reviewing new threats.
 
-This section will focus on how to shift security left by automating vulnerability scanning, code analysis, and compliance checks within your CI/CD pipeline.
+- Zero Trust Architecture:
+Adopt a Zero Trust model with continuous verification at every layer using Spring Security for policy-based access control.
 
-- Monitoring and Observability for Security:
+- Transport Layer Security (TLS/mTLS):
+Upgrade to TLS 1.3 for enhanced performance and security. Mutual TLS (mTLS) is essential for secure service-to-service communication, especially in microservices and zero-trust architectures.
 
-We'll cover how to implement robust monitoring and observability practices to detect and respond to security incidents in real time. 
+- Security Headers & CSP:
+Implement advanced Content Security Policies (CSP) and use tools like securityheaders.com to ensure proper security headers.
+
+- Preventing Common Attacks:
+Implement modern defenses against CSRF, XSS, and SQL Injection through parameterized queries, built-in framework protections, and CSRF tokens.
