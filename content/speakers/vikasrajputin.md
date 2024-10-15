@@ -1,23 +1,16 @@
 ---
 title: 'Vikas Rajput'
-jobTitle: 'Sr. Backend Developer'
+jobTitle: 'Sr. Backend Engineer'
 company: 'Gujarat JUG'
 date: 2017-03-23
 weight: 12
 linkedin: 'https://www.linkedin.com/in/vikasrajputin/'
 ---
 
-"If you've to live for 1000 more years, then what is that one thing that you'll keep doing?"
+Vikas Rajput is a dedicated Java Backend Engineer with over a decade of experience in building secure, scalable applications using Java & Spring Boot.
 
-For me the Answer was "Teaching".
+His expertise spans developing backend solutions, and cloud-native architectures with a strong focus on delivering reliable and efficient systems.
 
-So here I'm teaching Students, Experienced Professionals through my experience.
+Apart from coding, he is a JUG Leader and Community manager at Gujarat Java User Group (JUG), Vikas has been deeply committed to growing the local Java community. Through JUG, he organizes events, fosters knowledge sharing, and creates opportunities for developers of all levels to learn, connect, and grow together.
 
-Every week I write about - Programming Tips, Tricks, Java, and Back-end Development in General.
-
-Which can help you get started with your Programming Journey as a noob.
-
-On the Professional Front:
-- I am Sr. Backend Engineer(Freelancer), holds expertise in Java, Spring, Hibernate, and JPA Frameworks.
-- Worked on Docker, Kubernetes, Microservices, AWS, and DevOps tools.
-- Check out my Projects & Experience section to know more about my work.
+In addition to his community work, Vikas is passionate about mentoring aspiring developers and sharing his knowledge. Whether through hands-on coding, workshops, or one-on-one guidance, he enjoys helping others navigate the complexities of backend development.
