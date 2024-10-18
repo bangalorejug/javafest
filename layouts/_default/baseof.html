@@ -118,11 +118,18 @@
         background-color: #736658;
         border-color: #736658;
       }
+      #myTab .active {
+        background-color: #736658;
+        border-color: #736658;
+      }
+      #myTabContent .tab-pane a {
+        color: black;
+      }
     </style>
   </head>
 
   <body class="text-dark bg-light">
-    <div class="d-flex w-100 h-100 mx-auto flex-column">
+    <div class="d-flex w-100 h-100 mx-auto flex-column min-vh-100">
       {{ block "header" . }}{{ partial "header" . }}{{end}} {{ block "main" .
       }}{{end}} {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 

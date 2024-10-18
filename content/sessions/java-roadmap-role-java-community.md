@@ -3,7 +3,7 @@ title: 'Java roadmap and the role of Java community'
 speakers:
   - pravemoh
 topics:
-  - core
+  - keynote
 time: 09:30 AM – 10:20 AM
 weight: 1
 ---
