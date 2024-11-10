@@ -1,7 +1,7 @@
 ---
-title: 'Vijay Raja'
-jobTitle: 'Junior Software developer and Open source contriputor'
-company: 'Usis Technologies'
+title: 'Saravana Kumar Vaidyanathan'
+jobTitle: 'Technical Consultant'
+company: 'Independent'
 date: 2017-03-23
 weight: 14
 linkedin: 'https://www.linkedin.com/in/vijay-raja42/'
