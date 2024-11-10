@@ -4,8 +4,8 @@ speakers:
   - vikasrajputin
 topics:
   - enterprise
-time: 01:40 PM – 02:30 PM
-weight: 11
+time: 04:50 PM – 05:40 PM
+weight: 7
 ---
 
 Explore the latest strategies and tools that Java developers can use to secure their web applications against emerging threats in 2024 along with practical approaches, modern standards, and automation techniques to ensure your applications are robust and resilient

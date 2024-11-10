@@ -4,8 +4,8 @@ speakers:
   - allahbaksh
 topics:
   - enterprise
-time: 09:30 AM – 10:20 AM
-weight: 4
+time: 10:20 AM – 11:10 AM
+weight: 1
 ---
 
 In the rapidly evolving landscape of Artificial Intelligence, Java is emerging as a powerful and versatile platform for AI. This talk will take you on the Java ecosystem for AI, focusing on key tools and frameworks that are shaping the future of AI in Java.

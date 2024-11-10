@@ -5,8 +5,8 @@ speakers:
   - thamaraip
 topics:
   - core
-time: 12:15 PM – 01:05 PM
-weight: 4
+time: 12:30 PM – 01:20 PM
+weight: 3
 ---
 
 Step into the future of Java development with JSR 381, the game-changing API that brings cutting-edge machine learning capabilities directly to your Java applications. In this session, we’ll dive into how JSR 381 revolutionizes visual recognition, making it easier than ever for Java developers to harness the power of AI. Discover how this innovative API seamlessly integrates into the Java ecosystem, empowering you to build intelligent, data-driven applications with unparalleled ease. 

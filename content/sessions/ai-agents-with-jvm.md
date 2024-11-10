@@ -4,8 +4,8 @@ speakers:
   - ranganaths
 topics:
   - enterprise
-time: 03:35 PM - 04:25 PM
-weight: 13
+time: 03:45 PM – 04:35 PM
+weight: 6
 ---
 
 Agentic workflows that have AI models iterate, revise their work, and leverage tools deliver significantly better results than typical non-agentic prompting approaches. 

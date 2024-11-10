@@ -5,8 +5,8 @@ speakers:
   - ram-bgl
 topics:
   - workshop
-time: 01:40 PM – 03:20 PM
-weight: 5
+time: 12:35 PM – 02:35 PM
+weight: 2
 ---
 
 In this talk, we will explore the intricacies of Java virtual threads, a revolutionary feature in modern Java development aimed at simplifying concurrency and improving performance. Unlike typical discussions that focus on how to use virtual threads, this session will take a deep dive into the internals of the Java runtime, shedding light on what happens under the hood when you work with virtual threads.

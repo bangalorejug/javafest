@@ -2,10 +2,11 @@
 title: 'Migration Engineering as Code (MEaC): Treating  Updates, Upgrades, and Refactoring and more as CODE'
 speakers:
   - nagkumar
+  - vikasrajputin
 topics:
   - enterprise
-time: 04:40 PM - 05:30 PM
-weight: 13
+time: 01:35 PM - 02:25 PM
+weight: 4
 ---
 
 In today’s world of too much more work always on the developers plate, updates, upgrades, migrations, and refactoring are often seen as tedious, secondary work. But with frameworks/tools like OpenRewrite, we can turn these tasks into rewarding, strategic parts of a developer’s role.

@@ -4,8 +4,8 @@ speakers:
   - sivaprasadreddy
 topics:
   - workshop
-time: 09:30 AM – 11:10 AM
-weight: 3
+time: 10:20 AM – 12:20 PM
+weight: 1
 ---
 
 We have been building monolithic applications for many years and have faced some challenges. Microservices architecture emerged as an alternative to solve the difficulties imposed by monolithic architecture, but it brings its own set of challenges. What about combining the best of both worlds? Welcome to Modular Monoliths.
