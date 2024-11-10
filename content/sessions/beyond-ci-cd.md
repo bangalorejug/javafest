@@ -1,7 +1,7 @@
 ---
 title: 'Taming Technical Debt: A CI/CD Upgrade Strategy'
 speakers:
-  - vijaywhat
+  - saravanak
 topics:
   - enterprise
 time: 02:30 PM – 03:20 PM
