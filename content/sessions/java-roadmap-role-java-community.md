@@ -4,7 +4,7 @@ speakers:
   - pravemoh
 topics:
   - keynote
-time: 09:30 AM – 10:20 AM
+time: 09:30 AM – 09:50 AM
 weight: 1
 ---
 
