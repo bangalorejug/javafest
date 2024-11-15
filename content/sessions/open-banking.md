@@ -1,7 +1,7 @@
 ---
-title: 'Modern Approach for Securing Your Java Web Applications in 2024'
+title: 'Open Banking and Keyclock'
 speakers:
-  - vikasrajputin
+  - pritish-nitb
 topics:
   - enterprise
 time: 04:50 PM – 05:40 PM
