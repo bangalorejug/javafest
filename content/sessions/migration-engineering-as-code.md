@@ -1,5 +1,5 @@
 ---
-title: 'Migration Engineering as Code (MEaC): Treating  Updates, Upgrades, and Refactoring and more as CODE'
+title: 'Migration Engineering as Code (MEaC)'
 speakers:
   - nagkumar
   - vikasrajputin

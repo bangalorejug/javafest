@@ -1,7 +1,7 @@
 ---
-title: 'Ashwin M S'
+title: 'Pritih'
 jobTitle: 'Software Developer'
-company: 'IBM'
+company: 'Banfico'
 date: 2017-03-23
 weight: 7
 linkedin: 'https://www.linkedin.com/in/ashwin-ms/'
