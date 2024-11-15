@@ -1,12 +1,13 @@
 ---
-title: 'Taming Technical Debt: A CI/CD Upgrade Strategy'
+title: 'Queues, Backpressure and Reselience - Participative Discussion'
 speakers:
   - saravanak
 topics:
-  - enterprise
+  - core
 time: 02:40 PM – 03:30 PM
 weight: 5
 ---
 
-Technical debt from outdated dependencies can quietly destabilize even the most robust applications. This talk explores a proactive approach to tackling this issue within CI/CD pipelines. By leveraging tools like the Maven Versions plugin for automatic version detection and the Enforcer plugin to enforce upgrade policies, we created a process that ensures continuous updates while maintaining stability. Attendees will learn how to streamline dependency management, enforce build failures for outdated libraries, and balance innovation with long-term security—keeping their codebase agile, secure, and up-to-date.
-
+We use a simple demo for understanding how to queue requests to a resource. Our Queues will have techniques like backpressure, graceful degradation. 
+We'll understand how different queuing mechanisms work. Queues and the contending resource is implemented as a Java service, using Core/Spring Core. 
+Project code will be shared during the demo, and it will be a participative demo for all participants. 
