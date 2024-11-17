@@ -4,7 +4,7 @@ speakers:
   - sivaprasadreddy
 topics:
   - workshop
-time: 10:20 AM – 12:20 PM
+time: 10:20 AM - 11:50 AM
 weight: 1
 ---
 

@@ -4,7 +4,7 @@ speakers:
   - ashutoshbhakare
 topics:
   - keynote
-time: 10:00 PM – 10:20 PM
+time: 09:50 PM – 10:10 PM
 weight: 2
 ---
 

@@ -4,8 +4,8 @@ speakers:
   - ashutoshbhakare
 topics:
   - workshop
-time: 02:50 PM – 04:50 PM
-weight: 5
+time: 03:50 PM – 05:20 PM
+weight: 4
 ---
 
 Codelab illustrates the concept with the address completion and standardization use case. For this we will be building a Java Cloud Function that does the following tasks:
