@@ -5,8 +5,8 @@ speakers:
   - ashwinms17
 topics:
   - core
-time: 10:20 AM – 11:10 PM
-weight: 32
+time: 03:50 PM - 04:35 PM
+weight: 7
 ---
 
 

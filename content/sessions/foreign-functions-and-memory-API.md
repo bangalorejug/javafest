@@ -4,8 +4,8 @@ speakers:
   - tejeshr
 topics:
   - core
-time: 01:35 PM - 02:25 PM
-weight: 4
+time: 12:00 PM - 12:45 PM
+weight: 3
 ---
 
 Two salient features of Java which helps programmers to invoke foreign functions efficiently and safely access foreign memory which are the code and data outside of JVM. An API capable of calling native libraries and process native data.

@@ -4,7 +4,7 @@ speakers:
   - ranganaths
 topics:
   - enterprise
-time: 03:45 PM – 04:35 PM
+time: 10:20 AM - 11:05 AM
 weight: 1
 ---
 

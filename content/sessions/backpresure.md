@@ -4,7 +4,7 @@ speakers:
   - saravanak
 topics:
   - core
-time: 02:40 PM – 03:30 PM
+time: 02:05 PM - 02:50 PM
 weight: 5
 ---
 

@@ -4,7 +4,7 @@ speakers:
   - pritish-nitb
 topics:
   - enterprise
-time: 04:50 PM – 05:40 PM
+time: 03:50 PM - 04:35 PM
 weight: 7
 ---
 

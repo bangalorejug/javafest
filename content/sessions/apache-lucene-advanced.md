@@ -4,7 +4,7 @@ speakers:
   - atris
 topics:
   - core
-time: 03:45 PM – 04:35 PM
+time: 02:55 PM - 03:40 PM
 weight: 6
 ---
 

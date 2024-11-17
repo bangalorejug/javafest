@@ -5,7 +5,7 @@ speakers:
   - thamaraip
 topics:
   - core
-time: 12:30 PM – 01:20 PM
+time: 10:20 AM - 11:05 AM
 weight: 1
 ---
 
