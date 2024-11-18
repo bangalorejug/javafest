@@ -6,7 +6,7 @@ speakers:
 topics:
   - core
 time: 12:50 PM - 01:35 PM
-weight: 7
+weight: 4
 ---
 
 
