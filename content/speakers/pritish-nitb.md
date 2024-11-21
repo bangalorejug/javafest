@@ -1,5 +1,5 @@
 ---
-title: 'Pritish'
+title: 'Pritish Joshi'
 jobTitle: 'Technical Architect'
 company: 'Banfico'
 date: 2019-08-26
