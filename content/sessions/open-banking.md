@@ -8,45 +8,36 @@ time: 03:50 PM - 04:35 PM
 weight: 7
 ---
 
-Explore the latest strategies and tools that Java developers can use to secure their web applications against emerging threats in 2024 along with practical approaches, modern standards, and automation techniques to ensure your applications are robust and resilient
+Explore the essentials of Open Banking API security, focusing on protecting sensitive financial data and meeting regulatory standards. This talk will cover core security principles like OAuth 2.0, mutual TLS, and consent management, alongside encryption practices and threat monitoring. Learn how these measures establish a secure, compliant Open Banking ecosystem that users and financial institutions can trust.
 
 Key Highlights:
 
 - Authentication & Authorization:
-Embrace OAuth 2.1 for enhanced security and OpenID Connect (OIDC) with Authorization Code Flow in modern Single Page Applications (SPAs).
+Utilize OAuth 2.1 for improved security and OpenID Connect (OIDC) with Authorization Code Flow. Implement Strong Customer Authentication (SCA) using secure flows like redirect, decoupled, or embedded options tailored to customer experience.
 
-- JWT Best Practices:
-Follow best practices for secure JWT handling, including encrypting payloads, shortening token expiry, and secure storage in HttpOnly cookies.
+- API Security Best Practices:
+Ensure confidentiality, integrity, and availability of APIs. Use mutual TLS (mTLS), OAuth 2.0, and private key JWT for secure API interactions. Implement high-assurance cryptography like PS256 or ES256 for sensitive operations.
 
-- API Gateway Security:
-Use API gateways to centralize security features such as authentication, rate limiting, and logging.
+- JWT Handling:
+Sign and validate JSON Web Tokens (JWTs) using libraries such as Nimbus JOSE+JWT. Encrypt sensitive claims, shorten token lifespans, and validate tokens via introspection or public keys.
 
-- Dependency Scanning:
-Use tools like OWASP Dependency-Check, Snyk, and GitHub Dependabot to identify vulnerabilities in third-party libraries and enforce supply chain security. Automate dependency updates using tools like Renovate and Dependabot to ensure timely vulnerability patches.
+- Secure Data Transmission:
+Enforce HTTPS/TLS with modern configurations (e.g., TLS 1.3). Encrypt data at rest and mask or obfuscate sensitive information in API responses.
 
-- Secret Management:
-Avoid storing secrets in source control. Use modern secret management tools and learn to automate secret detection in CI/CD pipelines.
+- Consent Management & Data Privacy:
+Adhere to customer consent standards with secure data-sharing mechanisms. Implement dynamic client registration (DCR) and encrypted request objects for enhanced authorization flows.
 
-- Container Security:
-Use distroless containers and runtime modern security tools to minimize attack surfaces.
+- Secure Java APIs:
+Leverage Spring Security for secure API endpoints. Include PKCE for code exchange in authorization flows and implement mutual TLS (mTLS) for Java-based Open Banking APIs.
 
 - Monitoring & Observability:
-Shift towards observability using tools like OpenTelemetry, ELK Stack, and Datadog for real-time threat detection.
+Shift to observability with tools like OpenTelemetry and ELK Stack. Use centralized logging and real-time threat detection.
 
-- Secure CI/CD Pipelines:
-Integrate security scans like SAST, DAST, and dependency scanning early in your CI/CD pipelines to enforce "shift-left" security.
-
-- Code Review & OWASP Top 10:
-Utilize modern code review tools with security checks, update practices based on the 2021 OWASP Top 10, and emphasize the importance of reviewing new threats.
+- Scalability & Resilience:
+Address scalability through optimized API design and fault-tolerant mechanisms. Implement rate limiting and robust error handling.
 
 - Zero Trust Architecture:
-Adopt a Zero Trust model with continuous verification at every layer using Spring Security for policy-based access control.
+Adopt Zero Trust principles with continuous verification. Enforce policy-based access controls using Spring Security in a microservices architecture.
 
-- Transport Layer Security (TLS/mTLS):
-Upgrade to TLS 1.3 for enhanced performance and security. Mutual TLS (mTLS) is essential for secure service-to-service communication, especially in microservices and zero-trust architectures.
-
-- Security Headers & CSP:
-Implement advanced Content Security Policies (CSP) and use tools like securityheaders.com to ensure proper security headers.
-
-- Preventing Common Attacks:
-Implement modern defenses against CSRF, XSS, and SQL Injection through parameterized queries, built-in framework protections, and CSRF tokens.
+- Modern Authentication Flows:
+Facilitate app-to-app or decoupled SCA for smoother customer experiences. Implement distributed SCA for scenarios involving multiple PSU authentication.
