@@ -1,6 +1,6 @@
 ---
 title: 'Ramkumar Sunderbabu'
-jobTitle: 'Java Platform Team, PMTS'
+jobTitle: 'Principal Member Of Technical Staff'
 company: 'Oracle'
 date: 2017-03-23
 weight: 3
