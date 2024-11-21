@@ -1,5 +1,5 @@
 ---
-title: 'Missing Pieces in Java Persistence for Modern Development'
+title: 'Missing Pieces in Java Persistence Puzzle'
 speakers:
   - hari-nikesh-r
 topics:
