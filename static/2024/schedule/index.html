@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <meta charset="utf-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/site.webmanifest" />
+
+    
+    <meta charset="utf-8" />
+
+
+  <base href="//localhost:1313/">
+  <title>Javafest | Schedule</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  
+  
+    <link href="/main.css" rel="stylesheet">
+  
+</head>
+
+<body class="text-dark bg-light">
+
+  <div class="d-flex w-100 h-100 mx-auto flex-column">
+
+  <header class="mb-auto">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid d-flex">
+      <div class="logo">
+        <a class="navbar-brand d-flex align-items-center" href="/" style="
+            width: 200px;
+        ">
+          <img src="/images/Logo.png" width="60" height="60" alt="" loading="lazy" style="
+              vertical-align: top;
+          ">
+          <div style="
+              display: inline-block;
+          "><span class="h4 text-uppercase">JavaFest</span></div>
+        </a>
+
+      </div>
+      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/schedule">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/speakers">Speakers</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Intiatives
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/re-session">Re-Session</a>
+              <a class="dropdown-item" href="/start-up">Startup</a>
+              <a class="dropdown-item" href="/architects-bof">Birds of a Feather</a>
+              <a class="dropdown-item" href="/student-synergy">Student Synergy</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/cfp">Call for papers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/register">Register</a>
+          </li>
+        </ul>
+      </div>
+
+      
+
+
+
+
+
+    </div>
+  </nav>
+
+
+
+</header>
+
+
+
+   
+<div class="container-fluid">
+
+  <div class="row">
+    <h3>Schedule</h3>
+<article class="col-lg-12"><style>
+    .schedule-nav .nav-item span {
+        display: block
+    }
+
+    .schedule-nav .nav-item .heading {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.25rem
+    }
+
+    .schedule-nav .nav-item .meta {
+        -webkit-opacity: .8;
+        -moz-opacity: .8;
+        opacity: .8
+    }
+
+    .schedule-nav .nav-link {
+        background: #f0f6fa;
+        border-radius: 0;
+        border-right: rgba(0, 0, 0, 0.1);
+        text-decoration: none
+    }
+
+    .schedule-tab-content {
+        padding: 2rem 0
+    }
+
+    .schedule-tab-content .tab-pane {
+        position: relative
+    }
+
+    .schedule-tab-content .tab-pane:after {
+        content: "";
+        display: block;
+        background: #e5ecf4;
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        left: 196px;
+        top: 5px
+    }
+
+    .schedule-tab-content .tab-pane.no-timeline:after {
+        display: none
+    }
+
+    .schedule-tab-content .item {
+        position: relative;
+        margin-bottom: 2rem
+    }
+
+    .item-talk {
+        min-height: 165px
+    }
+
+    .schedule-tab-content .item:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        z-index: 5;
+        left: 190px;
+        top: 5px;
+        width: 16px;
+        height: 16px;
+        border: 4px solid #098dcf;
+        background: white;
+        border-radius: 50%
+    }
+
+    .schedule-tab-content .item .meta {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px;
+        padding: 1rem;
+        padding-top: 0;
+        text-align: center;
+        font-size: 0.875rem
+    }
+
+    .schedule-tab-content .item .meta .time {
+        font-size: 1.25rem;
+        color: #098dcf
+    }
+
+    .schedule-tab-content .item .meta .location {
+        font-weight: bold
+    }
+
+    .schedule-tab-content .item .profile-image {
+        width: 80px
+    }
+
+    .schedule-tab-content .item .content {
+        padding-left: 240px
+    }
+
+    .schedule-tab-content .item .content .title {
+        font-size: 1.25rem
+    }
+</style>
+<div class="container">
+
+    <!-- Nav tabs -->
+    <ul class="schedule-nav nav nav-pills nav-fill" id="myTab" role="tablist">
+        <li class="nav-item me-2" role="presentation">
+            <a class="nav-link active" id="tab-1" data-bs-toggle="tab" href="#tab-1-content" role="tab"
+                aria-controls="tab-1-content" aria-selected="true">
+                <span class="heading">Core Java</span>
+            </a>
+        </li>
+        <li class="nav-item me-2" role="presentation">
+            <a class="nav-link" id="tab-2" data-bs-toggle="tab" href="#tab-2-content" role="tab"
+                aria-controls="tab-2-content" aria-selected="false" tabindex="-1">
+                <span class="heading">Frameworks/Tools</span>
+            </a>
+        </li>
+        <li class="nav-item me-2" role="presentation">
+            <a class="nav-link" id="tab-3" data-bs-toggle="tab" href="#tab-3-content" role="tab"
+                aria-controls="tab-3-content" aria-selected="false" tabindex="-1">
+                <span class="heading">Workshop</span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="schedule-tab-content tab-content">
+        <div class="tab-pane active" id="tab-1-content" role="tabpanel" aria-labelledby="tab-1">
+
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:00</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Registration </h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>
+                        <!---->Ground Floor, Audi Block
+                    </div>
+                    <div class="desc"> Validate you registration and Get your conference badge for the event. And if you
+                        are the an early bird[by 8.45am] </div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+
+
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:30 - 10:30</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Java roadmap and the role of Java community</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Auditorium, 3rd Floor,
+                        Audi Block</div>
+                    <div class="desc">In this talk, we shall see the future trajectory of Java, examining potential advancements in language features, libraries, and platform capabilities and discuss the critical role of the community in shaping Java’s evolution through open-source contributions, feedback, and participation in the Java development Process.</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">10:30 - 11:30</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Day in a life of modern Java developer</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 1</div>
+                    <div class="desc">In this session, we’ll go through a set of tools the IDE provided for debugging and refactoring. Also, we shall glimpse upon the new AI features they have to offer.</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">11:30 - 11:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Tea Break</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Common Area</div>
+                    <div class="desc">Refreshments available</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">11:40 - 12:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">How Java can productionize the generative AI buzz with Spring Native, LangChain4j and AOT compile!</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 2</div>
+                    <div class="desc">In this session, we’ll talk about how Java can help productionize generative AI ideas involving RAG on real world data. The session will have a real-time demo for a context-based patent search use case.</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">12:40 - 1:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Lunch Break</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Dining Hall</div>
+                    <div class="desc">Enjoy your meal and network!</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">1:40 - 2:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Exploring the Java Ecosystem for AI</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 3</div>
+                    <div class="desc">This talk will take you on the Java ecosystem for AI, focusing on key tools and frameworks that are shaping the future of AI in Java.</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">2:40 - 2:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Tea Break</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Common Area</div>
+                    <div class="desc">Refreshments available</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">2:50 - 3:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">TBD</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 4</div>
+                    <div class="desc">To be announced</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">3:50 - 4:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">TBD</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 5</div>
+                    <div class="desc">To be announced</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">4:50 - 5:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">TBD</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 6</div>
+                    <div class="desc">To be announced</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">5:50 - 6:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">TBD</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 7</div>
+                    <div class="desc">To be announced</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+
+
+        </div>
+        <!--//tab-1-content-->
+        <div class="tab-pane active" id="tab-2-content" role="tabpanel" aria-labelledby="tab-1">
+
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:00</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Registration </h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>
+                        <!---->Ground Floor, Audi Block
+                    </div>
+                    <div class="desc"> Validate you registration and Get your conference badge for the event. And if you
+                        are the an early bird[by 8.45am] </div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+
+
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:30 - 10:30</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">From Java Sourcecode to Bytecode - Secrets Unveiled!</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Auditorium, 3rd Floor,
+                        Audi Block</div>
+                    <div class="desc">This Java session explores bytecode, the secret language powering Java execution. We unveil the transformation of source code (.java) into bytecode (.class) files, the heart of the Java Virtual Machine. </div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">10:30 - 11:30</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Missing Pieces in Java Persistence for Modern Development</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 1</div>
+                    <div class="desc"> Join us for an insightful talk on “Missing Pieces in Java Persistence,” where we’ll explore the key challenges that modern applications face. </div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">11:30 - 11:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Tea Break</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Common Area</div>
+                    <div class="desc">Refreshments available</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">11:40 - 12:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Exploring the Java Ecosystem for AI</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 2</div>
+                    <div class="desc">This talk will take you on the Java ecosystem for AI, focusing on key tools and frameworks that are shaping the future of AI in Java.</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">12:40 - 1:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Lunch Break</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Dining Hall</div>
+                    <div class="desc">Enjoy your meal and network!</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">1:40 - 2:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Foreign functions and memory API</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 3</div>
+                    <div class="desc">Introduction to FFM, accessing & dereferencing memory segment and it's usage</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">2:40 - 2:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Tea Break</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Common Area</div>
+                    <div class="desc">Refreshments available</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">2:50 - 3:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">TBD</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 4</div>
+                    <div class="desc">To be announced</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">3:50 - 4:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">TBD</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 5</div>
+                    <div class="desc">To be announced</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">4:50 - 5:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">TBD</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 6</div>
+                    <div class="desc">To be announced</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">5:50 - 6:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">TBD</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 7</div>
+                    <div class="desc">To be announced</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+
+
+        </div>
+        <!--//tab-2-content-->
+
+        <div class="tab-pane active fade in" id="tab-3-content" role="tabpanel" aria-labelledby="tab-3">
+
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">9:30 - 11:30</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Workshop: Introduction to Java Virtual Threads</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Main Auditorium, 3rd Floor,
+                        Audi Block</div>
+                    <div class="desc">Dive deep into the concept of Java Virtual Threads and learn how to utilize them
+                        for improved concurrency in your applications.</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">11:30 - 11:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Tea Break</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Common Area</div>
+                    <div class="desc">Refreshments available</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">11:40 - 1:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Workshop: Building Asynchronous Applications</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 1</div>
+                    <div class="desc">Learn to build responsive, asynchronous applications with Java's new concurrency
+                        features. Hands-on exercises included!</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">1:40 - 2:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Lunch Break</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Dining Hall</div>
+                    <div class="desc">Enjoy your meal and network!</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">2:40 - 4:40</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Workshop: Advanced Concurrency Patterns</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 2</div>
+                    <div class="desc">Explore advanced concurrency patterns using virtual threads. Case studies and
+                        practical implementations will be covered.</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">4:40 - 4:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Tea Break</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Common Area</div>
+                    <div class="desc">Refreshments available</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+                <div class="meta">
+                    <h4 class="time mb-3">4:50 - 6:50</h4>
+                </div>
+                <!--//meta-->
+                <div class="content">
+                    <h3 class="title mb-3">Workshop: Deploying Java Applications with Virtual Threads</h3>
+                    <div class="location mb-3"><i class="fas fa-map-marker-alt me-2"></i>Track 3</div>
+                    <div class="desc">Learn how to deploy Java applications using virtual threads effectively. This
+                        session includes best practices and deployment strategies.</div>
+                </div>
+                <!--//content-->
+            </div>
+            <!--//item-->
+
+
+        </div>
+        <!--//tab-3-content-->
+
+    </div></article>
+</div>
+</div>
+
+
+  <footer class="mt-auto text-white-50">
+    
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  
+  
+    <script src="/main.js"></script>
+  
+
+</div>
+
+
+
+</body>
+
+
+</html>
