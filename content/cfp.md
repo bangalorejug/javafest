@@ -22,9 +22,15 @@ year: 2024
         border: 0;
 
     }
+    @media (max-width: 600px) {
+    .gform-container {
+        height: 80vh;
+        padding-bottom: 0;
+    }
+}
 </style>
 <div class="gform-container">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlS-9uhWmaD1LlMMnqSUupyTsPXngI0r-iiTFyrPTz9HsAgA/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlS-9uhWmaD1LlMMnqSUupyTsPXngI0r-iiTFyrPTz9HsAgA/viewform?embedded=true"  frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div>
 {{< /rawhtml >}}
 
