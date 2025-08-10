@@ -81,3 +81,12 @@ body {
 .nav-link:hover {
   color: var(--accent-red);
 }
+.navbar-brand {
+  width: 200px;
+}
+
+@media only screen and (max-width: 786px){
+  .navbar-brand {
+    width: 150px;
+  }
+}
