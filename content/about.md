@@ -3,7 +3,7 @@ title: 'About'
 year: 2024
 ---
 
-JAVAFEST is an annual conference hosted with enthusiasm and dedication by the Java User Group. Whether you’re a seasoned developer, a budding enthusiast, or a techie, JAVAFEST warmly invites you to join this dynamic community and immerse yourself in the world of Java.
+JAVAFEST is an annual conference hosted with enthusiasm and dedication by the Java User Group. Whether you’re a seasoned developer, a budding enthusiast, or a techie, we warmly invites you to join this dynamic community and immerse yourself in the world of Java.
 
 At JAVAFEST, we pride ourselves on being different from other conferences by adhering to our founding principles. Here's how JAVAFEST stands out:
 

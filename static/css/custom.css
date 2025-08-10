@@ -1,0 +1,83 @@
+/* Custom CSS for JavaFest */
+
+:root {
+    --primary-black: #1a1a1a;
+    --accent-red: #e53e3e;
+    --java-orange: #f89820;
+    --light-gray: #f8f9fa;
+    --medium-gray: #6c757d;
+    --dark-gray: #343a40;
+    --gold-accent: #a08660;
+    --blue-accent: #0066cc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: #fff;
+}
+
+
+.social-media-icons {
+  color: #736658;
+}
+
+.register-button {
+  background-color: #736658;
+  border-color: #736658;
+}
+
+.register-button:hover {
+  background-color: #736658;
+  border-color: #736658;
+}
+
+#myTab .active {
+  background-color: #736658;
+  border-color: #736658;
+}
+
+#myTabContent .tab-pane a {
+  color: black;
+}
+
+.btn-primary {
+    background: var(--accent-red);
+    color: white;
+    border-color: var(--accent-red);
+}
+
+.btn-primary:hover {
+    background: #c53030;
+    border-color: #c53030;
+    transform: translateY(-2px);
+}
+.btn-secondary {
+    background: transparent;
+    color: var(--dark-gray);
+    border-color: var(--dark-gray);
+}
+
+.btn-secondary:hover {
+    background: var(--dark-gray);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.nav-link {
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--accent-red);
+}
