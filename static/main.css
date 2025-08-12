@@ -96,7 +96,7 @@ header {
 
 @media only screen and (max-width: 786px){
   .navbar-brand {
-    width: 150px;
+    width: 60px;
   }
 }
 .hero {
