@@ -110,9 +110,11 @@
   </head>
 
   <body class="text-dark bg-light">
-    <div class="d-flex flex-column  min-vh-100 mx-md-5 mx-auto">
-      {{ block "header" . }}{{ partial "header" . }}{{end}} {{ block "main" .
-      }}{{end}} {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+    <div class="d-flex flex-column  min-vh-100">
+      {{ block "header" . }}{{ partial "header" . }}{{end}} 
+      <div class="mx-md-5 mx-auto">{{ block "main" . }}{{end}} </div>
+      {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
 
       
 

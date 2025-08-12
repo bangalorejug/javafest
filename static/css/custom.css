@@ -71,6 +71,15 @@ body {
     transform: translateY(-2px);
 }
 
+
+header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .nav-link {
   color: var(--dark-gray);
   text-transform: uppercase;
@@ -89,4 +98,61 @@ body {
   .navbar-brand {
     width: 150px;
   }
+}
+.hero {
+  position: relative;
+  text-align: center;
+  color: var(--dark-gray);
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="500" cy="500" r="300" fill="none" stroke="rgba(229,62,62,0.05)" stroke-width="2"/><circle cx="500" cy="500" r="200" fill="none" stroke="rgba(248,152,32,0.05)" stroke-width="1"/></svg>') center/cover;
+}
+.hero-content {
+  max-width: 720px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: 4rem;
+  color: var(--primary-black);
+  font-weight: 800;
+}
+.hero-logo {
+  display: flex;
+  justify-content: center;
+}
+.hero p {
+  max-width: 700px;
+}
+.hero-tagline {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--accent-red);
+}
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero-tagline {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hero {
+    padding: 100px 1rem 60px;
+  }
+  
 }
