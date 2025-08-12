@@ -103,10 +103,9 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    {{ $stylesheet := .Site.Data.webpack.main }} {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet" />
-    {{ end }}
-    <!-- <link href="{{ "css/custom.css" | relURL }}" rel="stylesheet" /> -->
+    {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+
   </head>
 
   <body class="text-dark bg-light">

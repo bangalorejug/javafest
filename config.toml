@@ -12,3 +12,6 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 enableInlineShortcodes = true
 [security.funcs]
 getenv = ['^HUGO_','CONTEXT','BUILD_PRODUCTION']
+
+
+assetDir = "assets"
