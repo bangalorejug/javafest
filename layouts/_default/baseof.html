@@ -106,7 +106,7 @@
     {{ $stylesheet := .Site.Data.webpack.main }} {{ with $stylesheet.css }}
     <link href="{{ relURL . }}" rel="stylesheet" />
     {{ end }}
-    <link href="{{ "css/custom.css" | relURL }}" rel="stylesheet" />
+    <!-- <link href="{{ "css/custom.css" | relURL }}" rel="stylesheet" /> -->
   </head>
 
   <body class="text-dark bg-light">
