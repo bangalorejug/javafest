@@ -93,10 +93,21 @@ header {
 .navbar-brand {
   width: 200px;
 }
+.navbar .cta-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.navbar .cta-buttons .cfp-button {
+  width: 115px;
+}
 
 @media only screen and (max-width: 786px){
   .navbar-brand {
     width: 60px;
+  }
+  .navbar .cta-buttons {
+    display: none;
   }
 }
 .hero {
