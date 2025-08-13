@@ -78,6 +78,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 1px solid #d6d8da;
 }
 
 .nav-link {
@@ -114,6 +115,7 @@ header {
   position: relative;
   text-align: center;
   color: var(--dark-gray);
+  margin: 90px;
 }
 .hero::before {
   content: '';
@@ -122,7 +124,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="500" cy="500" r="300" fill="none" stroke="rgba(229,62,62,0.05)" stroke-width="2"/><circle cx="500" cy="500" r="200" fill="none" stroke="rgba(248,152,32,0.05)" stroke-width="1"/></svg>') center/cover;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="500" cy="500" r="350" fill="none" stroke="rgba(229,62,62,0.05)" stroke-width="2"/><circle cx="500" cy="500" r="200" fill="none" stroke="rgba(248,152,32,0.05)" stroke-width="1"/></svg>') center/cover;
 }
 .hero-content {
   max-width: 720px;
@@ -164,6 +166,90 @@ header {
 @media only screen and (max-width: 480px) {
   .hero {
     padding: 100px 1rem 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
   }
   
+}
+.conference-info-section {
+  padding: 2rem 1rem;
+  /* border-top: 0.1px solid #6c757d; */
+}
+.conference-info-section h2 {
+  font-size: 2.8rem;
+  color: var(--primary-black);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.conference-info-section h2::after {
+  content: '';
+  width: 100px;
+  height: 4px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  background: var(--accent-red);
+  border-radius: 2px;
+}
+.conference-info-section .conference-info-cards {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.conference-info-section .conference-info-cards .card {
+  max-width: 350px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.conference-info-section .conference-info-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.conference-info-section .conference-info-cards .card .card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--accent-red);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 1.5rem;
+}
+
+
+.conference-info-section .conference-info-message {
+  margin-top: 2rem;
+  text-align: center;
+  background: var(--light-gray);
+  padding: 3rem;
+  border-radius: 12px;
+}
+.conference-info-section .conference-info-message h3 {
+  font-size: 2rem;
+  color: var(--primary-black);
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+.conference-info-section .conference-info-message p {
+  max-width: 800px;
+  margin: 0 auto;
 }
