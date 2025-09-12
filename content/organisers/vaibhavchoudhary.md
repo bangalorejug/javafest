@@ -1,5 +1,5 @@
 ---
-title: 'Vaibhav Choudry'
+title: 'Vaibhav Choudhary'
 jobTitle: 'JVM Engineer'
 company: 'Salesforce'
 date: 2017-03-23
