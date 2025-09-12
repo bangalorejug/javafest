@@ -5,6 +5,7 @@ company: 'DevOn'
 date: 2017-03-23
 weight: 2
 linkedin: 'https://www.linkedin.com/in/sumanth-k-srivarma/'
+profilePicture: '/images/SumanthKS.jpeg'
 ---
 
 Hi, I’m Sumanth, a Java enthusiast with over 10 years of experience building enterprise applications and microservices. Most of my work revolves around Java, Spring Boot, and modern development practices, helping teams write cleaner, more efficient, and maintainable code.
