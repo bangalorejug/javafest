@@ -1,5 +1,5 @@
 ---
-title: 'Inside the JVM: Debugging, Profiling, and the AI Code Trap'
+title: 'Write Less, Do More – The Power of Modern Java'
 speakers:
   - vikas400
   - sumanthks144
