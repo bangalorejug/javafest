@@ -106,6 +106,12 @@
     {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
+    <!-- Add to head section -->
+    <link rel="preload" href="{{ "/images/Logo.png" | relURL }}" as="image">
+    <link rel="dns-prefetch" href="//www.infosys.com">
+    <link rel="dns-prefetch" href="//konfhub.com">
+
+
   </head>
 
   <body class="text-dark">
