@@ -3,43 +3,87 @@
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
 <div class="container-fluid">
 
-  <div class="row">
-    <h3>{{- .Title -}}</h3>
+  <!-- Mobile header: image, name, LinkedIn -->
+  <div class="d-block d-lg-none text-center mb-4">
+    {{ if .Params.profilePicture }}
+    <img src="{{ .Params.profilePicture }}" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 200px; height: 200px;">
+    {{ else }}
+    <img src="https://github.com/{{ .File.BaseFileName }}.png" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 200px; height: 200px;">
+    {{ end }}
+    <h3 class="mb-1">{{- .Title -}}</h3>
+    {{ $meta := slice }}
+    {{ with .Params.designation }}{{ $meta = $meta | append . }}{{ end }}
+    {{ with .Params.jobTitle }}{{ $meta = $meta | append . }}{{ end }}
+    {{ with .Params.company }}{{ $meta = $meta | append . }}{{ end }}
+    {{ if gt (len $meta) 0 }}
+      <div class="text-muted small mb-2">{{ delimit $meta " · " }}</div>
+    {{ end }}
+    {{ if .Params.linkedin }}
+      <a href="{{ .Params.linkedin }}" target="_blank" aria-label="LinkedIn" class="btn btn-link p-0 speaker-social">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.792-1.75-1.764s.784-1.764 1.75-1.764 1.75.792 1.75 1.764-.783 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.027-3.059-1.865-3.059-1.867 0-2.154 1.459-2.154 2.967v5.696h-3v-10h2.881v1.367h.041c.401-.759 1.379-1.56 2.839-1.56 3.038 0 3.358 2.001 3.358 4.604v5.589z"/></svg>
+      </a>
+    {{ end }}
+  </div>
 
-    <div class="col-lg-3">
+  <div class="row speaker-layout">
+    <!-- Sidebar: visible only on large screens -->
+    <div class="col-lg-4 col-xl-3 mb-4 speaker-sidebar d-none d-lg-block text-center">
       {{ if .Params.profilePicture }}
-      <img src="{{ .Params.profilePicture }}" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle" style="width: 250px; height: 250px;">
+      <img src="{{ .Params.profilePicture }}" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 250px; height: 250px;">
       {{ else }}
-      <img src="https://github.com/{{ .File.BaseFileName }}.png" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle" style="width: 250px; height: 250px;">
+      <img src="https://github.com/{{ .File.BaseFileName }}.png" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 250px; height: 250px;">
+      {{ end }}
+
+      <h3 class="mb-1">{{- .Title -}}</h3>
+      {{ $metaDesk := slice }}
+      {{ with .Params.designation }}{{ $metaDesk = $metaDesk | append . }}{{ end }}
+      {{ with .Params.jobTitle }}{{ $metaDesk = $metaDesk | append . }}{{ end }}
+      {{ with .Params.company }}{{ $metaDesk = $metaDesk | append . }}{{ end }}
+      {{ if gt (len $metaDesk) 0 }}
+        <div class="text-muted small mb-2">{{ delimit $metaDesk " · " }}</div>
+      {{ end }}
+      {{ if .Params.linkedin }}
+        <a href="{{ .Params.linkedin }}" target="_blank" aria-label="LinkedIn" class="speaker-social d-inline-flex align-items-center justify-content-center" style="line-height: 1;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.792-1.75-1.764s.784-1.764 1.75-1.764 1.75.792 1.75 1.764-.783 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.027-3.059-1.865-3.059-1.867 0-2.154 1.459-2.154 2.967v5.696h-3v-10h2.881v1.367h.041c.401-.759 1.379-1.56 2.839-1.56 3.038 0 3.358 2.001 3.358 4.604v5.589z"/></svg>
+        </a>
       {{ end }}
     </div>
-    
-<article class="col-lg-12">
-  {{- .Content -}}
-  {{ if .Params.linkedin }}
-      <p>
-        Checkout their<a href="{{ .Params.linkedin }}" target="_blank" class="btn btn-link">LinkedIn Profile!</a>
-      </p>
-      {{ end }}
-</article>
-</div>
 
-<h4>Sessions</h4>
-<ul>
-  {{ $username := .File.BaseFileName  }}
-{{ range (where .Site.Pages "Section" "sessions") }}
-   {{ range .Pages }}
+    <div class="col-lg-8 col-xl-9 speaker-main">
+      <article class="speaker-content">
+        {{- .Content -}}
+      </article>
 
-   {{ if in .Params.speakers $username }}
-   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-   {{ end }}
+      <!-- Sessions cards under summary (all screens) -->
+      <div class="speaker-sessions mt-4">
+        <h5>Sessions</h5>
+        <div class="row g-3">
+          {{ $username := .File.BaseFileName }}
+          {{ range (where .Site.Pages "Section" "sessions") }}
+            {{ range .Pages }}
+              {{ if in .Params.speakers $username }}
+                <div class="col-md-6 col-xl-4">
+                  <a href="{{ .Permalink }}" class="card h-100 session-card text-reset text-decoration-none">
+                    <div class="card-body">
+                      <h6 class="card-title mb-2">{{ .Title }}</h6>
+                      <p class="card-text text-muted small mb-0">
+                        {{ with .Params.description }}
+                          {{ . | plainify | truncate 140 }}
+                        {{ else }}
+                          {{ .Summary | plainify | truncate 140 }}
+                        {{ end }}
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-      
-   {{ end }}
-{{ end }}
-
-</ul>
 </div>
 {{ end }}
 

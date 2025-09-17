@@ -253,3 +253,70 @@ header {
   max-width: 800px;
   margin: 0 auto;
 }
+/* Speakers single page */
+.speaker-layout {
+  align-items: flex-start;
+}
+.speaker-sidebar {
+  position: sticky;
+  top: 100px;
+}
+.speaker-avatar {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.speaker-sessions h5 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.speaker-sessions ul li a {
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+.speaker-sessions ul li a:hover {
+  color: var(--accent-red);
+  text-decoration: underline;
+}
+.speaker-main .speaker-content p {
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  .speaker-sidebar {
+    position: static;
+    top: auto;
+  }
+  .speaker-avatar {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* Speaker mobile adjustments */
+@media only screen and (max-width: 992px) {
+  .speaker-avatar {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .speaker-layout {
+    margin-top: 0;
+  }
+}
+.speaker-social {
+  color: var(--blue-accent);
+}
+.speaker-social:hover {
+  color: #004a99;
+}
+.session-card {
+  border: 1px solid #eee;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.session-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.session-card .card-title {
+  font-weight: 600;
+  color: var(--primary-black);
+}
