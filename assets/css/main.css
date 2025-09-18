@@ -403,6 +403,39 @@ header {
   font-size: 1rem;
 }
 
+/* Speakers list responsive images */
+.speaker-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+@media only screen and (min-width: 1200px) {
+  .speaker-img {
+    aspect-ratio: 1 / 1;
+    max-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .speaker-img {
+    max-height: 220px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .speaker-img {
+    max-height: 180px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .speaker-img {
+    max-height: 150px;
+  }
+}
+
 .speaker-company {
   color: var(--accent-red);
   font-weight: 600;

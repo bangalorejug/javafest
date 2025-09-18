@@ -3,7 +3,7 @@ title: 'Thriving in the Age of AI-Powered Software Development'
 speakers:
   - sivaprasadreddy
 topics:
-  - enterprise
+  - Enterprise
 time: 10:20 AM - 11:05 AM
 weight: 1
 sessionType: Talk

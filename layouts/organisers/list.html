@@ -18,9 +18,9 @@
 		<div class="col-6 col-lg-3 mb-4">
 			<div class="card rounded-0">
 				{{ if .Params.profilePicture }}
-					<img src="{{ .Params.profilePicture }}" class="card-img-top rounded-0" alt="">
+					<img src="{{ .Params.profilePicture }}" class="card-img-top rounded-0 speaker-img" alt="Profile picture of {{ .Title }}">
 				{{ else }}
-				<img src="https://github.com/{{.File.BaseFileName}}.png" class="card-img-top rounded-0" alt="">
+					<img src="https://github.com/{{.File.BaseFileName}}.png" class="card-img-top rounded-0 speaker-img" alt="Profile picture of {{ .Title }}">
 				{{ end }}
 				<div class="card-body">
 					<h5 class="card-title mb-2">{{ .Title }}</h5>
