@@ -1,7 +1,7 @@
 ---
 title: 'Udayani V'
 jobTitle: 'Senior Member Of Technical Staff'
-company: 'VMware by Broadcom'
+company: 'Broadcom'
 date: 2017-03-23
 weight: 7
 linkedin: 'https://www.linkedin.com/in/udayani-v-56261a147/'
