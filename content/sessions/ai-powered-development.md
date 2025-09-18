@@ -6,6 +6,7 @@ topics:
   - enterprise
 time: 10:20 AM - 11:05 AM
 weight: 1
+sessionType: Talk
 ---
 
 AI isn’t replacing developers. It’s redefining what “competent” means.

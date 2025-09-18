@@ -6,6 +6,7 @@ topics:
   - core
 time: 10:20 AM - 11:05 AM
 weight: 1
+sessionType: Talk
 ---
 
 Modern enterprise applications live and die by performance. In large-scale production systems, even small inefficiencies in the Java Virtual Machine can cascade into major slowdowns, outages, or spiraling costs. This session takes you inside the JVM to explore how performance challenges surface in real-world software development.

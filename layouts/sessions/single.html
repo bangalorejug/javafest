@@ -1,25 +1,89 @@
-
-
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
 <div class="container-fluid">
 
-  <div class="row">
-    <h3>{{- .Title -}}</h3>
-    <p>by {{- range $index, $element := .Params.speakers }}
-      {{ $speaker := site.GetPage (printf "speakers/%s" $element) }}
-      {{ if gt $index 0 }} & {{ end }}
-      <a href="{{ $speaker.Permalink }}">{{ $speaker.Title }}</a>
-    {{ end }}</p>
-<article class="col-lg-12">
-  {{- .Content -}}
-</article>
-</div>
+  <!-- Session Title -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <h1 class="session-title">{{- .Title -}}</h1>
+    </div>
+  </div>
 
+  <!-- Two-column layout for desktop -->
+  <div class="row session-layout">
+    <!-- Left Column: Speaker Information -->
+    <div class="col-lg-4 col-xl-3 mb-4 speaker-info-column">
+      <div class="speaker-info-card">
+        {{- range $index, $element := .Params.speakers }}
+          {{ $speaker := site.GetPage (printf "speakers/%s" $element) }}
+          <div class="speaker-item {{ if gt $index 0 }}mt-4{{ end }}">
+            <!-- Speaker Image -->
+            <div class="speaker-image-container">
+              {{ if $speaker.Params.profilePicture }}
+                <img src="{{ $speaker.Params.profilePicture }}" alt="{{ $speaker.Title }}" class="speaker-image">
+              {{ else }}
+                <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" alt="{{ $speaker.Title }}" class="speaker-image">
+              {{ end }}
+            </div>
+            
+            <!-- Speaker Details -->
+            <div class="speaker-details">
+              <h4 class="speaker-name">
+                <a href="{{ $speaker.Permalink }}" class="speaker-link">{{ $speaker.Title }}</a>
+              </h4>
+              
+              {{ $meta := slice }}
+              {{ with $speaker.Params.jobTitle }}{{ $meta = $meta | append . }}{{ end }}
+              {{ with $speaker.Params.designation }}{{ $meta = $meta | append . }}{{ end }}
+              {{ if gt (len $meta) 0 }}
+                <p class="speaker-job-title">{{ delimit $meta " · " }}</p>
+              {{ end }}
+              
+              {{ with $speaker.Params.company }}
+                <p class="speaker-company">{{ . }}</p>
+              {{ end }}
+              
+              {{ if $speaker.Params.linkedin }}
+                <a href="{{ $speaker.Params.linkedin }}" target="_blank" aria-label="LinkedIn" class="speaker-social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.792-1.75-1.764s.784-1.764 1.75-1.764 1.75.792 1.75 1.764-.783 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.027-3.059-1.865-3.059-1.867 0-2.154 1.459-2.154 2.967v5.696h-3v-10h2.881v1.367h.041c.401-.759 1.379-1.56 2.839-1.56 3.038 0 3.358 2.001 3.358 4.604v5.589z"/>
+                  </svg>
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
 
+    <!-- Right Column: Session Details -->
+    <div class="col-lg-8 col-xl-9 session-details-column">
+      <div class="session-details-card">
+        <!-- Session Meta Information -->
+        <div class="session-meta mb-4">
+          <!-- {{ with .Params.time }}
+            <div class="session-meta-item">
+              <strong>Time:</strong> {{ . }}
+            </div>
+          {{ end }} -->
+          {{ with .Params.topics }}
+            <div class="session-meta-item">
+              <strong>Track:</strong> {{ delimit . ", " }}
+            </div>
+          {{ end }}
+          {{ with .Params.sessionType }}
+            <div class="session-meta-item">
+              <strong>Session Type:</strong> {{ . }}
+            </div>
+          {{ end }}
+        </div>
 
+        <!-- Session Content -->
+        <div class="session-content">
+          {{- .Content -}}
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 {{ end }}
-
-
-
