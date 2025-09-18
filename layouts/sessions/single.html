@@ -33,7 +33,6 @@
               
               {{ $meta := slice }}
               {{ with $speaker.Params.jobTitle }}{{ $meta = $meta | append . }}{{ end }}
-              {{ with $speaker.Params.designation }}{{ $meta = $meta | append . }}{{ end }}
               {{ if gt (len $meta) 0 }}
                 <p class="speaker-job-title">{{ delimit $meta " · " }}</p>
               {{ end }}

@@ -554,3 +554,6 @@ header {
     font-size: 1rem;
   }
 }
+.break-all {
+  word-break: break-all;
+}

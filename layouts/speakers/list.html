@@ -6,27 +6,33 @@
 		{{ range .Pages }}
 
 		<div class="col-6 col-lg-3 mb-4">
-			<div class="card rounded-0">
-				<a href="/speakers/{{.File.BaseFileName}}">
+			<div class="card border-0 ">
+				<a class="text-decoration-none" href="/speakers/{{.File.BaseFileName}}">
 					{{ if .Params.profilePicture }}
-						<img src="{{ .Params.profilePicture }}" class="card-img-top rounded-0 speaker-img" alt="Profile picture of {{ .Title }}">
+						<img src="{{ .Params.profilePicture }}" class="card-img-top rounded-circle speaker-img" alt="Profile picture of {{ .Title }}">
 					{{ else }}
-						<img src="https://github.com/{{.File.BaseFileName}}.png" class="card-img-top rounded-0 speaker-img" alt="Profile picture of {{ .Title }}">
+						<img src="https://github.com/{{.File.BaseFileName}}.png" class="card-img-top rounded-circle speaker-img" alt="Profile picture of {{ .Title }}">
 					{{ end }}
 				</a>
-				<div class="card-body">
-					<h5 class="card-title mb-2">{{ .Title }}</h5>
-					<div class="card-text mb-3">
-						<div class="meta">{{ .Params.jobTitle }}</div>
-						<div class="meta">{{ .Params.company }}</div>
-					</div><!--//card-text-->
-					<a href="/speakers/{{.File.BaseFileName}}">Read more →</a>
-				</div><!--//card-->
-				<div class="card-footer text-muted">
-					<ul class="social-list list-inline mb-0">
-						<li class="list-inline-item"><a href="{{ .Params.linkedin }}" target="_blank"><svg class="svg-inline--fa fa-linkedin-in fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg><!-- <i class="fa-brands fa-linkedin-in fa-fw"></i> Font Awesome fontawesome.com --></a></li>
-					</ul><!--//social-list-->
+				<div class="card-body text-black">
+					<a class="text-decoration-none" href="/speakers/{{.File.BaseFileName}}">
+						<h5 class="d-none d-md-block card-title mb-2 text-black fw-bold text-center text-break break-all">{{ .Title }}</h5>
+						<h6 class="d-block d-md-none card-title mb-2 text-black fw-bold text-center text-break break-all">{{ .Title }}</h5>
+						<div class="card-text text-center">
+							{{ with .Params.jobTitle }}
+							  <p class="speaker-job-title">{{ . }}</p>
+							{{ end }}
+							{{ with .Params.company }}
+							  <p class="text-muted small">{{ . }}</p>
+							{{ end }}
+						</div><!--//card-text-->
+					</a>
+				<div class="text-center">
+					<a href="{{ .Params.linkedin }}" target="_blank" aria-label="LinkedIn" class="btn btn-link p-0 d-inline-block">
+						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.792-1.75-1.764s.784-1.764 1.75-1.764 1.75.792 1.75 1.764-.783 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.027-3.059-1.865-3.059-1.867 0-2.154 1.459-2.154 2.967v5.696h-3v-10h2.881v1.367h.041c.401-.759 1.379-1.56 2.839-1.56 3.038 0 3.358 2.001 3.358 4.604v5.589z"/></svg>
+					</a>
 				</div>
+			</div><!--//card-->
 			</div><!--//card-->
 		</div>
 

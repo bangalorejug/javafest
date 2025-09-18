@@ -12,7 +12,6 @@
     {{ end }}
     <h3 class="mb-1">{{- .Title -}}</h3>
     {{ $meta := slice }}
-    {{ with .Params.designation }}{{ $meta = $meta | append . }}{{ end }}
     {{ with .Params.jobTitle }}{{ $meta = $meta | append . }}{{ end }}
     {{ with .Params.company }}{{ $meta = $meta | append . }}{{ end }}
     {{ if gt (len $meta) 0 }}
