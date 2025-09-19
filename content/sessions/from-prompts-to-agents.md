@@ -4,7 +4,7 @@ speakers:
   - thamaraip
   - udayani
 topics:
-  - enterprise
+  - Enterprise Java
 time: 10:20 AM - 11:05 AM
 weight: 1
 sessionType: Workshop
