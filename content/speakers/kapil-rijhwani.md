@@ -1,6 +1,6 @@
 ---
 title: 'Kapil Rijhwani'
-jobTitle: 'Lead Member of Technical Staff(LMTS)'
+jobTitle: 'Lead Member of Technical Staff'
 company: 'Salesforce'
 date: 2017-03-23
 weight: 1
