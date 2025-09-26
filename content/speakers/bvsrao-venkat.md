@@ -1,7 +1,7 @@
 ---
 title: 'Venkata Subba Rao'
-jobTitle: 'Director'
-company: 'Gnithra Technologies'
+jobTitle: 'Freelancer, Corporate Trainer'
+company: 'Ignithra Technologies'
 date: 2017-03-23
 weight: 1
 linkedin: 'https://www.linkedin.com/in/bvsrao-venkat-4014133b/'
