@@ -27,7 +27,7 @@
    {{ range .Pages }}
 
    {{ if in .Params.speakers $username }}
-   <meta property="og:description" content="{{ printf "%s from %s will be spaeking about %s" $.Params.jobTitle $.Params.company .Title }}" />
+   <meta property="og:description" content="{{ printf "%s from %s will be speaking about %s" $.Params.jobTitle $.Params.company .Title }}" />
    {{ end }}
 
 
