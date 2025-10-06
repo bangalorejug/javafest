@@ -2,6 +2,7 @@
 title: " RAG (Retrieval-Augmented Generation) in Java"
 speakers:
   - sai-mounik
+  - rohan-j
 topics:
   - Enterprise Java
 time: 10:20 AM - 11:05 AM
