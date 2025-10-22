@@ -1,5 +1,5 @@
 ---
-title: 'How well do you know your Java Compiler Errors?'
+title: 'From Syntax Trees to Smart IDEs: How Java Compiler Complexity Powers Developer Productivity'
 speakers:
   - manoj-nalledathu
 topics:
