@@ -1,5 +1,5 @@
 ---
-title: "Turbocharged Java Performance: Mastering Caches 🧠 Branches, and SIMD ⚡️"
+title: "AI at the Speed of Silicon: How Java Talks Directly to Hardware"
 speakers:
   - manukumar-vs
 topics:
@@ -10,4 +10,4 @@ sessionType: Workshop
 duration: 90 min 
 ---
 
-Why does one piece of code scream while another crawls? In this high-energy, hands-on workshop, we’ll peel back the layers of modern CPUs and show how Java code can be tuned to dance with the hardware. Whether you’re a seasoned professional, a fresher, or a Java enthusiast, you’ll gain practical skills to unlock performance. Together we’ll explore Caches, Branches, and SIMD through live coding, real benchmarks (JMH), profiling (JFR/VisualVM), and the blazing speed of the Panama Vector API. Small code changes, massive speedups — come ready to experiment and supercharge your Java!
+AI workloads live and die by performance—and the secret to true speed isn’t just smarter algorithms, it’s smarter execution on silicon. In this hands-on session, we dive deep into how modern Java can accelerate AI and data processing by directly leveraging CPU features like SIMD instructions, the Panama Vector API, cache locality, and just-in-time (JIT) compilation. You’ll see how Java can match native languages for AI inference, matrix math, and cryptographic operations essential to securing AI pipelines. From real-time vector computations to quantum-resistant encryption for AI security, this session will show you how Java doesn’t just run AI—it powers it at hardware speed.
