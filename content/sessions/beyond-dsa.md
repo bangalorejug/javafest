@@ -3,7 +3,7 @@ title: 'Beyond DSAs – The Modern Way to Deal with Large Datasets Efficiently: 
 speakers:
   - manish-jhanwar
 topics:
-  - Core Java
+  - Enterprise Java
 time: 10:20 AM - 11:05 AM
 weight: 1
 sessionType: Talk
