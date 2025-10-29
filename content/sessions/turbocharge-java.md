@@ -2,6 +2,7 @@
 title: "AI at the Speed of Silicon: How Java Talks Directly to Hardware"
 speakers:
   - manukumar-vs
+  - disha
 topics:
   - Core Java
 time: 10:20 AM - 11:05 AM
