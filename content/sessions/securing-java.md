@@ -3,7 +3,7 @@ title: 'Securing Java in the Age of AI-Powered Attacks: Modern Defenses for Inte
 speakers:
   - bvsrao-venkat
 topics:
-  - Devops
+  - Devops Java
 time: 10:20 AM - 11:05 AM
 weight: 1
 sessionType: Talk
