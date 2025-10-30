@@ -10,15 +10,10 @@ sessionType: Talk
 duration: 45 min 
 ---
 
-Modern enterprise applications live and die by performance. In large-scale production systems, even small inefficiencies in the Java Virtual Machine can cascade into major slowdowns, outages, or spiraling costs. This session takes you inside the JVM to explore how performance challenges surface in real-world software development.
+Learn how to fortify Java applications against AI-powered cyberattacks using modern authentication, anomaly detection, and runtime defenses — with live attack and mitigation demos.
 
-We will dive into:
-Garbage Collection (GC) pitfalls — when memory management becomes a bottleneck.
-The Hot Method Trap — why highly optimized code can still burn CPU cycles.
-CPU profiling — finding the real culprits behind usage spikes.
-APT (Application Performance Tuning) techniques — what works in production vs. lab conditions.
-AI-generated code — how blindly trusting code from tools like Cursor or ChatGPT can introduce subtle inefficiencies, and why profiling, benchmarking, and deep understanding remain essential.
+AI is transforming development — but it’s also supercharging cyberattacks. AI-driven vulnerability scanning, automated exploit generation, and adaptive phishing mean your Java applications are facing a smarter adversary than ever before.
+In this session, we’ll dive into modern, AI-aware security practices for Java developers. From securing APIs against automated reconnaissance to detecting anomalous requests with machine learning, we’ll explore cutting-edge techniques to fortify your Java applications.
+You’ll learn how to implement runtime threat detection, harden authentication mechanisms against AI-powered brute force, and apply zero-trust principles in Java microservices. We’ll conclude with a live simulation of an AI-assisted attack and demonstrate real-time mitigation strategies using Spring Security, JWT best practices, and cloud-native tooling.
 
-
-Through production case studies, live analysis, and examples of auto-generated code, you’ll see how even “working” code can hurt scalability and performance if not carefully reviewed and tested. You’ll also learn practical debugging and profiling strategies using tools like Java Flight Recorder, JMC, async-profiler, and system metrics.
-Expect to walk away with actionable insights to spot problems faster, tune smarter, and keep your Java services running fast and reliable in production.
+By the end of this talk, you’ll be equipped with battle-ready strategies to secure your Java applications in the era of intelligent threats.
