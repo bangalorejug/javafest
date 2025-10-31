@@ -11,7 +11,7 @@
                     <div class="col-12">
                         <ul class="nav nav-pills nav-fill" id="trackTabs" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="core-java-tab" data-bs-toggle="pill" data-bs-target="#core-java" type="button" role="tab" aria-controls="core-java" aria-selected="true">
+                                <button class="nav-link" id="core-java-tab" data-bs-toggle="pill" data-bs-target="#core-java" type="button" role="tab" aria-controls="core-java" aria-selected="false">
                                     <i class="fas fa-code me-2"></i>Core Java
                                 </button>
                             </li>
@@ -25,6 +25,11 @@
                                     <i class="fas fa-cogs me-2"></i>DevOps Java
                                 </button>
                             </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="all-sessions-tab" data-bs-toggle="pill" data-bs-target="#all-sessions" type="button" role="tab" aria-controls="all-sessions" aria-selected="true">
+                                    <i class="fas fa-list me-2"></i>All Sessions
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -32,7 +37,7 @@
                 <!-- Track Content -->
                 <div class="tab-content" id="trackTabsContent">
                     <!-- Core Java Track -->
-                    <div class="tab-pane fade show active" id="core-java" role="tabpanel" aria-labelledby="core-java-tab">
+                    <div class="tab-pane fade" id="core-java" role="tabpanel" aria-labelledby="core-java-tab">
                         <div class="card border-0 shadow-sm">
                             <div class="card-header bg-primary text-white">
                                 <h3 class="mb-0"><i class="fas fa-code me-2"></i>Core Java Track</h3>
@@ -234,12 +239,205 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- All Sessions Tab -->
+                    <div class="tab-pane fade show active" id="all-sessions" role="tabpanel" aria-labelledby="all-sessions-tab">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header bg-info text-white">
+                                <h3 class="mb-0"><i class="fas fa-list me-2"></i>All Sessions</h3>
+                                <small>Complete schedule across all tracks</small>
+                            </div>
+                            <div class="card-body">
+                                <!-- Core Java Sessions Row -->
+                                <div class="track-section mb-5">
+                                    <div class="track-header mb-3">
+                                        <h4 class="text-primary mb-1"><i class="fas fa-code me-2"></i>Core Java Track</h4>
+                                        <small class="text-muted">Fundamentals, Performance, and Language Features</small>
+                                    </div>
+                                    <div class="sessions-row">
+                                        {{ $coreJavaSessions := where .Site.Pages "Params.topics" "intersect" (slice "Core Java") }}
+                                        {{ $sortedSessions := sort $coreJavaSessions "Params.weight" }}
+                                        {{ range $sortedSessions }}
+                                        <div class="session-card-horizontal mb-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-2">
+                                                    <div class="time-badge-compact bg-primary">
+                                                        <i class="fas fa-clock me-1"></i>{{ .Params.time }}
+                                                        {{ if .Params.duration }}
+                                                        <small class="d-block">{{ .Params.duration }}</small>
+                                                        {{ end }}
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    {{ if .Params.speakers }}
+                                                    <div class="speakers-compact">
+                                                        {{ range .Params.speakers }}
+                                                        {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
+                                                        {{ if $speaker }}
+                                                        <div class="speaker-compact d-flex align-items-center mb-1">
+                                                            <div class="speaker-avatar-tiny me-2">
+                                                                {{ if $speaker.Params.profilePicture }}
+                                                                <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="20" height="20" alt="{{ $speaker.Title }}">
+                                                                {{ else }}
+                                                                <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="20" height="20" alt="{{ $speaker.Title }}">
+                                                                {{ end }}
+                                                            </div>
+                                                            <div class="speaker-info-tiny">
+                                                                <div class="speaker-name-tiny">{{ $speaker.Title }}</div>
+                                                                {{ if $speaker.Params.company }}
+                                                                <small class="text-muted company-tiny">{{ $speaker.Params.company }}</small>
+                                                                {{ end }}
+                                                            </div>
+                                                        </div>
+                                                        {{ end }}
+                                                        {{ end }}
+                                                    </div>
+                                                    {{ end }}
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="session-info">
+                                                        <h6><a href="{{ .Permalink }}" class="text-decoration-none text-dark">{{ .Title }}</a></h6>
+                                                        <p class="text-muted mb-0 small">{{ .Content | strings.Truncate 100 }}</p>
+                                                        {{ if .Params.sessionType }}
+                                                        <span class="badge bg-light text-dark mt-1">{{ .Params.sessionType }}</span>
+                                                        {{ end }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+
+                                <!-- Enterprise Java Sessions Row -->
+                                <div class="track-section mb-5">
+                                    <div class="track-header mb-3">
+                                        <h4 class="text-success mb-1"><i class="fas fa-building me-2"></i>Enterprise Java Track</h4>
+                                        <small class="text-muted">Frameworks, Architecture, and Business Solutions</small>
+                                    </div>
+                                    <div class="sessions-row">
+                                        {{ $enterpriseJavaSessions := where .Site.Pages "Params.topics" "intersect" (slice "Enterprise Java") }}
+                                        {{ $sortedSessions := sort $enterpriseJavaSessions "Params.weight" }}
+                                        {{ range $sortedSessions }}
+                                        <div class="session-card-horizontal mb-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-2">
+                                                    <div class="time-badge-compact bg-success">
+                                                        <i class="fas fa-clock me-1"></i>{{ .Params.time }}
+                                                        {{ if .Params.duration }}
+                                                        <small class="d-block">{{ .Params.duration }}</small>
+                                                        {{ end }}
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    {{ if .Params.speakers }}
+                                                    <div class="speakers-compact">
+                                                        {{ range .Params.speakers }}
+                                                        {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
+                                                        {{ if $speaker }}
+                                                        <div class="speaker-compact d-flex align-items-center mb-1">
+                                                            <div class="speaker-avatar-tiny me-2">
+                                                                {{ if $speaker.Params.profilePicture }}
+                                                                <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="20" height="20" alt="{{ $speaker.Title }}">
+                                                                {{ else }}
+                                                                <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="20" height="20" alt="{{ $speaker.Title }}">
+                                                                {{ end }}
+                                                            </div>
+                                                            <div class="speaker-info-tiny">
+                                                                <div class="speaker-name-tiny">{{ $speaker.Title }}</div>
+                                                                {{ if $speaker.Params.company }}
+                                                                <small class="text-muted company-tiny">{{ $speaker.Params.company }}</small>
+                                                                {{ end }}
+                                                            </div>
+                                                        </div>
+                                                        {{ end }}
+                                                        {{ end }}
+                                                    </div>
+                                                    {{ end }}
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="session-info">
+                                                        <h6><a href="{{ .Permalink }}" class="text-decoration-none text-dark">{{ .Title }}</a></h6>
+                                                        <p class="text-muted mb-0 small">{{ .Content | strings.Truncate 100 }}</p>
+                                                        {{ if .Params.sessionType }}
+                                                        <span class="badge bg-light text-dark mt-1">{{ .Params.sessionType }}</span>
+                                                        {{ end }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+
+                                <!-- DevOps Java Sessions Row -->
+                                <div class="track-section mb-5">
+                                    <div class="track-header mb-3">
+                                        <h4 class="text-warning mb-1"><i class="fas fa-cogs me-2"></i>DevOps Java Track</h4>
+                                        <small class="text-muted">Deployment, Monitoring, and Operations</small>
+                                    </div>
+                                    <div class="sessions-row">
+                                        {{ $devopsJavaSessions := where .Site.Pages "Params.topics" "intersect" (slice "Devops Java") }}
+                                        {{ $sortedSessions := sort $devopsJavaSessions "Params.weight" }}
+                                        {{ range $sortedSessions }}
+                                        <div class="session-card-horizontal mb-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-2">
+                                                    <div class="time-badge-compact bg-warning text-dark">
+                                                        <i class="fas fa-clock me-1"></i>{{ .Params.time }}
+                                                        {{ if .Params.duration }}
+                                                        <small class="d-block">{{ .Params.duration }}</small>
+                                                        {{ end }}
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    {{ if .Params.speakers }}
+                                                    <div class="speakers-compact">
+                                                        {{ range .Params.speakers }}
+                                                        {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
+                                                        {{ if $speaker }}
+                                                        <div class="speaker-compact d-flex align-items-center mb-1">
+                                                            <div class="speaker-avatar-tiny me-2">
+                                                                {{ if $speaker.Params.profilePicture }}
+                                                                <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="20" height="20" alt="{{ $speaker.Title }}">
+                                                                {{ else }}
+                                                                <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="20" height="20" alt="{{ $speaker.Title }}">
+                                                                {{ end }}
+                                                            </div>
+                                                            <div class="speaker-info-tiny">
+                                                                <div class="speaker-name-tiny">{{ $speaker.Title }}</div>
+                                                                {{ if $speaker.Params.company }}
+                                                                <small class="text-muted company-tiny">{{ $speaker.Params.company }}</small>
+                                                                {{ end }}
+                                                            </div>
+                                                        </div>
+                                                        {{ end }}
+                                                        {{ end }}
+                                                    </div>
+                                                    {{ end }}
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="session-info">
+                                                        <h6><a href="{{ .Permalink }}" class="text-decoration-none text-dark">{{ .Title }}</a></h6>
+                                                        <p class="text-muted mb-0 small">{{ .Content | strings.Truncate 100 }}</p>
+                                                        {{ if .Params.sessionType }}
+                                                        <span class="badge bg-light text-dark mt-1">{{ .Params.sessionType }}</span>
+                                                        {{ end }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <style>
 /* Track Navigation */
 .nav-pills .nav-link {
@@ -396,6 +594,104 @@
     border-left-color: #ffc107;
 }
 
+/* All Sessions Tab Styles */
+.track-section {
+    border-left: 4px solid #e9ecef;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.track-section:nth-child(1) {
+    border-left-color: #007bff;
+}
+
+.track-section:nth-child(2) {
+    border-left-color: #28a745;
+}
+
+.track-section:nth-child(3) {
+    border-left-color: #ffc107;
+}
+
+.track-header h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.session-card-horizontal {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    transition: all 0.2s ease;
+}
+
+.session-card-horizontal:hover {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+    transform: translateY(-1px);
+}
+
+.time-badge-compact {
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.time-badge-compact small {
+    font-size: 0.7rem;
+    opacity: 0.9;
+}
+
+.speakers-compact {
+    padding: 4px 0;
+}
+
+.speaker-compact {
+    margin-bottom: 4px !important;
+}
+
+.speaker-avatar-tiny img {
+    border: 1px solid #dee2e6;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-name-tiny {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.company-tiny {
+    font-size: 0.65rem;
+    line-height: 1.1;
+    display: block;
+}
+
+.session-info h6 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.session-info h6 a:hover {
+    color: #007bff !important;
+}
+
+.session-info p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
+
+.badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .timeline-content .row {
@@ -407,8 +703,8 @@
     }
     
     .nav-pills .nav-link {
-        padding: 8px 16px;
-        font-size: 0.9rem;
+        padding: 8px 12px;
+        font-size: 0.8rem;
     }
     
     .speakers-section-left {
@@ -426,6 +722,39 @@
 
     .company-small {
         font-size: 0.65rem;
+    }
+
+    /* All Sessions mobile adjustments */
+    .track-section {
+        border-left-width: 2px;
+        padding-left: 15px;
+        margin-left: 5px;
+    }
+
+    .session-card-horizontal .row {
+        flex-direction: column;
+    }
+
+    .time-badge-compact {
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+    .speakers-compact {
+        margin-bottom: 10px;
+    }
+
+    .speaker-avatar-tiny img {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    .speaker-name-tiny {
+        font-size: 0.7rem;
+    }
+
+    .company-tiny {
+        font-size: 0.6rem;
     }
 }
 </style>
