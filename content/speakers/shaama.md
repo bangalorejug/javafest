@@ -1,5 +1,5 @@
 ---
-title: 'Shaama Manoharanis'
+title: 'Shaama Manoharan'
 jobTitle: 'Software Engineer'
 company: 'Ford Motors'
 date: 2017-03-23
