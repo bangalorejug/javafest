@@ -4,10 +4,10 @@ speakers:
   - kapil-rijhwani
 topics:
   - Core Java
-time: 10:20 AM - 11:05 AM
-weight: 1
+time: 12:00 PM - 12:45 PM
+weight: 2
 sessionType: Talk
-duration: 45 min 
+duration: 45 min
 ---
 
 Java isn't just for the enterprise backend anymore. While Python has dominated AI's research and prototyping phase, Java's enduring strengths—proven scalability, security, and performance—are making it the ideal choice for building and deploying AI applications in production.

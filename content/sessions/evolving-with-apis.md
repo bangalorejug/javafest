@@ -4,8 +4,8 @@ speakers:
   - vipin-menon
 topics:
   - Enterprise Java
-time: 10:20 AM - 11:05 AM
-weight: 1
+time: 12:00 PM - 12:45 PM
+weight: 2
 sessionType: Talk
 duration: 45 min
 ---

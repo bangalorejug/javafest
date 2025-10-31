@@ -5,7 +5,7 @@ speakers:
 topics:
   - Core Java
 time: 02:15 PM - 03:00 PM
-weight: 1
+weight: 3
 sessionType: Talk
 duration: 45 min
 ---

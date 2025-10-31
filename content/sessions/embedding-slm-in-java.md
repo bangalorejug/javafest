@@ -4,8 +4,8 @@ speakers:
   - rajasekaran
 topics:
   - Devops Java
-time: 01:45 PM - 02:15 PM
-weight: 1
+time: 03:10 PM - 03:40 PM
+weight: 5
 sessionType: Talk
 duration: 30 min
 ---

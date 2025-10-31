@@ -5,8 +5,8 @@ speakers:
   - sumanthks144
 topics:
   - Core Java
-time: 10:20 AM - 11:05 AM
-weight: 1
+time: 03:40 PM - 05:10 PM
+weight: 6
 sessionType: Workshop
 ---
 

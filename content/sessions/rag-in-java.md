@@ -5,8 +5,9 @@ speakers:
   - rohan-j
 topics:
   - Enterprise Java
-time: 10:20 AM - 11:05 AM
-weight: 1
+duration: 45 min 
+time: 02:15 PM - 03:00 PM
+weight: 4
 sessionType: Talk
 duration: 45 min 
 ---

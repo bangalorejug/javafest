@@ -4,8 +4,8 @@ speakers:
   - manoj-nalledathu
 topics:
   - Core Java
-time: 10:20 AM - 11:05 AM
-weight: 1
+time: 1:45 PM - 2:15 PM
+weight: 3
 sessionType: Talk
 duration: 30 min
 ---

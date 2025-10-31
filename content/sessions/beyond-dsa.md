@@ -4,8 +4,8 @@ speakers:
   - manish-jhanwar
 topics:
   - Enterprise Java
-time: 10:20 AM - 11:05 AM
-weight: 1
+time: 03:10 PM - 03:40 PM
+weight: 5
 sessionType: Talk
 duration: 30 min
 ---

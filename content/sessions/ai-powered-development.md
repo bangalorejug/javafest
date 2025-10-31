@@ -4,8 +4,8 @@ speakers:
   - sivaprasadreddy
 topics:
   - Enterprise Java
-time: 10:20 AM - 11:05 AM
-weight: 1
+time: 1:45 PM - 2:15 PM
+weight: 3
 sessionType: Talk
 ---
 
