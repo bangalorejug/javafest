@@ -3,7 +3,7 @@ title: 'GC Optimized Data Structures for Search'
 speakers:
   - atrisharma
 topics:
-  - Core Java
+  - Devops Java
 time: 1:45 PM - 2:15 PM
 weight: 3
 sessionType: Talk
