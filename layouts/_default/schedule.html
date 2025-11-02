@@ -46,8 +46,7 @@
                 <div class="tab-content" id="trackTabsContent">
                     {{ $allSessions := where .Site.Pages "Type" "sessions" }}
                     {{ $coreJavaSessions := where $allSessions "Params.topics" "intersect" (slice "Core Java") }}
-                    {{ $enterpriseJavaSessions := where $allSessions "Params.topics" "intersect" (slice "Enterprise
-                    Java") }}
+                    {{ $enterpriseJavaSessions := where $allSessions "Params.topics" "intersect" (slice "Enterprise Java") }}
                     {{ $devopsJavaSessions := where $allSessions "Params.topics" "intersect" (slice "Devops Java") }}
                     {{ $allTimes := slice }}
                     {{ range $allSessions }}
@@ -67,8 +66,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="schedule-timeline">
-                                    {{ $coreJavaSessions := where .Site.Pages "Params.topics" "intersect" (slice "Core
-                                    Java") }}
+                                    {{ $coreJavaSessions := where .Site.Pages "Params.topics" "intersect" (slice "Core Java") }}
                                     {{ $sortedSessions := sort $coreJavaSessions "Params.weight" }}
                                     {{ range $sortedSessions }}
                                     <div class="timeline-item">
