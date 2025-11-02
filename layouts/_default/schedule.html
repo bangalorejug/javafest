@@ -368,9 +368,39 @@
                                                     {{ range $coreSessionsAtTime }}
                                                     <div class="session-item">
                                                         <h6><a href="{{ .Permalink }}">{{ .Title }}</a></h6>
-                                                        {{ if .Params.speakers }}
-                                                        <small class="text-muted">{{ delimit .Params.speakers ", " }}</small>
-                                                        {{ end }}
+                                                        <div class="col-md-3">
+                                                            {{ if .Params.speakers }}
+                                                                <div class="speakers-section-left">
+                                                                    {{ range .Params.speakers }}
+                                                                    {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
+                                                                    {{ if $speaker }}
+                                                                    <div
+                                                                        class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                        <div class="speaker-avatar-small me-2">
+                                                                            {{ if $speaker.Params.profilePicture }}
+                                                                            <img src="{{ $speaker.Params.profilePicture | relURL }}"
+                                                                                class="rounded-circle" width="24" height="24"
+                                                                                alt="{{ $speaker.Title }}">
+                                                                            {{ else }}
+                                                                            <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png"
+                                                                                class="rounded-circle" width="24" height="24"
+                                                                                alt="{{ $speaker.Title }}">
+                                                                            {{ end }}
+                                                                        </div>
+                                                                        <div class="speaker-details-compact">
+                                                                            <div class="speaker-name-small">{{ $speaker.Title }}
+                                                                            </div>
+                                                                            {{ if $speaker.Params.company }}
+                                                                            <small class="text-muted company-small">{{
+                                                                                $speaker.Params.company }}</small>
+                                                                            {{ end }}
+                                                                        </div>
+                                                                    </div>
+                                                                    {{ end }}
+                                                                    {{ end }}
+                                                                </div>
+                                                            {{ end }}
+                                                        </div>
                                                     </div>
                                                     {{ end }}
                                                     {{ else }}
@@ -397,9 +427,39 @@
                                                     {{ range $enterpriseSessionsAtTime }}
                                                     <div class="session-item">
                                                         <h6><a href="{{ .Permalink }}">{{ .Title }}</a></h6>
-                                                        {{ if .Params.speakers }}
-                                                        <small class="text-muted">{{ delimit .Params.speakers ", " }}</small>
-                                                        {{ end }}
+                                                        <div class="col-md-3">
+                                                            {{ if .Params.speakers }}
+                                                                <div class="speakers-section-left">
+                                                                    {{ range .Params.speakers }}
+                                                                    {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
+                                                                    {{ if $speaker }}
+                                                                    <div
+                                                                        class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                        <div class="speaker-avatar-small me-2">
+                                                                            {{ if $speaker.Params.profilePicture }}
+                                                                            <img src="{{ $speaker.Params.profilePicture | relURL }}"
+                                                                                class="rounded-circle" width="24" height="24"
+                                                                                alt="{{ $speaker.Title }}">
+                                                                            {{ else }}
+                                                                            <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png"
+                                                                                class="rounded-circle" width="24" height="24"
+                                                                                alt="{{ $speaker.Title }}">
+                                                                            {{ end }}
+                                                                        </div>
+                                                                        <div class="speaker-details-compact">
+                                                                            <div class="speaker-name-small">{{ $speaker.Title }}
+                                                                            </div>
+                                                                            {{ if $speaker.Params.company }}
+                                                                            <small class="text-muted company-small">{{
+                                                                                $speaker.Params.company }}</small>
+                                                                            {{ end }}
+                                                                        </div>
+                                                                    </div>
+                                                                    {{ end }}
+                                                                    {{ end }}
+                                                                </div>
+                                                            {{ end }}
+                                                        </div>
                                                     </div>
                                                     {{ end }}
                                                     {{ else }}
@@ -426,9 +486,39 @@
                                                     {{ range $devopsSessionsAtTime }}
                                                     <div class="session-item">
                                                         <h6><a href="{{ .Permalink }}">{{ .Title }}</a></h6>
-                                                        {{ if .Params.speakers }}
-                                                        <small class="text-muted">{{ delimit .Params.speakers ", " }}</small>
-                                                        {{ end }}
+                                                        <div class="col-md-3">
+                                                            {{ if .Params.speakers }}
+                                                                <div class="speakers-section-left">
+                                                                    {{ range .Params.speakers }}
+                                                                    {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
+                                                                    {{ if $speaker }}
+                                                                    <div
+                                                                        class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                        <div class="speaker-avatar-small me-2">
+                                                                            {{ if $speaker.Params.profilePicture }}
+                                                                            <img src="{{ $speaker.Params.profilePicture | relURL }}"
+                                                                                class="rounded-circle" width="24" height="24"
+                                                                                alt="{{ $speaker.Title }}">
+                                                                            {{ else }}
+                                                                            <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png"
+                                                                                class="rounded-circle" width="24" height="24"
+                                                                                alt="{{ $speaker.Title }}">
+                                                                            {{ end }}
+                                                                        </div>
+                                                                        <div class="speaker-details-compact">
+                                                                            <div class="speaker-name-small">{{ $speaker.Title }}
+                                                                            </div>
+                                                                            {{ if $speaker.Params.company }}
+                                                                            <small class="text-muted company-small">{{
+                                                                                $speaker.Params.company }}</small>
+                                                                            {{ end }}
+                                                                        </div>
+                                                                    </div>
+                                                                    {{ end }}
+                                                                    {{ end }}
+                                                                </div>
+                                                            {{ end }}
+                                                        </div>
                                                     </div>
                                                     {{ end }}
                                                     {{ else }}
