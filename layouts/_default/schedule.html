@@ -377,7 +377,31 @@
                                                     {{ else if eq $currentTime "9:50 AM - 10:15 AM" }}
                                                         <div class="break-item">
                                                         <h6>Keynote : The Hidden Rules of Career Growth </h6>
-                                                        <small class="text-muted">Speaker: Siva</small>    
+                                                        <!-- Speaker: Siva -->
+                                                                {{ $speaker := $.Site.GetPage "/speakers/sivaprasadreddy" }}
+                                                                {{ if $speaker }}
+                                                                <div class="speakers-section-left d-flex justify-content-center mt-2">
+                                                                    <div class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                        <div class="speaker-avatar-small me-2">
+                                                                            {{ if $speaker.Params.profilePicture }}
+                                                                            <img src="{{ $speaker.Params.profilePicture | relURL }}"
+                                                                                class="rounded-circle" width="24" height="24"
+                                                                                alt="{{ $speaker.Title }}">
+                                                                            {{ else }}
+                                                                            <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png"
+                                                                                class="rounded-circle" width="24" height="24"
+                                                                                alt="{{ $speaker.Title }}">
+                                                                            {{ end }}
+                                                                        </div>
+                                                                        <div class="speaker-details-compact text-start">
+                                                                            <div class="speaker-name-small">{{ $speaker.Title }}</div>
+                                                                            {{ if $speaker.Params.company }}
+                                                                            <small class="text-muted company-small">{{ $speaker.Params.company }}</small>
+                                                                            {{ end }}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                {{ end }}    
                                                         <small class="text-muted">25 minutes</small>
                                                     </div>
                                                     {{ else if eq $currentTime "12:45 PM - 1:35 PM" }}
@@ -449,7 +473,9 @@
                                                 </td>
                                                 <td>
                                                     <!-- Check for breaks first -->
-                                                    {{ if eq $currentTime "12:45 PM - 1:35 PM" }}
+                                                    {{ if eq $currentTime "9:30 AM - 9:50 AM" }}
+                                                    {{ else if eq $currentTime "9:50 AM - 10:15 AM" }}
+                                                    {{ else if eq $currentTime "12:45 PM - 1:35 PM" }}
                                                     {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
                                                     {{ else }}
                                                     <!-- Find sessions for Enterprise Java track at this time -->
@@ -500,7 +526,9 @@
                                                 </td>
                                                 <td>
                                                     <!-- Check for breaks first -->
-                                                    {{ if eq $currentTime "12:45 PM - 1:35 PM" }}
+                                                    {{ if eq $currentTime "9:30 AM - 9:50 AM" }}
+                                                    {{ else if eq $currentTime "9:50 AM - 10:15 AM" }}
+                                                    {{ else if eq $currentTime "12:45 PM - 1:35 PM" }}
                                                     {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
                                                     {{ else }}
                                                     <!-- Find sessions for DevOps Java track at this time -->
