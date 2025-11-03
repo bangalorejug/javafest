@@ -349,8 +349,9 @@
                                             {{ $currentTime := . }}
                                             <tr>
                                                 <td class="fw-bold">{{ $currentTime }}</td>
-                                                <td>
-                                                    <!-- Check for breaks first -->
+                                                {{ if or (eq $currentTime "12:45 PM - 1:35 PM") (eq $currentTime "3:00 PM - 3:10 PM") }}
+                                                <!-- Render break spanning across all 3 track columns -->
+                                                <td colspan="3" class="text-center">
                                                     {{ if eq $currentTime "12:45 PM - 1:35 PM" }}
                                                     <div class="break-item">
                                                         <h6>Lunch + Networking + Walk Back</h6>
@@ -361,6 +362,13 @@
                                                         <h6>Break</h6>
                                                         <small class="text-muted">10 minutes</small>
                                                     </div>
+                                                    {{ end }}
+                                                </td>
+                                                {{ else }}
+                                                <td>
+                                                    <!-- Check for breaks first -->
+                                                    {{ if eq $currentTime "12:45 PM - 1:35 PM" }}
+                                                    {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
                                                     {{ else }}
                                                     <!-- Find sessions for Core Java track at this time -->
                                                     {{ $coreSessionsAtTime := where $coreJavaSessions "Params.time" $currentTime }}
@@ -407,19 +415,12 @@
                                                     <span class="text-muted">TBD</span>
                                                     {{ end }}
                                                     {{ end }}
+                                                    {{ end }}
                                                 </td>
                                                 <td>
                                                     <!-- Check for breaks first -->
                                                     {{ if eq $currentTime "12:45 PM - 1:35 PM" }}
-                                                    <div class="break-item">
-                                                        <h6>Lunch + Networking + Walk Back</h6>
-                                                        <small class="text-muted">50 minutes</small>
-                                                    </div>
                                                     {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
-                                                    <div class="break-item">
-                                                        <h6>Break</h6>
-                                                        <small class="text-muted">10 minutes</small>
-                                                    </div>
                                                     {{ else }}
                                                     <!-- Find sessions for Enterprise Java track at this time -->
                                                     {{ $enterpriseSessionsAtTime := where $enterpriseJavaSessions "Params.time" $currentTime }}
@@ -470,15 +471,7 @@
                                                 <td>
                                                     <!-- Check for breaks first -->
                                                     {{ if eq $currentTime "12:45 PM - 1:35 PM" }}
-                                                    <div class="break-item">
-                                                        <h6>Lunch + Networking + Walk Back</h6>
-                                                        <small class="text-muted">50 minutes</small>
-                                                    </div>
                                                     {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
-                                                    <div class="break-item">
-                                                        <h6>Break</h6>
-                                                        <small class="text-muted">10 minutes</small>
-                                                    </div>
                                                     {{ else }}
                                                     <!-- Find sessions for DevOps Java track at this time -->
                                                     {{ $devopsSessionsAtTime := where $devopsJavaSessions "Params.time" $currentTime }}
