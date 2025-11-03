@@ -57,38 +57,44 @@
                     
                     <!-- Get all unique times in order -->
                     {{ $allTimeObjects := slice }}
-                    {{ range $allSessions }}
-                    {{ if .Params.time }}
-                    {{ $timeParts := split .Params.time " - " }}
-                    {{ $startTime := index $timeParts 0 }}
-                    {{ $hourMin := split $startTime ":" }}
-                    {{ $hour := int (index $hourMin 0) }}
-                    {{ $isPM := in $startTime "PM" }}
-                    {{ if and $isPM (lt $hour 12) }}
-                    {{ $hour = add $hour 12 }}
-                    {{ end }}
-                    {{ if and (not $isPM) (eq $hour 12) }}
-                    {{ $hour = 0 }}
-                    {{ end }}
-                    {{ $minute := replaceRE ":([0-9]{2}).*" "$1" (index $hourMin 1) }}
-                    {{ $sortKey := printf "%02d%s" $hour $minute }}
-                    {{ $allTimeObjects = $allTimeObjects | append (dict "display" .Params.time "sort" $sortKey) }}
-                    {{ end }}
-                    {{ end }}
-                    
-                    <!-- Add break times -->
-                    {{ $lunchTime := dict "display" "12:45 PM - 1:35 PM" "sort" "1245" }}
-                    {{ $breakTime := dict "display" "3:00 PM - 3:10 PM" "sort" "1500" }}
-                    {{ $allTimeObjects = $allTimeObjects | append $lunchTime | append $breakTime }}
-                    
-                    <!-- Sort and extract unique times -->
-                    {{ $sortedTimes := sort $allTimeObjects "sort" }}
-                    {{ $uniqueTimes := slice }}
-                    {{ range $sortedTimes }}
-                    {{ if not (in $uniqueTimes .display) }}
-                    {{ $uniqueTimes = $uniqueTimes | append .display }}
-                    {{ end }}
-                    {{ end }}
+{{ range $allSessions }}
+  {{ if .Params.time }}
+    {{ $timeParts := split .Params.time " - " }}
+    {{ $startTime := index $timeParts 0 }}
+    {{ $hourMin := split $startTime ":" }}
+    {{ $hour := int (index $hourMin 0) }}
+    {{ $minuteWithAmPm := index $hourMin 1 }}
+    {{ $minute := replaceRE "([0-9]{2}).*" "$1" $minuteWithAmPm }}
+    {{ $isPM := in $minuteWithAmPm "PM" }}
+    {{ if and $isPM (lt $hour 12) }}
+      {{ $hour = add $hour 12 }}
+    {{ end }}
+    {{ if and (not $isPM) (eq $hour 12) }}
+      {{ $hour = 0 }}
+    {{ end }}
+    {{ $sortKeyInt := add (mul $hour 60) (int $minute) }}
+    {{ $sortKeyStr := printf "%05d" $sortKeyInt }}
+    {{ $allTimeObjects = $allTimeObjects | append (dict "display" .Params.time "sort" $sortKeyStr) }}
+  {{ end }}
+{{ end }}
+
+<!-- Add breaks converted to total minutes -->
+{{ $lunchSort := add (mul 12 60) 45 }}  <!-- 12:45 PM -->
+{{ $breakSort := add (mul 15 60) 0 }}   <!-- 3:00 PM -->
+{{ $allTimeObjects = $allTimeObjects | append (dict "display" "12:45 PM - 1:35 PM" "sort" (printf "%05d" $lunchSort)) }}
+{{ $allTimeObjects = $allTimeObjects | append (dict "display" "3:00 PM - 3:10 PM" "sort" (printf "%05d" $breakSort)) }}
+
+<!-- Sort and extract unique times -->
+{{ $sortedTimes := sort $allTimeObjects "sort" }}
+{{ $uniqueTimes := slice }}
+{{ range $sortedTimes }}
+  {{ if not (in $uniqueTimes .display) }}
+    {{ $uniqueTimes = $uniqueTimes | append .display }}
+  {{ end }}
+{{ end }}
+
+
+
 
                     <!-- Core Java Track -->
                     <div class="tab-pane fade" id="core-java" role="tabpanel" aria-labelledby="core-java-tab">
