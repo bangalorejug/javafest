@@ -81,8 +81,13 @@
 {{ end }}
 
 <!-- Add breaks converted to total minutes -->
-{{ $lunchSort := add (mul 12 60) 45 }}  <!-- 12:45 PM -->
-{{ $breakSort := add (mul 15 60) 0 }}   <!-- 3:00 PM -->
+{{ $welcomeSort := add (mul 9 60) 30 }}    <!-- 9:30 AM -->
+{{ $keynoteSort := add (mul 9 60) 50 }}   <!-- 9:50 AM -->
+{{ $lunchSort := add (mul 12 60) 45 }}    <!-- 12:45 PM -->
+{{ $breakSort := add (mul 15 60) 0 }}     <!-- 3:00 PM -->
+
+{{ $allTimeObjects = $allTimeObjects | append (dict "display" "9:30 AM - 9:50 AM" "sort" (printf "%05d" $welcomeSort)) }}
+{{ $allTimeObjects = $allTimeObjects | append (dict "display" "9:50 AM - 10:15 AM" "sort" (printf "%05d" $keynoteSort)) }}
 {{ $allTimeObjects = $allTimeObjects | append (dict "display" "12:45 PM - 1:35 PM" "sort" (printf "%05d" $lunchSort)) }}
 {{ $allTimeObjects = $allTimeObjects | append (dict "display" "3:00 PM - 3:10 PM" "sort" (printf "%05d" $breakSort)) }}
 
