@@ -390,19 +390,10 @@
                                                 {{ else }}
                                                 <td>
                                                     <!-- Check for common sessions (Welcome, Keynote, Lunch, Break, etc.) -->
-                                                    {{ $commonSession := first 1 (where $breaks "Params.time" $currentTime) }}
-                                                    {{ if $commonSession }}
-                                                    <!-- Render a shared session spanning all 3 tracks -->
-                                                        <td colspan="3" class="text-center">
-                                                            {{ range $commonSession }}
-                                                            <div class="break-item">
-                                                            <h6>{{ .Title }}</h6>
-                                                            {{ if .Params.duration }}
-                                                            <small class="text-muted">{{ .Params.duration }}</small>
-                                                            {{ end }}
-                                                            </div>
-                                                            {{ end }}
-                                                        </td>
+                                                    {{ if eq $currentTime "9:30 AM - 9:50 AM" }}
+                                                    {{ else if eq $currentTime "9:50 AM - 10:15 AM" }}
+                                                    {{ else if eq $currentTime "12:45 PM - 1:35 PM" }}
+                                                    {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
                                                     {{ else }}
                                                     <!-- Find sessions for Core Java track at this time -->
                                                     {{ $coreSessionsAtTime := where $coreJavaSessions "Params.time" $currentTime }}
