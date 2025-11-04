@@ -6,7 +6,7 @@ speakers:
 topics:
   - Devops Java
 duration: 45 min 
-time: 02:15 PM - 03:00 PM
+time: 10:15 AM - 11:00 AM
 weight: 4
 sessionType: Talk
 duration: 45 min 
