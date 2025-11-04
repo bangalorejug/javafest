@@ -4,7 +4,7 @@ speakers:
   - bvsrao-venkat
 topics:
   - Devops Java
-time: 12:00 PM - 12:45 PM
+time: 02:15 PM - 03:00 PM
 weight: 2
 sessionType: Talk
 duration: 45 min 
