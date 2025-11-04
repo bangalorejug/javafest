@@ -4,7 +4,7 @@ speakers:
   - kapil-rijhwani
 topics:
   - Core Java
-time: 12:00 PM - 12:45 PM
+time: 10:15 AM - 11:00 AM
 weight: 2
 sessionType: Talk
 duration: 45 min
