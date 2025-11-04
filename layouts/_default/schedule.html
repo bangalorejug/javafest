@@ -52,7 +52,7 @@
                     <!-- Create breaks as pseudo-sessions -->
                     {{ $breaks := slice }}
                     {{ $welcome := dict "Title" "Welcome Note" "Params" (dict "time" "9:30 AM - 9:50 AM" "weight" 10 "duration" "20 minutes" "isBreak" true) }}
-                    {{ $keynote := dict "Title" "Keynote" "Params" (dict "time" "9:50 AM - 10:15 AM"  "weight" 20 "duration" "25 minutes" "isBreak" true) }}
+                    {{ $keynote := dict "Title" "Keynote" "Params" (dict "time" "9:50 AM - 10:10 AM"  "weight" 20 "duration" "20 minutes" "isBreak" true) }}
                     {{ $lunch := dict "Title" "Lunch + Networking + Walk Back" "Params" (dict "time" "12:45 PM - 1:35 PM" "weight" 50 "duration" "50 minutes" "isBreak" true) }}
                     {{ $break := dict "Title" "Break" "Params" (dict "time" "3:00 PM - 3:10 PM" "weight" 90 "duration" "10 minutes" "isBreak" true) }}
                     {{ $breaks = $breaks | append $welcome | append $keynote | append $lunch | append $break }}
@@ -87,7 +87,7 @@
 {{ $breakSort := add (mul 15 60) 0 }}     <!-- 3:00 PM -->
 
 {{ $allTimeObjects = $allTimeObjects | append (dict "display" "9:30 AM - 9:50 AM" "sort" (printf "%05d" $welcomeSort)) }}
-{{ $allTimeObjects = $allTimeObjects | append (dict "display" "9:50 AM - 10:15 AM" "sort" (printf "%05d" $keynoteSort)) }}
+{{ $allTimeObjects = $allTimeObjects | append (dict "display" "9:50 AM - 10:10 AM" "sort" (printf "%05d" $keynoteSort)) }}
 {{ $allTimeObjects = $allTimeObjects | append (dict "display" "12:45 PM - 1:35 PM" "sort" (printf "%05d" $lunchSort)) }}
 {{ $allTimeObjects = $allTimeObjects | append (dict "display" "3:00 PM - 3:10 PM" "sort" (printf "%05d" $breakSort)) }}
 
@@ -363,7 +363,7 @@
                                             <tr>
                                                 <td class="fw-bold">{{ $currentTime }}</td>
                                                 {{ if or (eq $currentTime "9:30 AM - 9:50 AM") 
-                                                         (eq $currentTime "9:50 AM - 10:15 AM")
+                                                         (eq $currentTime "9:50 AM - 10:10 AM")
                                                          (eq $currentTime "12:45 PM - 1:35 PM") 
                                                          (eq $currentTime "3:00 PM - 3:10 PM") }}
                                                 <!-- Render break spanning across all 3 track columns -->
@@ -397,7 +397,7 @@
                                                                 </div>
                                                                 {{ end }}
                                                     </div>
-                                                    {{ else if eq $currentTime "9:50 AM - 10:15 AM" }}
+                                                    {{ else if eq $currentTime "9:50 AM - 10:10 AM" }}
                                                         <div class="break-item">
                                                         <h6>Keynote : The Hidden Rules of Career Growth </h6>
                                                         <!-- Speaker: Siva -->
@@ -442,7 +442,7 @@
                                                 <td>
                                                     <!-- Check for common sessions (Welcome, Keynote, Lunch, Break, etc.) -->
                                                     {{ if eq $currentTime "9:30 AM - 9:50 AM" }}
-                                                    {{ else if eq $currentTime "9:50 AM - 10:15 AM" }}
+                                                    {{ else if eq $currentTime "9:50 AM - 10:10 AM" }}
                                                     {{ else if eq $currentTime "12:45 PM - 1:35 PM" }}
                                                     {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
                                                     {{ else }}
@@ -496,7 +496,7 @@
                                                 <td>
                                                     <!-- Check for breaks first -->
                                                     {{ if eq $currentTime "9:30 AM - 9:50 AM" }}
-                                                    {{ else if eq $currentTime "9:50 AM - 10:15 AM" }}
+                                                    {{ else if eq $currentTime "9:50 AM - 10:10 AM" }}
                                                     {{ else if eq $currentTime "12:45 PM - 1:35 PM" }}
                                                     {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
                                                     {{ else }}
@@ -549,7 +549,7 @@
                                                 <td>
                                                     <!-- Check for breaks first -->
                                                     {{ if eq $currentTime "9:30 AM - 9:50 AM" }}
-                                                    {{ else if eq $currentTime "9:50 AM - 10:15 AM" }}
+                                                    {{ else if eq $currentTime "9:50 AM - 10:10 AM" }}
                                                     {{ else if eq $currentTime "12:45 PM - 1:35 PM" }}
                                                     {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
                                                     {{ else }}
