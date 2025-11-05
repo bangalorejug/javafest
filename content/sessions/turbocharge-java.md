@@ -12,3 +12,12 @@ duration: 100 min
 ---
 
 AI workloads live and die by performance—and the secret to true speed isn’t just smarter algorithms, it’s smarter execution on silicon. In this hands-on session, we dive deep into how modern Java can accelerate AI and data processing by directly leveraging CPU features like SIMD instructions, the Panama Vector API, cache locality, and just-in-time (JIT) compilation. You’ll see how Java can match native languages for AI inference, matrix math, and cryptographic operations essential to securing AI pipelines. From real-time vector computations to quantum-resistant encryption for AI security, this session will show you how Java doesn’t just run AI—it powers it at hardware speed.
+
+Prerequisites
+
+1.JDK 25 (set JAVA_HOME)
+        Download Openjdk/Oracle JDK 25, eg: https://www.oracle.com/in/java/technologies/downloads/
+        export JAVA_HOME=your_java_downloaded_location
+        export PATH=$JAVA_HOME/bin:$PATH
+2. Maven 3.8+
+3. Any IDE
