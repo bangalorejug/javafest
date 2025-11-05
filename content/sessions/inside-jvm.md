@@ -21,3 +21,10 @@ AI-generated code — how blindly trusting code from tools like Cursor or ChatGP
 
 Through production case studies, live analysis, and examples of auto-generated code, you’ll see how even “working” code can hurt scalability and performance if not carefully reviewed and tested. You’ll also learn practical debugging and profiling strategies using tools like Java Flight Recorder, JMC, async-profiler, and system metrics.
 Expect to walk away with actionable insights to spot problems faster, tune smarter, and keep your Java services running fast and reliable in production.
+
+Prerequisites
+- Download Java 11, Java 17, Java 21, Java 25 
+- A Mission Control 
+
+NOTE: Please don’t install any of these tools, just keep the downloads
+
