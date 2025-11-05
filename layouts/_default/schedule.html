@@ -112,69 +112,147 @@
                             </div>
                             <div class="card-body">
                                 <div class="schedule-timeline">
-                                    {{ $coreJavaSessions := where .Site.Pages "Params.topics" "intersect" (slice "Core Java") }}
-                                    {{ $sortedSessions := sort $coreJavaSessions "Params.weight" }}
-                                    {{ range $sortedSessions }}
-                                    <div class="timeline-item">
-                                        <div class="timeline-marker bg-primary"></div>
-                                        <div class="timeline-content">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <div class="time-badge">
-                                                        <i class="fas fa-clock me-1"></i>{{ .Params.time }}
-                                                        {{ if .Params.duration }}
-                                                        <small class="d-block text-muted">{{ .Params.duration }}</small>
-                                                        {{ end }}
-                                                        {{ if .Params.sessionType }}
-                                                        <div class="session-type-badge mt-1">{{ .Params.sessionType }}
-                                                        </div>
-                                                        {{ end }}
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    {{ if .Params.speakers }}
-                                                    <div class="speakers-section-left">
-                                                        {{ range .Params.speakers }}
-                                                        {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
-                                                        {{ if $speaker }}
-                                                        <div
-                                                            class="speaker-info-compact d-flex align-items-center mb-1">
-                                                            <div class="speaker-avatar-small me-2">
-                                                                {{ if $speaker.Params.profilePicture }}
-                                                                <img src="{{ $speaker.Params.profilePicture | relURL }}"
-                                                                    class="rounded-circle" width="24" height="24"
-                                                                    alt="{{ $speaker.Title }}">
-                                                                {{ else }}
-                                                                <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png"
-                                                                    class="rounded-circle" width="24" height="24"
-                                                                    alt="{{ $speaker.Title }}">
-                                                                {{ end }}
-                                                            </div>
-                                                            <div class="speaker-details-compact">
-                                                                <div class="speaker-name-small">{{ $speaker.Title }}
+                                    {{ range $uniqueTimes }}
+                                    {{ $currentTime := . }}
+                                    {{ if or (eq $currentTime "9:30 AM - 9:50 AM") (eq $currentTime "9:50 AM - 10:10 AM") (eq $currentTime "12:45 PM - 1:35 PM") (eq $currentTime "3:00 PM - 3:10 PM") }}
+                                        <div class="timeline-item">
+                                            <div class="timeline-marker bg-primary"></div>
+                                            <div class="timeline-content">
+                                                <div class="session-card">
+                                                    {{ if eq $currentTime "9:30 AM - 9:50 AM" }}
+                                                        <div class="break-item">
+                                                        <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                        <h6>Welcome Note + Java @ 30 and Beyond </h6>
+                                                        <!-- Speaker: Jayashree -->
+                                                                {{ $speaker := $.Site.GetPage "/speakers/jsk" }}
+                                                                {{ if $speaker }}
+                                                                <div class="speakers-section-left d-flex justify-content-center mt-2">
+                                                                    <div class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                        <div class="speaker-avatar-small me-2">
+                                                                            {{ if $speaker.Params.profilePicture }}
+                                                                            <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ else }}
+                                                                            <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ end }}
+                                                                        </div>
+                                                                        <div class="speaker-details-compact text-start">
+                                                                            <div class="speaker-name-small">{{ $speaker.Title }}</div>
+                                                                            {{ if $speaker.Params.company }}
+                                                                            <small class="text-muted company-small">{{ $speaker.Params.company }}</small>
+                                                                            {{ end }}
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                {{ if $speaker.Params.company }}
-                                                                <small class="text-muted company-small">{{
-                                                                    $speaker.Params.company }}</small>
                                                                 {{ end }}
-                                                            </div>
                                                         </div>
-                                                        {{ end }}
-                                                        {{ end }}
-                                                    </div>
+                                                    {{ else if eq $currentTime "9:50 AM - 10:10 AM" }}
+                                                        <div class="break-item">
+                                                        <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                        <h6>Keynote : The Hidden Rules of Career Growth </h6>
+                                                        <!-- Speaker: Siva -->
+                                                                {{ $speaker := $.Site.GetPage "/speakers/sivaprasadreddy" }}
+                                                                {{ if $speaker }}
+                                                                <div class="speakers-section-left d-flex justify-content-center mt-2">
+                                                                    <div class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                        <div class="speaker-avatar-small me-2">
+                                                                            {{ if $speaker.Params.profilePicture }}
+                                                                            <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ else }}
+                                                                            <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ end }}
+                                                                        </div>
+                                                                        <div class="speaker-details-compact text-start">
+                                                                            <div class="speaker-name-small">{{ $speaker.Title }}</div>
+                                                                            {{ if $speaker.Params.company }}
+                                                                            <small class="text-muted company-small">{{ $speaker.Params.company }}</small>
+                                                                            {{ end }}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                {{ end }}
+                                                        </div>
+                                                    {{ else if eq $currentTime "12:45 PM - 1:35 PM" }}
+                                                        <div class="break-item">
+                                                            <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                            <h6>Lunch + Networking + Walk Back</h6>
+                                                            <small class="text-muted">50 minutes</small>
+                                                        </div>
+                                                    {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
+                                                        <div class="break-item">
+                                                            <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                            <h6>Break</h6>
+                                                            <small class="text-muted">10 minutes</small>
+                                                        </div>
                                                     {{ end }}
-                                                </div>
-                                                <div class="col-md-7">
-                                                    <div class="session-card">
-                                                        <h5><a href="{{ .Permalink }}" class="text-decoration-none">{{
-                                                                .Title }}</a></h5>
-                                                        <p class="text-muted mb-0">{{ .Content | strings.Truncate 120 }}
-                                                        </p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    {{ else }}
+                                        {{ $coreSessionsAtTime := where $coreJavaSessions "Params.time" $currentTime }}
+                                        {{ if $coreSessionsAtTime }}
+                                            {{ range $coreSessionsAtTime }}
+                                            <div class="timeline-item">
+                                                <div class="timeline-marker bg-primary"></div>
+                                                <div class="timeline-content">
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <div class="time-badge">
+                                                                <i class="fas fa-clock me-1"></i>{{ .Params.time }}
+                                                                {{ if .Params.duration }}
+                                                                <small class="d-block text-muted">{{ .Params.duration }}</small>
+                                                                {{ end }}
+                                                                {{ if .Params.sessionType }}
+                                                                <div class="session-type-badge mt-1">{{ .Params.sessionType }}</div>
+                                                                {{ end }}
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            {{ if .Params.speakers }}
+                                                            <div class="speakers-section-left">
+                                                                {{ range .Params.speakers }}
+                                                                {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
+                                                                {{ if $speaker }}
+                                                                <div class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                    <div class="speaker-avatar-small me-2">
+                                                                        {{ if $speaker.Params.profilePicture }}
+                                                                        <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                        {{ else }}
+                                                                        <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                        {{ end }}
+                                                                    </div>
+                                                                    <div class="speaker-details-compact">
+                                                                        <div class="speaker-name-small">{{ $speaker.Title }}</div>
+                                                                        {{ if $speaker.Params.company }}
+                                                                        <small class="text-muted company-small">{{ $speaker.Params.company }}</small>
+                                                                        {{ end }}
+                                                                    </div>
+                                                                </div>
+                                                                {{ end }}
+                                                                {{ end }}
+                                                            </div>
+                                                            {{ end }}
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="session-card">
+                                                                <h5><a href="{{ .Permalink }}" class="text-decoration-none">{{ .Title }}</a></h5>
+                                                                <p class="text-muted mb-0">{{ .Content | strings.Truncate 120 }}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {{ end }}
+                                        {{ else }}
+                                            <div class="timeline-item">
+                                                <div class="timeline-marker bg-primary"></div>
+                                                <div class="timeline-content">
+                                                    <div class="session-card">
+                                                        <span class="text-muted">TBD</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {{ end }}
+                                    {{ end }}
                                     {{ end }}
                                 </div>
                             </div>
@@ -191,70 +269,147 @@
                             </div>
                             <div class="card-body">
                                 <div class="schedule-timeline">
-                                    {{ $enterpriseJavaSessions := where .Site.Pages "Params.topics" "intersect" (slice
-                                    "Enterprise Java") }}
-                                    {{ $sortedSessions := sort $enterpriseJavaSessions "Params.weight" }}
-                                    {{ range $sortedSessions }}
-                                    <div class="timeline-item">
-                                        <div class="timeline-marker bg-success"></div>
-                                        <div class="timeline-content">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <div class="time-badge">
-                                                        <i class="fas fa-clock me-1"></i>{{ .Params.time }}
-                                                        {{ if .Params.duration }}
-                                                        <small class="d-block text-muted">{{ .Params.duration }}</small>
-                                                        {{ end }}
-                                                        {{ if .Params.sessionType }}
-                                                        <div class="session-type-badge mt-1">{{ .Params.sessionType }}
-                                                        </div>
-                                                        {{ end }}
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    {{ if .Params.speakers }}
-                                                    <div class="speakers-section-left">
-                                                        {{ range .Params.speakers }}
-                                                        {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
-                                                        {{ if $speaker }}
-                                                        <div
-                                                            class="speaker-info-compact d-flex align-items-center mb-1">
-                                                            <div class="speaker-avatar-small me-2">
-                                                                {{ if $speaker.Params.profilePicture }}
-                                                                <img src="{{ $speaker.Params.profilePicture | relURL }}"
-                                                                    class="rounded-circle" width="24" height="24"
-                                                                    alt="{{ $speaker.Title }}">
-                                                                {{ else }}
-                                                                <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png"
-                                                                    class="rounded-circle" width="24" height="24"
-                                                                    alt="{{ $speaker.Title }}">
-                                                                {{ end }}
-                                                            </div>
-                                                            <div class="speaker-details-compact">
-                                                                <div class="speaker-name-small">{{ $speaker.Title }}
+                                    {{ range $uniqueTimes }}
+                                    {{ $currentTime := . }}
+                                    {{ if or (eq $currentTime "9:30 AM - 9:50 AM") (eq $currentTime "9:50 AM - 10:10 AM") (eq $currentTime "12:45 PM - 1:35 PM") (eq $currentTime "3:00 PM - 3:10 PM") }}
+                                        <div class="timeline-item">
+                                            <div class="timeline-marker bg-success"></div>
+                                            <div class="timeline-content">
+                                                <div class="session-card">
+                                                    {{ if eq $currentTime "9:30 AM - 9:50 AM" }}
+                                                        <div class="break-item">
+                                                        <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                        <h6>Welcome Note + Java @ 30 and Beyond </h6>
+                                                        <!-- Speaker: Jayashree -->
+                                                                {{ $speaker := $.Site.GetPage "/speakers/jsk" }}
+                                                                {{ if $speaker }}
+                                                                <div class="speakers-section-left d-flex justify-content-center mt-2">
+                                                                    <div class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                        <div class="speaker-avatar-small me-2">
+                                                                            {{ if $speaker.Params.profilePicture }}
+                                                                            <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ else }}
+                                                                            <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ end }}
+                                                                        </div>
+                                                                        <div class="speaker-details-compact text-start">
+                                                                            <div class="speaker-name-small">{{ $speaker.Title }}</div>
+                                                                            {{ if $speaker.Params.company }}
+                                                                            <small class="text-muted company-small">{{ $speaker.Params.company }}</small>
+                                                                            {{ end }}
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                {{ if $speaker.Params.company }}
-                                                                <small class="text-muted company-small">{{
-                                                                    $speaker.Params.company }}</small>
                                                                 {{ end }}
-                                                            </div>
                                                         </div>
-                                                        {{ end }}
-                                                        {{ end }}
-                                                    </div>
+                                                    {{ else if eq $currentTime "9:50 AM - 10:10 AM" }}
+                                                        <div class="break-item">
+                                                        <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                        <h6>Keynote : The Hidden Rules of Career Growth </h6>
+                                                        <!-- Speaker: Siva -->
+                                                                {{ $speaker := $.Site.GetPage "/speakers/sivaprasadreddy" }}
+                                                                {{ if $speaker }}
+                                                                <div class="speakers-section-left d-flex justify-content-center mt-2">
+                                                                    <div class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                        <div class="speaker-avatar-small me-2">
+                                                                            {{ if $speaker.Params.profilePicture }}
+                                                                            <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ else }}
+                                                                            <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ end }}
+                                                                        </div>
+                                                                        <div class="speaker-details-compact text-start">
+                                                                            <div class="speaker-name-small">{{ $speaker.Title }}</div>
+                                                                            {{ if $speaker.Params.company }}
+                                                                            <small class="text-muted company-small">{{ $speaker.Params.company }}</small>
+                                                                            {{ end }}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                {{ end }}
+                                                        </div>
+                                                    {{ else if eq $currentTime "12:45 PM - 1:35 PM" }}
+                                                        <div class="break-item">
+                                                            <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                            <h6>Lunch + Networking + Walk Back</h6>
+                                                            <small class="text-muted">50 minutes</small>
+                                                        </div>
+                                                    {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
+                                                        <div class="break-item">
+                                                            <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                            <h6>Break</h6>
+                                                            <small class="text-muted">10 minutes</small>
+                                                        </div>
                                                     {{ end }}
-                                                </div>
-                                                <div class="col-md-7">
-                                                    <div class="session-card">
-                                                        <h5><a href="{{ .Permalink }}" class="text-decoration-none">{{
-                                                                .Title }}</a></h5>
-                                                        <p class="text-muted mb-0">{{ .Content | strings.Truncate 120 }}
-                                                        </p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    {{ else }}
+                                        {{ $enterpriseSessionsAtTime := where $enterpriseJavaSessions "Params.time" $currentTime }}
+                                        {{ if $enterpriseSessionsAtTime }}
+                                            {{ range $enterpriseSessionsAtTime }}
+                                            <div class="timeline-item">
+                                                <div class="timeline-marker bg-success"></div>
+                                                <div class="timeline-content">
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <div class="time-badge">
+                                                                <i class="fas fa-clock me-1"></i>{{ .Params.time }}
+                                                                {{ if .Params.duration }}
+                                                                <small class="d-block text-muted">{{ .Params.duration }}</small>
+                                                                {{ end }}
+                                                                {{ if .Params.sessionType }}
+                                                                <div class="session-type-badge mt-1">{{ .Params.sessionType }}</div>
+                                                                {{ end }}
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            {{ if .Params.speakers }}
+                                                            <div class="speakers-section-left">
+                                                                {{ range .Params.speakers }}
+                                                                {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
+                                                                {{ if $speaker }}
+                                                                <div class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                    <div class="speaker-avatar-small me-2">
+                                                                        {{ if $speaker.Params.profilePicture }}
+                                                                        <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                        {{ else }}
+                                                                        <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                        {{ end }}
+                                                                    </div>
+                                                                    <div class="speaker-details-compact">
+                                                                        <div class="speaker-name-small">{{ $speaker.Title }}</div>
+                                                                        {{ if $speaker.Params.company }}
+                                                                        <small class="text-muted company-small">{{ $speaker.Params.company }}</small>
+                                                                        {{ end }}
+                                                                    </div>
+                                                                </div>
+                                                                {{ end }}
+                                                                {{ end }}
+                                                            </div>
+                                                            {{ end }}
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="session-card">
+                                                                <h5><a href="{{ .Permalink }}" class="text-decoration-none">{{ .Title }}</a></h5>
+                                                                <p class="text-muted mb-0">{{ .Content | strings.Truncate 120 }}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {{ end }}
+                                        {{ else }}
+                                            <div class="timeline-item">
+                                                <div class="timeline-marker bg-success"></div>
+                                                <div class="timeline-content">
+                                                    <div class="session-card">
+                                                        <span class="text-muted">TBD</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {{ end }}
+                                    {{ end }}
                                     {{ end }}
                                 </div>
                             </div>
@@ -270,69 +425,147 @@
                             </div>
                             <div class="card-body">
                                 <div class="schedule-timeline">
-                                    {{ $devopsJavaSessions := where .Site.Pages "Params.topics" "intersect" (slice "Devops Java") }}
-                                    {{ $sortedSessions := sort $devopsJavaSessions "Params.weight" }}
-                                    {{ range $sortedSessions }}
-                                    <div class="timeline-item">
-                                        <div class="timeline-marker bg-warning"></div>
-                                        <div class="timeline-content">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <div class="time-badge">
-                                                        <i class="fas fa-clock me-1"></i>{{ .Params.time }}
-                                                        {{ if .Params.duration }}
-                                                        <small class="d-block text-muted">{{ .Params.duration }}</small>
-                                                        {{ end }}
-                                                        {{ if .Params.sessionType }}
-                                                        <div class="session-type-badge mt-1">{{ .Params.sessionType }}
-                                                        </div>
-                                                        {{ end }}
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    {{ if .Params.speakers }}
-                                                    <div class="speakers-section-left">
-                                                        {{ range .Params.speakers }}
-                                                        {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
-                                                        {{ if $speaker }}
-                                                        <div
-                                                            class="speaker-info-compact d-flex align-items-center mb-1">
-                                                            <div class="speaker-avatar-small me-2">
-                                                                {{ if $speaker.Params.profilePicture }}
-                                                                <img src="{{ $speaker.Params.profilePicture | relURL }}"
-                                                                    class="rounded-circle" width="24" height="24"
-                                                                    alt="{{ $speaker.Title }}">
-                                                                {{ else }}
-                                                                <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png"
-                                                                    class="rounded-circle" width="24" height="24"
-                                                                    alt="{{ $speaker.Title }}">
-                                                                {{ end }}
-                                                            </div>
-                                                            <div class="speaker-details-compact">
-                                                                <div class="speaker-name-small">{{ $speaker.Title }}
+                                    {{ range $uniqueTimes }}
+                                    {{ $currentTime := . }}
+                                    {{ if or (eq $currentTime "9:30 AM - 9:50 AM") (eq $currentTime "9:50 AM - 10:10 AM") (eq $currentTime "12:45 PM - 1:35 PM") (eq $currentTime "3:00 PM - 3:10 PM") }}
+                                        <div class="timeline-item">
+                                            <div class="timeline-marker bg-warning"></div>
+                                            <div class="timeline-content">
+                                                <div class="session-card">
+                                                    {{ if eq $currentTime "9:30 AM - 9:50 AM" }}
+                                                        <div class="break-item">
+                                                        <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                        <h6>Welcome Note + Java @ 30 and Beyond </h6>
+                                                        <!-- Speaker: Jayashree -->
+                                                                {{ $speaker := $.Site.GetPage "/speakers/jsk" }}
+                                                                {{ if $speaker }}
+                                                                <div class="speakers-section-left d-flex justify-content-center mt-2">
+                                                                    <div class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                        <div class="speaker-avatar-small me-2">
+                                                                            {{ if $speaker.Params.profilePicture }}
+                                                                            <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ else }}
+                                                                            <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ end }}
+                                                                        </div>
+                                                                        <div class="speaker-details-compact text-start">
+                                                                            <div class="speaker-name-small">{{ $speaker.Title }}</div>
+                                                                            {{ if $speaker.Params.company }}
+                                                                            <small class="text-muted company-small">{{ $speaker.Params.company }}</small>
+                                                                            {{ end }}
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                {{ if $speaker.Params.company }}
-                                                                <small class="text-muted company-small">{{
-                                                                    $speaker.Params.company }}</small>
                                                                 {{ end }}
-                                                            </div>
                                                         </div>
-                                                        {{ end }}
-                                                        {{ end }}
-                                                    </div>
+                                                    {{ else if eq $currentTime "9:50 AM - 10:10 AM" }}
+                                                        <div class="break-item">
+                                                        <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                        <h6>Keynote : The Hidden Rules of Career Growth </h6>
+                                                        <!-- Speaker: Siva -->
+                                                                {{ $speaker := $.Site.GetPage "/speakers/sivaprasadreddy" }}
+                                                                {{ if $speaker }}
+                                                                <div class="speakers-section-left d-flex justify-content-center mt-2">
+                                                                    <div class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                        <div class="speaker-avatar-small me-2">
+                                                                            {{ if $speaker.Params.profilePicture }}
+                                                                            <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ else }}
+                                                                            <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                            {{ end }}
+                                                                        </div>
+                                                                        <div class="speaker-details-compact text-start">
+                                                                            <div class="speaker-name-small">{{ $speaker.Title }}</div>
+                                                                            {{ if $speaker.Params.company }}
+                                                                            <small class="text-muted company-small">{{ $speaker.Params.company }}</small>
+                                                                            {{ end }}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                {{ end }}
+                                                        </div>
+                                                    {{ else if eq $currentTime "12:45 PM - 1:35 PM" }}
+                                                        <div class="break-item">
+                                                            <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                            <h6>Lunch + Networking + Walk Back</h6>
+                                                            <small class="text-muted">50 minutes</small>
+                                                        </div>
+                                                    {{ else if eq $currentTime "3:00 PM - 3:10 PM" }}
+                                                        <div class="break-item">
+                                                            <div class="fw-bold mb-1">{{ $currentTime }}</div>
+                                                            <h6>Break</h6>
+                                                            <small class="text-muted">10 minutes</small>
+                                                        </div>
                                                     {{ end }}
-                                                </div>
-                                                <div class="col-md-7">
-                                                    <div class="session-card">
-                                                        <h5><a href="{{ .Permalink }}" class="text-decoration-none">{{
-                                                                .Title }}</a></h5>
-                                                        <p class="text-muted mb-0">{{ .Content | strings.Truncate 120 }}
-                                                        </p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    {{ else }}
+                                        {{ $devopsSessionsAtTime := where $devopsJavaSessions "Params.time" $currentTime }}
+                                        {{ if $devopsSessionsAtTime }}
+                                            {{ range $devopsSessionsAtTime }}
+                                            <div class="timeline-item">
+                                                <div class="timeline-marker bg-warning"></div>
+                                                <div class="timeline-content">
+                                                    <div class="row">
+                                                        <div class="col-md-2">
+                                                            <div class="time-badge">
+                                                                <i class="fas fa-clock me-1"></i>{{ .Params.time }}
+                                                                {{ if .Params.duration }}
+                                                                <small class="d-block text-muted">{{ .Params.duration }}</small>
+                                                                {{ end }}
+                                                                {{ if .Params.sessionType }}
+                                                                <div class="session-type-badge mt-1">{{ .Params.sessionType }}</div>
+                                                                {{ end }}
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            {{ if .Params.speakers }}
+                                                            <div class="speakers-section-left">
+                                                                {{ range .Params.speakers }}
+                                                                {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
+                                                                {{ if $speaker }}
+                                                                <div class="speaker-info-compact d-flex align-items-center mb-1">
+                                                                    <div class="speaker-avatar-small me-2">
+                                                                        {{ if $speaker.Params.profilePicture }}
+                                                                        <img src="{{ $speaker.Params.profilePicture | relURL }}" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                        {{ else }}
+                                                                        <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" class="rounded-circle" width="24" height="24" alt="{{ $speaker.Title }}">
+                                                                        {{ end }}
+                                                                    </div>
+                                                                    <div class="speaker-details-compact">
+                                                                        <div class="speaker-name-small">{{ $speaker.Title }}</div>
+                                                                        {{ if $speaker.Params.company }}
+                                                                        <small class="text-muted company-small">{{ $speaker.Params.company }}</small>
+                                                                        {{ end }}
+                                                                    </div>
+                                                                </div>
+                                                                {{ end }}
+                                                                {{ end }}
+                                                            </div>
+                                                            {{ end }}
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="session-card">
+                                                                <h5><a href="{{ .Permalink }}" class="text-decoration-none">{{ .Title }}</a></h5>
+                                                                <p class="text-muted mb-0">{{ .Content | strings.Truncate 120 }}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {{ end }}
+                                        {{ else }}
+                                            <div class="timeline-item">
+                                                <div class="timeline-marker bg-warning"></div>
+                                                <div class="timeline-content">
+                                                    <div class="session-card">
+                                                        <span class="text-muted">TBD</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {{ end }}
+                                    {{ end }}
                                     {{ end }}
                                 </div>
                             </div>
