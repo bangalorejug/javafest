@@ -15,9 +15,11 @@ AI workloads live and die by performance—and the secret to true speed isn’t 
 
 Prerequisites
 
-1.JDK 25 (set JAVA_HOME)
-        Download Openjdk/Oracle JDK 25, eg: https://www.oracle.com/in/java/technologies/downloads/
-        export JAVA_HOME=your_java_downloaded_location
-        export PATH=$JAVA_HOME/bin:$PATH
-2. Maven 3.8+
-3. Any IDE
+- JDK 25 (set JAVA_HOME)
+  - Download Openjdk/Oracle JDK 25, eg: https://www.oracle.com/in/java/technologies/downloads/
+  - export JAVA_HOME=your_java_downloaded_location
+  - export PATH=$JAVA_HOME/bin:$PATH
+- Maven 3.8+
+- Any IDE
+
+Note: Sample project repo is shared over email
