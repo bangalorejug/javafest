@@ -1,7 +1,7 @@
 ---
 title: 'Pinning issues with Virtual Threads: Differences between JDK21 and JDK24'
 speakers:
-  - jayakrishnan
+  - sreevidhya
 topics:
   - Core Java
 time: 02:15 PM - 03:00 PM
