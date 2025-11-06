@@ -23,8 +23,8 @@ Through production case studies, live analysis, and examples of auto-generated c
 Expect to walk away with actionable insights to spot problems faster, tune smarter, and keep your Java services running fast and reliable in production.
 
 Prerequisites
-- Download Java 11, Java 17, Java 21, Java 25 
-- A Mission Control 
+- Download Java 11, Java 17, Java 21, Java 25 from https://jdk.java.net/archive/
+- A Mission Control from https://jdk.java.net/jmc/9/
 
 NOTE: Please don’t install any of these tools, just keep the downloads
 
