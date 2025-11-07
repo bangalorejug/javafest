@@ -5,6 +5,7 @@ company: '@Quinbay | Blibli.com'
 date: 2017-03-23
 weight: 8
 linkedin: 'https://www.linkedin.com/in/hari-nikesh-r-930bb723a/'
+profilePicture: '/images/hari.png'
 ---
 
 Highly Skilled Software Developer with a Passion for Programming.
