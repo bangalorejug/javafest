@@ -1,7 +1,7 @@
 ---
 title: '[Beginner Level] Basics to Best Practices: Building Better Java for 2025 and Beyond'
 speakers:
-  - hari-nikesh
+  - hari-nikesh-r
 topics:
   - Devops Java
 time: 03:40 PM - 05:10 PM
