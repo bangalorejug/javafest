@@ -91,9 +91,9 @@ header {
 .nav-link:hover {
   color: var(--accent-red);
 }
-.navbar-brand {
+/* .navbar-brand {
   width: 200px;
-}
+} */
 .navbar .cta-buttons {
   display: flex;
   gap: 1rem;
