@@ -1,5 +1,6 @@
 ---
 title: 'Saimanoj Seshagiri'
+hidden: true
 # role: 'Technical Volunteer'
 date: 2024-01-05
 weight: 5
