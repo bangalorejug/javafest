@@ -89,7 +89,7 @@
     <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv
     "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{
     $.Site.BaseURL }}{{ end }}">
-    <title>{{ $.Site.Title }} | {{ $.Title }}</title>
+    {{ if .IsHome }}<title>{{ $.Site.Title }} — Community Java Conference</title>{{ else }}<title>{{ .Title }} | {{ $.Site.Title }}</title>{{ end }}
 
     <link
       rel="stylesheet"

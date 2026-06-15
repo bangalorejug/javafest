@@ -12,7 +12,7 @@
                     {{ range .Pages }}
                     <div class="col-lg-6 col-xl-4">
                         <div class="card h-100 shadow-sm border-0" style="transition: transform 0.2s ease-in-out;">
-                            <div class="card-header bg-primary text-white">
+                            <div class="card-header {{ if .Params.topics }}{{ $topics := .Params.topics }}{{ if in $topics "Core Java" }}bg-primary{{ else if in $topics "Enterprise Java" }}bg-success{{ else if in $topics "Devops Java" }}bg-warning{{ else }}bg-secondary{{ end }}{{ else }}bg-secondary{{ end }} text-white">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="badge bg-light text-dark">{{ .Params.sessionType }}</span>
                                     <!-- <small class="text-white-50">{{ .Params.time }}</small> -->
