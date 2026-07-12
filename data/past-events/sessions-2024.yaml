@@ -1,0 +1,126 @@
+sessions:
+  - title: "Java roadmap and the role of Java community"
+    description: "An exploration of the future trajectory of Java, examining potential advancements in language features, libraries, platform capabilities, and the vital role community plays in shaping Java's direction."
+    speakers: ["pravemoh", "ram-bgl"]
+    tags: ["java", "keynote", "community", "roadmap"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "From Java Sourcecode to Bytecode - Secrets Unveiled!"
+    description: "An exploration of bytecode, the secret language powering Java execution, and the transformation of source code (.java) into bytecode (.class) files — the heart of the Java Virtual Machine."
+    speakers: ["tejeshr"]
+    tags: ["java", "jvm", "bytecode", "core-java"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Day in a life of modern Java developer"
+    description: "A look at modern Java development beyond writing code — focusing on debugging, refactoring, and leveraging powerful IDE tools to enhance productivity and code quality."
+    speakers: ["sivaprasadreddy"]
+    tags: ["java", "productivity", "ide", "developer-tools"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Powering Machine Learning in Java"
+    description: "An introduction to JSR 381, the API that brings cutting-edge machine learning capabilities directly to Java applications, revolutionizing visual recognition for Java developers."
+    speakers: ["abiramisukumaran"]
+    tags: ["java", "machine-learning", "ai", "jsr"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Foreign Functions and Memory API"
+    description: "An exploration of Java's Foreign Functions and Memory API, enabling efficient and safe invocation of native libraries and access to foreign memory outside the JVM."
+    speakers: ["jaysk1", "varada1110"]
+    tags: ["java", "core-java", "panama", "native"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Debugging and Resolving Performance Issues in Real World Java Application"
+    description: "A workshop revealing real-life bugs, glitches, and anti-patterns in Java applications and how to debug and resolve them — covering common performance issues developers face in production."
+    speakers: ["vaibhavchoudhary"]
+    tags: ["java", "performance", "debugging", "workshop"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Using Native Java Capabilities for Speeding Apache Lucene"
+    description: "An exploration of recent improvements to Apache Lucene leveraging native Java capabilities including Panama APIs to significantly enhance search performance."
+    speakers: ["atris"]
+    tags: ["java", "lucene", "performance", "search", "panama"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Exploring the Java Ecosystem for AI"
+    description: "A tour of the Java ecosystem for Artificial Intelligence, focusing on key tools and frameworks including LLM4J that are shaping the future of AI in Java."
+    speakers: ["ranganaths"]
+    tags: ["java", "ai", "ecosystem", "llm"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Missing Pieces in Java Persistence for Modern Development"
+    description: "An insightful talk exploring the gaps in traditional Java persistence solutions and what modern development needs that current frameworks don't fully provide."
+    speakers: ["sathishk"]
+    tags: ["java", "persistence", "spring-data", "enterprise"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Unlocking Secure Access: Passwordless Logins with WebAuthn & JWT"
+    description: "An exploration of implementing passwordless logins using Passkey and WebAuthn protocols for secure, efficient, and user-friendly authentication."
+    speakers: ["vikasrajputin"]
+    tags: ["java", "security", "webauthn", "authentication", "jwt"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Migration Engineering as Code (MEaC): Treating Updates, Upgrades, and Refactoring as CODE"
+    description: "A demonstration of how OpenRewrite and similar frameworks turn updates, upgrades, migrations, and refactoring into strategic, automated developer tasks."
+    speakers: ["nagkumar"]
+    tags: ["java", "migration", "openrewrite", "devops", "refactoring"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Taming Technical Debt: A CI/CD Upgrade Strategy"
+    description: "A proactive approach to tackling outdated dependencies in CI/CD pipelines using Maven Versions plugin and Enforcer plugin for automated version management."
+    speakers: ["nagarajapalla"]
+    tags: ["java", "ci-cd", "technical-debt", "maven", "devops"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "AI Agents with JVM"
+    description: "An exploration of agentic AI workflows on the JVM, demonstrating how iterative, tool-leveraging agents deliver significantly better results than non-agentic prompting approaches."
+    speakers: ["saravanak"]
+    tags: ["java", "ai", "agents", "jvm", "llm"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Modern Approach for Securing Your Java Web Applications in 2024"
+    description: "A survey of the latest strategies and tools Java developers can use to secure web applications against emerging threats, covering authentication, modern standards, and automation."
+    speakers: ["allahbaksh"]
+    tags: ["java", "security", "authentication", "web"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Building Modular Monoliths using Spring Modulith"
+    description: "A hands-on workshop exploring Spring Modulith to combine the best of monolithic and microservices architectures, building well-structured modular applications."
+    speakers: ["sivaprasadreddy"]
+    tags: ["java", "spring", "modulith", "architecture", "workshop"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Virtual Threads in Java - A Primer"
+    description: "A deep dive into Java virtual threads exploring the underlying mechanics rather than just usage, covering how they simplify concurrency and improve performance."
+    speakers: ["thamaraip"]
+    tags: ["java", "virtual-threads", "concurrency", "jvm"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Hands-On Guide to Building RAG Chatbot"
+    description: "A comprehensive workshop on building Retrieval-Augmented Generation chatbots that combine retrieval-based and generative AI techniques using LLMs."
+    speakers: ["rohanjnr", "lohith46"]
+    tags: ["java", "ai", "rag", "llm", "workshop", "chatbot"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"
+
+  - title: "Spring Native with LangChain4J"
+    description: "An exploration of using Spring Native alongside LangChain4J to build production-ready AI-powered Java applications with native image compilation."
+    speakers: ["rajaduraikrishna"]
+    tags: ["java", "spring", "native", "langchain4j", "ai"]
+    year: 2024
+    archiveUrl: "/2024/sessions/index.html"

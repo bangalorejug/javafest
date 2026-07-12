@@ -1,0 +1,208 @@
+speakers:
+  - slug: "atrisharma"
+    name: "Atri Sharma"
+    jobTitle: "Senior Engineering Manager"
+    company: "Apple"
+    photo: "/2025/images/atri-sharma.png"
+    linkedin: "https://www.linkedin.com/in/atrisharma"
+    years: [2024, 2025]
+
+  - slug: "dhaval-gajjar"
+    name: "Dhaval Gajjar"
+    jobTitle: "System Architect"
+    company: "Staunchsys IT Services"
+    photo: "/2025/images/dhaval-gajjar.png"
+    linkedin: "https://www.linkedin.com/in/dhavalgajjarin"
+    years: [2025]
+
+  - slug: "disha"
+    name: "Disha Morye"
+    jobTitle: "Member of Technical Staff"
+    company: "Oracle"
+    photo: "/2025/images/disha.jpg"
+    linkedin: "https://www.linkedin.com/in/disha-morye-95480721b"
+    years: [2025]
+
+  - slug: "jsk"
+    name: "Jayashree S Kumar"
+    jobTitle: "Principal Member of Technical Staff"
+    company: "Oracle"
+    photo: "/2025/images/jsk12kb.jpg"
+    linkedin: "https://www.linkedin.com/in/jayashree-s-kumar-18b6941a/"
+    years: [2023, 2024, 2025]
+
+  - slug: "sivaprasadreddy"
+    name: "K. Siva Prasad Reddy"
+    jobTitle: "Developer Advocate"
+    company: "JetBrains"
+    photo: "https://github.com/sivaprasadreddy.png"
+    linkedin: "https://www.linkedin.com/in/ksivaprasadreddy/"
+    years: [2024, 2025]
+
+  - slug: "kapil-rijhwani"
+    name: "Kapil Rijhwani"
+    jobTitle: "Lead Member of Technical Staff"
+    company: "Salesforce"
+    photo: "/2025/images/Kapil-Rijhwani.jpeg"
+    linkedin: "https://www.linkedin.com/in/kapil-rijhwani/"
+    years: [2025]
+
+  - slug: "manish-jhanwar"
+    name: "Manish Jhanwar"
+    jobTitle: "Tech Evangelist & IT Consultant"
+    company: "Freelancer"
+    photo: "/2025/images/manish-jhawar.png"
+    linkedin: "https://www.linkedin.com/in/manish-jhanwar/"
+    years: [2025]
+
+  - slug: "manoj-nalledathu"
+    name: "Manoj Nalledathu Palat"
+    jobTitle: "Software Architect (Lead, Committer - Java Dev Tools - Eclipse)"
+    company: "IBM"
+    photo: "/2025/images/manoj-nalledathu.jpeg"
+    linkedin: "https://www.linkedin.com/in/manojnp/"
+    years: [2025]
+
+  - slug: "manukumar-vs"
+    name: "Manukumar VS"
+    jobTitle: "Principal Member of Technical Staff"
+    company: "Oracle"
+    photo: "/2025/images/manukumar-vs.jpeg"
+    linkedin: "https://www.linkedin.com/in/manukumarvs"
+    years: [2025]
+
+  - slug: "muthukumaran"
+    name: "Muthukumaran Navaneethakrishnan"
+    jobTitle: "Principal Consultant"
+    company: ""
+    photo: "/2025/images/muthukumaran.jpeg"
+    linkedin: "https://www.linkedin.com/in/muthuishere/"
+    years: [2025]
+
+  - slug: "rajasekaran"
+    name: "Rajasekaran S"
+    jobTitle: "Senior Technology Architect"
+    company: "Infosys"
+    photo: "/2025/images/raja1.png"
+    linkedin: "https://www.linkedin.com/in/rajasekaran-s-2847125"
+    years: [2025]
+
+  - slug: "rohan-j"
+    name: "Rohan J"
+    jobTitle: "Devops"
+    company: "SAP"
+    photo: "/2025/images/rohan-j.jpeg"
+    linkedin: "https://www.linkedin.com/in/rohan-j-ba489b19b/"
+    years: [2025]
+
+  - slug: "sai-mounik"
+    name: "Sai Mounik A"
+    jobTitle: "Software Engineer"
+    company: "Quinbay"
+    photo: "/2025/images/Sai-Mounik.jpeg"
+    linkedin: "https://www.linkedin.com/in/sai-mounik/"
+    years: [2025]
+
+  - slug: "sathishk"
+    name: "Sathish Kumar Thiyagarajan"
+    jobTitle: "Software Architect, CTO"
+    company: "OurKadai Technologies"
+    photo: "https://github.com/sathishk.png"
+    linkedin: "https://www.linkedin.com/in/sathishkumarthiyagarajan"
+    years: [2023, 2025]
+
+  - slug: "shaama"
+    name: "Shaama Manoharan"
+    jobTitle: "Software Engineer"
+    company: "Ford Motors"
+    photo: "/2025/images/shaama.jpeg"
+    linkedin: "https://www.linkedin.com/in/shaamam"
+    years: [2025]
+
+  - slug: "sreevidhya"
+    name: "Sreevidhya Chillara"
+    jobTitle: "Senior Technology Architect"
+    company: "Infosys Finacle"
+    photo: "/2025/images/sreevidhya.jpeg"
+    linkedin: "https://www.linkedin.com/in/sreevidhya-chillara-001863395/"
+    years: [2025]
+
+  - slug: "sumanthks144"
+    name: "Sumanth K S"
+    jobTitle: "Software Engineering Lead"
+    company: "DevOn"
+    photo: "/2025/images/SumanthKS.jpeg"
+    linkedin: "https://www.linkedin.com/in/sumanth-k-srivarma/"
+    years: [2025]
+
+  - slug: "thamaraip"
+    name: "Thamaraikkanni Panneerselvam"
+    jobTitle: "Solution Architect"
+    company: "lastminute.com group"
+    photo: "https://github.com/thamaraip.png"
+    linkedin: "https://www.linkedin.com/in/thamaraikanni-panneerselvam-951031107/"
+    years: [2024, 2025]
+
+  - slug: "udayani"
+    name: "Udayani V"
+    jobTitle: "Senior Member Of Technical Staff"
+    company: "Broadcom"
+    photo: "/2025/images/Udayani.jpeg"
+    linkedin: "https://www.linkedin.com/in/udayani-v/"
+    years: [2025]
+
+  - slug: "vaibhavchoudhary"
+    name: "Vaibhav Choudhary"
+    jobTitle: "JVM Engineer"
+    company: "Salesforce"
+    photo: "https://github.com/vaibhavchoudhary.png"
+    linkedin: "https://www.linkedin.com/in/vaibhavchoudhary/"
+    years: [2023, 2024, 2025]
+
+  - slug: "varada1110"
+    name: "Varada M"
+    jobTitle: "Software Developer"
+    company: "IBM"
+    photo: "https://github.com/varada1110.png"
+    linkedin: "https://www.linkedin.com/in/varada-m-547814177/"
+    years: [2024, 2025]
+
+  - slug: "vikas-rajput"
+    name: "Vikas Rajput"
+    jobTitle: "Founder"
+    company: "Techxplore IT Solutions"
+    photo: "/2025/images/vikas-rajput.png"
+    linkedin: "https://www.linkedin.com/in/vikasrajputin/"
+    years: [2025]
+
+  - slug: "bvsrao-venkat"
+    name: "Venkata Subba Rao"
+    jobTitle: "Freelancer, Corporate Trainer"
+    company: "Ignithra Technologies"
+    photo: "/2025/images/Venkata-Subba-Rao.jpeg"
+    linkedin: "https://www.linkedin.com/in/bvsrao-venkat-4014133b/"
+    years: [2025]
+
+  - slug: "vipin-menon"
+    name: "Vipin Menon"
+    jobTitle: "Software Engineer"
+    company: "IBM"
+    photo: "/2025/images/vipin-menon.jpeg"
+    linkedin: "https://www.linkedin.com/in/vipin-menon-ab434941/"
+    years: [2025]
+
+  - slug: "jayakrishnan"
+    name: "Jayakrishnan"
+    jobTitle: "Software Engineer"
+    company: ""
+    photo: "/2025/images/jayakrishnan.jpeg"
+    linkedin: "https://www.linkedin.com/in/jayakrishnan/"
+    years: [2025]
+
+  - slug: "hari-nikesh"
+    name: "Hari Nikesh R"
+    jobTitle: "Software Engineer"
+    company: "Quinbay | Blibli.com"
+    photo: "/2025/images/hari.png"
+    linkedin: "https://www.linkedin.com/in/hari-nikesh-r-930bb723a/"
+    years: [2024, 2025]

@@ -1,0 +1,126 @@
+{{ define "main" }}
+
+{{ $pastEvents := index .Site.Data "past-events" }}
+
+{{/* Build a merged speaker map: slug → speaker record (latest year file wins) */}}
+{{ $allSpeakers := dict }}
+{{ range $key, $data := $pastEvents }}
+  {{ if and (strings.HasPrefix $key "speakers") $data.speakers }}
+    {{ range $data.speakers }}
+      {{ $allSpeakers = merge $allSpeakers (dict .slug .) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $totalCount := len $allSpeakers }}
+{{ $editions := slice }}
+{{ with $pastEvents }}
+  {{ with .editions }}
+    {{ $editions = .editions }}
+  {{ end }}
+{{ end }}
+{{ $editionCount := len $editions }}
+
+<main>
+  <div class="container py-5">
+
+    <!-- Page heading -->
+    <section class="conference-info-section text-center pb-4">
+      <h2>All Speakers</h2>
+    </section>
+
+    <p class="text-center text-muted mb-4">
+      <strong>{{ $totalCount }}</strong> speakers across <strong>{{ $editionCount }}</strong> editions
+    </p>
+
+    <!-- Filter controls -->
+    <div class="archive-filter-controls mb-4" role="group" aria-label="Filter speakers">
+      <div class="d-flex flex-wrap gap-3 align-items-center justify-content-center">
+        <div>
+          <label for="speakerYearFilter" class="fw-semibold me-2">Filter by Year:</label>
+          <select id="speakerYearFilter" class="form-select form-select-sm d-inline-block w-auto"
+                  aria-label="Filter speakers by edition year">
+            <option value="all">All Years</option>
+            {{ range $editions }}
+              <option value="{{ .year }}">{{ .year }}</option>
+            {{ end }}
+          </select>
+        </div>
+        <button id="multiYearToggle"
+                class="btn btn-sm btn-outline-secondary"
+                data-active="false"
+                aria-pressed="false">
+          🌟 Show Multi-Year Speakers
+        </button>
+      </div>
+    </div>
+
+    <!-- ARIA live region for screen readers -->
+    <div id="speakerResultCount"
+         class="visually-hidden"
+         aria-live="polite"
+         aria-atomic="true">Showing {{ $totalCount }} speakers</div>
+
+    <!-- Speakers grid -->
+    <div class="row g-4" id="speakersGrid">
+      {{ range $slug, $speaker := $allSpeakers }}
+        {{ $isMultiYear := gt (len $speaker.years) 1 }}
+        {{ $yearsStr := delimit $speaker.years "," }}
+        <div class="col-6 col-md-4 col-lg-3 speaker-card-wrapper"
+             data-years="{{ $yearsStr }}"
+             data-multi-year="{{ $isMultiYear }}">
+          <div class="card archive-speaker-card h-100{{ if $isMultiYear }} multi-year-speaker{{ end }}">
+
+            <!-- Photo -->
+            <a href="{{ with $speaker.linkedin }}{{ . }}{{ else }}#{{ end }}"
+               {{ if $speaker.linkedin }}target="_blank" rel="noopener noreferrer"{{ end }}
+               class="text-decoration-none">
+              <img src="{{ $speaker.photo }}"
+                   class="card-img-top rounded-circle speaker-img p-3"
+                   alt="Profile picture of {{ $speaker.name }}"
+                   loading="lazy">
+            </a>
+
+            <div class="card-body text-center pb-1">
+              <h5 class="card-title fw-bold text-dark mb-1 text-break">{{ $speaker.name }}</h5>
+              {{ with $speaker.jobTitle }}
+                <p class="speaker-job-title mb-1">{{ . }}</p>
+              {{ end }}
+              {{ with $speaker.company }}
+                <p class="text-muted small mb-2">{{ . }}</p>
+              {{ end }}
+
+              <!-- Year badges -->
+              <div class="archive-year-badges mb-2">
+                {{ range $speaker.years }}
+                  <span class="badge archive-year-badge">{{ . }}</span>
+                {{ end }}
+              </div>
+            </div>
+
+            {{ if $speaker.linkedin }}
+            <div class="card-footer bg-transparent border-0 text-center pb-3">
+              <a href="{{ $speaker.linkedin }}"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="LinkedIn profile of {{ $speaker.name }}"
+                 class="speaker-social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V9h3v10zM6.5 7.732c-.966 0-1.75-.792-1.75-1.764s.784-1.764 1.75-1.764 1.75.792 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-1.337-.027-3.059-1.865-3.059-1.867 0-2.154 1.459-2.154 2.967V19h-3V9h2.881v1.367h.041c.401-.759 1.379-1.56 2.839-1.56 3.038 0 3.358 2.001 3.358 4.604V19z"/>
+                </svg>
+              </a>
+            </div>
+            {{ end }}
+
+          </div>
+        </div>
+      {{ end }}
+    </div>
+
+  </div>
+</main>
+
+{{ $js := resources.Get "js/archive-filters.js" | minify }}
+<script src="{{ $js.RelPermalink }}"></script>
+
+{{ end }}

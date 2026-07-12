@@ -1,0 +1,126 @@
+sessions:
+  - title: "AI at the Speed of Silicon: How Java Talks Directly to Hardware"
+    description: "An exploration of how AI workloads can achieve true speed through smarter execution on silicon, covering direct hardware communication from Java."
+    speakers: ["manukumar-vs", "disha"]
+    tags: ["java", "ai", "hardware", "performance", "core-java"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "From Prompts to Agents: Supercharging Spring Boot with AI and MCP"
+    description: "A deep dive into moving beyond simple prompts to AI agents that reason over data, respect context, and integrate with enterprise systems using Spring Boot and MCP."
+    speakers: ["thamaraip", "udayani"]
+    tags: ["java", "ai", "spring-boot", "mcp", "agents"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "Evolving with APIs, GraphQL and Generative AI"
+    description: "An exploration of how Java enterprise development is evolving to meet modern software architecture demands through GraphQL APIs and Generative AI integration."
+    speakers: ["vipin-menon"]
+    tags: ["java", "api", "graphql", "ai", "enterprise"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "Securing Java in the Age of AI-Powered Attacks: Modern Defenses for Intelligent Threats"
+    description: "A practical guide to fortifying Java applications against AI-powered cyberattacks using modern authentication, anomaly detection, and runtime defenses."
+    speakers: ["bvsrao-venkat"]
+    tags: ["java", "security", "ai", "authentication", "devops"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "The JVM Strikes Back: Java's AI Renaissance"
+    description: "A look at how Java is reclaiming territory in AI from Python, leveraging the JVM's strengths for production AI workloads beyond research and prototyping."
+    speakers: ["kapil-rijhwani"]
+    tags: ["java", "jvm", "ai", "core-java"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "From Syntax Trees to Smart IDEs: How Java Compiler Complexity Powers Developer Productivity"
+    description: "An interactive session on understanding Java Compiler Errors and how the compiler's internal structure enables smart IDE tooling and developer productivity features."
+    speakers: ["manoj-nalledathu"]
+    tags: ["java", "compiler", "ide", "core-java", "productivity"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "GC Optimized Data Structures for Search"
+    description: "A look at how large-scale search engines can fight JVM garbage collector pressure using GC-optimized data structures for millions of objects per second."
+    speakers: ["atrisharma"]
+    tags: ["java", "gc", "performance", "search", "data-structures"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "Pinning issues with Virtual Threads: Differences between JDK21 and JDK24"
+    description: "An analysis of virtual thread pinning issues introduced in JDK 21 and the improvements made in JDK 24, covering practical implications for concurrent Java applications."
+    speakers: ["sreevidhya"]
+    tags: ["java", "virtual-threads", "jdk21", "jdk24", "concurrency"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "Thriving in the Age of AI-Powered Software Development"
+    description: "Practical ways to pair-program with AI to ship faster — exploring how AI is redefining developer competence without replacing developers."
+    speakers: ["sivaprasadreddy"]
+    tags: ["java", "ai", "productivity", "developer-tools"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "RAG (Retrieval-Augmented Generation) in Java"
+    description: "An exploration of how RAG overcomes LLM hallucinations by combining retrieval-based and generative approaches to give AI domain-specific knowledge in Java applications."
+    speakers: ["sai-mounik", "rohan-j"]
+    tags: ["java", "ai", "rag", "llm", "enterprise"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "The Need for Speed: Java Microservices Powered by Micronaut & GraalVM"
+    description: "A demonstration of how Micronaut and GraalVM unlock lightning-fast Java microservices through native image compilation that slashes startup time and reduces memory usage."
+    speakers: ["vikas-rajput", "dhaval-gajjar"]
+    tags: ["java", "micronaut", "graalvm", "microservices", "performance"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "Beyond DSAs – The Modern Way to Deal with Large Datasets Efficiently: Bloom Filters in Java"
+    description: "An exploration of Bloom Filters and probabilistic data structures as efficient alternatives to traditional DSAs for handling large datasets in Java."
+    speakers: ["manish-jhanwar"]
+    tags: ["java", "data-structures", "algorithms", "performance", "enterprise"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "Introduction to Embedding Small Language Models in Java for Mobile & Edge Devices"
+    description: "A Java-based approach to loading and interacting with Small Language Models without external API dependencies, targeting mobile and edge device deployments."
+    speakers: ["rajasekaran"]
+    tags: ["java", "ai", "slm", "mobile", "edge"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "Modern Frontend Development with Java — Beyond the Hype"
+    description: "A critical look at modern frontend framework choices, exploring what lies beneath the hype and how Java-centric teams can make informed frontend decisions."
+    speakers: ["sathishk"]
+    tags: ["java", "frontend", "core-java", "architecture"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "[Beginner Level] Basics to Best Practices: Building Better Java for 2025 and Beyond"
+    description: "A beginner workshop for college grads, freshers and junior engineers covering the significant changes in Java and best practices for writing modern Java code."
+    speakers: ["hari-nikesh"]
+    tags: ["java", "beginners", "workshop", "best-practices"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "Inside the JVM: Debugging, Profiling, and the AI Code Trap"
+    description: "A workshop for large-scale production systems covering JVM performance inefficiencies, debugging techniques, profiling tools, and the pitfalls of AI-generated code."
+    speakers: ["vaibhavchoudhary"]
+    tags: ["java", "jvm", "debugging", "profiling", "performance", "workshop"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "MCP Internals, Security, and Cloud Deployments"
+    description: "A deep dive into Model Context Protocol internals, security considerations, and best practices for deploying MCP-powered applications to cloud environments."
+    speakers: ["muthukumaran", "shaama"]
+    tags: ["java", "mcp", "security", "cloud", "enterprise"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"
+
+  - title: "Write Less, Do More: Exploring Modern Java Features"
+    description: "An exploration of modern Java language features that reduce boilerplate and increase expressiveness, helping developers write cleaner, more concise code."
+    speakers: ["sumanthks144"]
+    tags: ["java", "core-java", "modern-java", "productivity"]
+    year: 2025
+    archiveUrl: "/2025/sessions/index.html"

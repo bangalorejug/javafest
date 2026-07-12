@@ -1,0 +1,104 @@
+speakers:
+  - slug: "pravemoh"
+    name: "Praveen Mohan"
+    jobTitle: "Director - Engineering, Java Platform Team"
+    company: "Oracle"
+    photo: "https://github.com/pravemoh.png"
+    linkedin: "https://www.linkedin.com/in/mohanpraveen/"
+    years: [2024]
+
+  - slug: "ram-bgl"
+    name: "Ramkumar Sunderbabu"
+    jobTitle: "Java Platform Team, PMTS"
+    company: "Oracle"
+    photo: "https://github.com/ram-bgl.png"
+    linkedin: "https://www.linkedin.com/in/ramkumar-sunderbabu-b30730a/"
+    years: [2024]
+
+  - slug: "lohith46"
+    name: "Lohith K M"
+    jobTitle: "Solution Consultant"
+    company: "Sahaj Software Solutions"
+    photo: "https://github.com/lohith46.png"
+    linkedin: "https://www.linkedin.com/in/lohithkm/"
+    years: [2024]
+
+  - slug: "nagkumar"
+    name: "Raja Nagendra Kumar"
+    jobTitle: "CTO"
+    company: "TejaSoft"
+    photo: "https://github.com/nagkumar.png"
+    linkedin: "https://lnkd.in/gxV7rPav"
+    years: [2023, 2024]
+
+  - slug: "ashwinms17"
+    name: "Ashwin M S"
+    jobTitle: "Software Developer"
+    company: "IBM"
+    photo: "https://github.com/ashwinms17.png"
+    linkedin: "https://www.linkedin.com/in/ashwin-ms/"
+    years: [2024]
+
+  - slug: "rajaduraikrishna"
+    name: "Rajadurai Krishnamoorthy"
+    jobTitle: "Solution Architect"
+    company: "Ourkadai | Member - Board Of Studies VIT"
+    photo: "https://github.com/rajaduraikrishna.png"
+    linkedin: "https://www.linkedin.com/in/rajaduraikrishnamoorthy/"
+    years: [2024]
+
+  - slug: "tejeshr"
+    name: "Tejesh R"
+    jobTitle: "Senior Member Technical Staff"
+    company: "Oracle"
+    photo: "https://github.com/tejeshr.png"
+    linkedin: "https://www.linkedin.com/in/tejesh-r-989b23b0/"
+    years: [2024]
+
+  - slug: "allahbaksh"
+    name: "Allahbaksh Mohammedali Asadullah"
+    jobTitle: "Architect at Strategic Technology Group (STG)"
+    company: "Infosys"
+    photo: "https://github.com/allahbaksh.png"
+    linkedin: "https://www.linkedin.com/in/allahbaksh-ab-asadullah-9275674/"
+    years: [2024]
+
+  - slug: "rohanjnr"
+    name: "Rohan Reddy Alleti"
+    jobTitle: "Solution Consultant"
+    company: "Sahaj Software"
+    photo: "https://github.com/rohanjnr.png"
+    linkedin: "https://www.linkedin.com/in/rohanalleti/"
+    years: [2024]
+
+  - slug: "nagarajapalla"
+    name: "Nagaraja Palla"
+    jobTitle: "Lead Software Engineer"
+    company: "Wells Fargo"
+    photo: "https://github.com/nagarajapalla.png"
+    linkedin: "https://www.linkedin.com/in/nagarajapalla/"
+    years: [2024]
+
+  - slug: "saravanak"
+    name: "Saravana Kumar Vaidyanathan"
+    jobTitle: "Technical Consultant"
+    company: "Independent"
+    photo: "https://github.com/saravanak.png"
+    linkedin: "https://www.linkedin.com/in/vijay-raja42/"
+    years: [2024]
+
+  - slug: "ranganaths"
+    name: "Ranganath S"
+    jobTitle: "Senior Engineering Manager, Data Engineering, Data science"
+    company: "Tesco"
+    photo: "https://github.com/ranganaths.png"
+    linkedin: "https://www.linkedin.com/in/ranganaths/"
+    years: [2024]
+
+  - slug: "abiramisukumaran"
+    name: "Abirami Sukumaran"
+    jobTitle: "Developer Advocate"
+    company: "Google"
+    photo: "https://github.com/abiramisukumaran.png"
+    linkedin: "https://www.linkedin.com/in/abirami-sukumaran/"
+    years: [2024]

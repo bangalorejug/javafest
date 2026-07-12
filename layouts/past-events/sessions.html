@@ -1,0 +1,136 @@
+{{ define "main" }}
+
+{{ $pastEvents := index .Site.Data "past-events" }}
+
+{{/* Build flat session list from all session data files */}}
+{{ $allSessions := slice }}
+{{ range $key, $data := $pastEvents }}
+  {{ if and (strings.HasPrefix $key "sessions") $data.sessions }}
+    {{ range $data.sessions }}
+      {{ $allSessions = $allSessions | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Build speaker slug → name lookup map */}}
+{{ $speakerLookup := dict }}
+{{ range $key, $data := $pastEvents }}
+  {{ if and (strings.HasPrefix $key "speakers") $data.speakers }}
+    {{ range $data.speakers }}
+      {{ if not (index $speakerLookup .slug) }}
+        {{ $speakerLookup = merge $speakerLookup (dict .slug .name) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $totalCount := len $allSessions }}
+{{ $editions := slice }}
+{{ with $pastEvents }}
+  {{ with .editions }}
+    {{ $editions = .editions }}
+  {{ end }}
+{{ end }}
+{{ $editionCount := len $editions }}
+
+<main>
+  <div class="container py-5">
+
+    <!-- Page heading -->
+    <section class="conference-info-section text-center pb-4">
+      <h2>All Sessions</h2>
+    </section>
+
+    <p class="text-center text-muted mb-4">
+      <strong>{{ $totalCount }}</strong> sessions across <strong>{{ $editionCount }}</strong> editions
+    </p>
+
+    <!-- Filter controls -->
+    <div class="archive-filter-controls mb-4" role="group" aria-label="Filter and search sessions">
+      <div class="d-flex flex-wrap gap-3 align-items-center justify-content-center">
+        <div>
+          <label for="sessionYearFilter" class="fw-semibold me-2">Year:</label>
+          <select id="sessionYearFilter"
+                  class="form-select form-select-sm d-inline-block w-auto"
+                  aria-label="Filter sessions by edition year">
+            <option value="all">All Years</option>
+            {{ range $editions }}
+              <option value="{{ .year }}">{{ .year }}</option>
+            {{ end }}
+          </select>
+        </div>
+        <div>
+          <label for="sessionSearch" class="fw-semibold me-2">Search:</label>
+          <input type="text"
+                 id="sessionSearch"
+                 class="form-control form-control-sm d-inline-block"
+                 style="width: 260px;"
+                 placeholder="Search title or tags..."
+                 aria-label="Search sessions by title or tags">
+        </div>
+      </div>
+    </div>
+
+    <!-- ARIA live region for screen readers -->
+    <div id="sessionResultCount"
+         class="visually-hidden"
+         aria-live="polite"
+         aria-atomic="true">Showing {{ $totalCount }} sessions</div>
+
+    <!-- Sessions grid -->
+    <div class="row g-4" id="sessionsGrid">
+      {{ range $allSessions }}
+        {{ $tagsStr := delimit .tags "," }}
+        {{ $searchText := printf "%s %s" .title $tagsStr | lower }}
+        {{ $yearStr := printf "%d" .year }}
+        <div class="col-12 col-md-6 session-card-wrapper"
+             data-year="{{ $yearStr }}"
+             data-search-text="{{ $searchText }}">
+          <div class="card archive-session-card h-100">
+            <div class="card-body">
+
+              <!-- Year badge -->
+              <span class="badge archive-year-badge{{ if eq .year 2025 }} badge-current{{ else }} badge-past{{ end }} mb-2">
+                {{ .year }}
+              </span>
+
+              <!-- Title -->
+              {{ if .archiveUrl }}
+                <h5 class="card-title mt-1">
+                  <a href="{{ .archiveUrl }}" class="text-decoration-none">{{ .title }}</a>
+                </h5>
+              {{ else }}
+                <h5 class="card-title mt-1">{{ .title }}</h5>
+              {{ end }}
+
+              <!-- Speaker names (resolved from lookup map) -->
+              <p class="card-subtitle text-muted mb-2">
+                By:
+                {{ range $i, $slug := .speakers }}
+                  {{- if $i }}, {{ end -}}
+                  {{ index $speakerLookup $slug | default $slug }}
+                {{- end }}
+              </p>
+
+              <!-- Tags -->
+              {{ if .tags }}
+              <div class="archive-session-tags">
+                {{ range .tags }}
+                  <span class="badge bg-secondary me-1 mb-1">{{ . }}</span>
+                {{ end }}
+              </div>
+              {{ end }}
+
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+
+  </div>
+</main>
+
+{{ $js := resources.Get "js/archive-filters.js" | minify }}
+<script src="{{ $js.RelPermalink }}"></script>
+
+{{ end }}

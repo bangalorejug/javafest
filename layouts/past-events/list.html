@@ -1,0 +1,75 @@
+{{ define "main" }}
+
+{{ $pastEvents := index .Site.Data "past-events" }}
+{{ $editions := slice }}
+{{ with $pastEvents }}
+  {{ with .editions }}
+    {{ $editions = .editions }}
+  {{ end }}
+{{ end }}
+
+{{ $totalSpeakers := 0 }}
+{{ $totalSessions := 0 }}
+{{ range $editions }}
+  {{ $totalSpeakers = add $totalSpeakers .speakerCount }}
+  {{ $totalSessions = add $totalSessions .sessionCount }}
+{{ end }}
+
+<main>
+  <div class="container py-5">
+
+    <!-- Page heading -->
+    <section class="conference-info-section text-center pb-4">
+      <h2>Past Editions</h2>
+    </section>
+
+    <!-- Cumulative stats strip -->
+    <div class="archive-stats-strip mb-5">
+      <span>🗓️ <strong>{{ len $editions }}</strong> Editions</span>
+      <span>👥 <strong>{{ $totalSpeakers }}</strong> Speakers</span>
+      <span>🎤 <strong>{{ $totalSessions }}</strong> Sessions</span>
+    </div>
+
+    <!-- Edition cards -->
+    <div class="row g-4 justify-content-center mb-5">
+      {{ range $editions }}
+        {{ if and .year .date .venue .speakerCount .sessionCount .archivePath }}
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card archive-edition-card h-100">
+            <div class="archive-edition-year">
+              JavaFest {{ .year }}
+            </div>
+            <div class="card-body">
+              <p class="mb-2">📅 {{ .date }}</p>
+              <p class="mb-2">📍 {{ .venue }}, {{ .city }}</p>
+              <p class="mb-2">👥 {{ .speakerCount }} speakers</p>
+              <p class="mb-0">🎤 {{ .sessionCount }} sessions</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3">
+              <a href="/past-events/sessions/?year={{ .year }}" class="btn btn-primary w-100">
+                View {{ .year }} Sessions →
+              </a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <!-- Cross-edition CTAs -->
+    <section class="site-section text-center">
+      <h3 class="mb-4 fw-semibold">Explore Across All Editions</h3>
+      <div class="archive-cta-section">
+        <a href="/past-events/speakers/" class="btn btn-outline-secondary btn-lg">
+          👥 All Speakers
+        </a>
+        <a href="/past-events/sessions/" class="btn btn-outline-secondary btn-lg">
+          🎤 All Sessions
+        </a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+{{ end }}

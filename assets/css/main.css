@@ -23,6 +23,7 @@ body {
     line-height: 1.6;
     color: var(--dark-gray);
     background-color: #fff;
+    /* background: #f0f0f0; */
 }
 
 /* ─── Buttons ─────────────────────────────────────────────────────────────── */
@@ -64,6 +65,20 @@ body {
     color: white;
 }
 
+/* ─── Site-wide horizontal container ─────────────────────────────────────── */
+
+.site-container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+@media (max-width: 786px) {
+    .site-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 /* ─── Header / Nav ────────────────────────────────────────────────────────── */
 
 header {
@@ -102,6 +117,17 @@ header {
     .navbar .cta-buttons {
         display: none;
     }
+
+    .navbar-logo {
+        width: 95px;
+        height: 70px;
+    }
+}
+
+.navbar-logo {
+    width: 120px;
+    height: 100px;
+    vertical-align: top;
 }
 
 /* ─── Social icons ────────────────────────────────────────────────────────── */
@@ -252,7 +278,7 @@ header {
 }
 
 .conference-info-section .conference-info-cards .card {
-    max-width: 350px;
+    max-width: 330px;
     background: white;
     border: 1px solid #eee;
     border-radius: 0.5rem;
@@ -829,4 +855,155 @@ header {
 
 .break-all {
     overflow-wrap: anywhere;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   PAST EVENTS ARCHIVE STYLES
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── Stats strip ─────────────────────────────────────────────────────────── */
+
+.archive-stats-strip {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 1.25rem 1rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+    font-size: 1.05rem;
+    color: var(--dark-gray);
+}
+
+@media (max-width: 576px) {
+    .archive-stats-strip {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* ─── Edition card ────────────────────────────────────────────────────────── */
+
+.archive-edition-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+.archive-edition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.13);
+}
+
+.archive-edition-year {
+    background: var(--java-orange);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.1rem 1rem;
+    letter-spacing: 0.02em;
+}
+
+.archive-edition-card .card-body p {
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+}
+
+/* ─── Archive speaker card ────────────────────────────────────────────────── */
+
+.archive-speaker-card {
+    border: 2px solid #e8e8e8;
+    border-radius: 10px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.archive-speaker-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--java-orange);
+}
+
+.archive-speaker-card.multi-year-speaker {
+    border-color: var(--gold-accent);
+    border-width: 3px;
+}
+
+.archive-speaker-card.multi-year-speaker:hover {
+    border-color: var(--java-orange);
+}
+
+/* ─── Archive session card ────────────────────────────────────────────────── */
+
+.archive-session-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.archive-session-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+}
+
+.archive-session-card .card-title a {
+    color: var(--primary-black);
+    font-weight: 600;
+}
+
+.archive-session-card .card-title a:hover {
+    color: var(--java-orange);
+    text-decoration: underline;
+}
+
+/* ─── Year badges ─────────────────────────────────────────────────────────── */
+
+.archive-year-badge {
+    background-color: var(--java-orange);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 0.2rem;
+}
+
+.archive-year-badge.badge-past {
+    background-color: var(--dark-gray);
+}
+
+.archive-year-badge.badge-current {
+    background-color: var(--java-orange);
+}
+
+.archive-year-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    justify-content: center;
+}
+
+/* ─── Filter controls ─────────────────────────────────────────────────────── */
+
+.archive-filter-controls {
+    background: var(--light-gray);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+}
+
+#multiYearToggle.active,
+#multiYearToggle[data-active="true"] {
+    background-color: var(--gold-accent);
+    border-color: var(--gold-accent);
+    color: white;
+}
+
+/* ─── Archive CTA section ─────────────────────────────────────────────────── */
+
+.archive-cta-section {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }

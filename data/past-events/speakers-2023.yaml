@@ -1,0 +1,93 @@
+speakers:
+  - slug: "adityasharma7"
+    name: "Aditya Sharma"
+    jobTitle: "Open Source Enthusiast | ASF Member"
+    company: "Apache Foundation"
+    photo: "https://github.com/adityasharma7.png"
+    linkedin: "https://www.linkedin.com/in/adityasharma7/"
+    years: [2023]
+
+  - slug: "murali"
+    name: "Muralidhar Rao"
+    jobTitle: "Retired Snr. Director"
+    company: "Oracle"
+    photo: "/2023/images/Murali.jpg"
+    years: [2023]
+
+  - slug: "navinreddy20"
+    name: "Navin Reddy"
+    jobTitle: "Tech Educator, Youtuber"
+    company: "Telusko"
+    photo: "https://github.com/navinreddy20.png"
+    years: [2023]
+
+  - slug: "rajeev"
+    name: "Rajeev Palanki"
+    jobTitle: "Program Director for BCO & Transformation, ISDL"
+    company: "IBM"
+    photo: "/2023/images/Rajeev.png"
+    years: [2023]
+
+  - slug: "vivsridh4"
+    name: "Vivek Sridhar"
+    jobTitle: "Senior Cloud Advocate | DevOps & Cloud Architect"
+    company: "Microsoft"
+    photo: "https://github.com/vivsridh4.png"
+    years: [2023]
+
+  - slug: "ashok"
+    name: "Dr Ashok Immanuel V"
+    jobTitle: "Professor & Head, Department of Computer Science"
+    company: "CHRIST (Deemed to be University)"
+    photo: "/2023/images/Ashok.jpeg"
+    years: [2023]
+
+  - slug: "nagkumar"
+    name: "Raja Nagendra Kumar"
+    jobTitle: "CTO"
+    company: "TejaSoft"
+    photo: "https://github.com/nagkumar.png"
+    linkedin: "https://lnkd.in/gxV7rPav"
+    years: [2023, 2024]
+
+  - slug: "vagrantism"
+    name: "Madhup Sukoon"
+    jobTitle: "Cloud Engineer, AI"
+    company: "Google"
+    photo: "https://github.com/vagrantism.png"
+    years: [2023]
+
+  - slug: "indianarcher"
+    name: "Venkat Seshasai"
+    jobTitle: "Developer & Solution Architect"
+    company: "EPAM Systems"
+    photo: "https://github.com/indianarcher.png"
+    years: [2023]
+
+  - slug: "stevemann2705"
+    name: "Steve Mann"
+    jobTitle: "Software Development Engineer"
+    company: "Fynd (Boltic)"
+    photo: "https://github.com/stevemann2705.png"
+    years: [2023]
+
+  - slug: "bhuvanavenkataramanan"
+    name: "Bhuvana Venkataramanan"
+    jobTitle: "Principal Enterprise Architect"
+    company: "Sabre Corporation"
+    photo: "https://github.com/bhuvanavenkataramanan.png"
+    years: [2023]
+
+  - slug: "ganeshsamarthyam"
+    name: "Ganesh Samarthyam"
+    jobTitle: "Co-founder CodeOps & KonfHub"
+    company: "KonfHub Technologies LLP"
+    photo: "https://github.com/ganeshsamarthyam.png"
+    years: [2023]
+
+  - slug: "prashant332"
+    name: "Prashant Hegde"
+    jobTitle: "Senior Principal Software Architect"
+    company: "Sabre Corporation"
+    photo: "https://github.com/prashant332.png"
+    years: [2023]

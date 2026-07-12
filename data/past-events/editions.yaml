@@ -1,0 +1,24 @@
+editions:
+  - year: 2025
+    date: "November 8, 2025"
+    venue: "Infosys Campus"
+    city: "Bengaluru"
+    speakerCount: 26
+    sessionCount: 18
+    archivePath: "/2025/"
+
+  - year: 2024
+    date: "November 23, 2024"
+    venue: "Infosys Campus"
+    city: "Bengaluru"
+    speakerCount: 21
+    sessionCount: 18
+    archivePath: "/2024/"
+
+  - year: 2023
+    date: "July 15, 2023"
+    venue: "Christ University"
+    city: "Bengaluru"
+    speakerCount: 16
+    sessionCount: 14
+    archivePath: "/2023/"

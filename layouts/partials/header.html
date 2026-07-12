@@ -1,10 +1,8 @@
 <header>
-  <nav class="navbar navbar-light navbar-expand-lg bg-body-tertiary mx-md-5 mx-auto">
+  <nav class="navbar navbar-light navbar-expand-lg bg-body-tertiary site-container">
     <div class="container-fluid">
         <a class="navbar-brand" href="/" >
-            <img src="/images/Logo.png" width="95" height="70" alt="" loading="lazy" style="
-                vertical-align: top;
-            ">
+            <img src="/images/Logo.png" alt="" loading="lazy" class="navbar-logo">
             <!-- <div class="align-baseline px-2 d-none d-sm-block"><span class="h5 text-uppercase">JAVAFEST'25</span></div> -->
         </a>
         <!-- <a href="/cfp" class="cfp-button  d-md-none btn btn-secondary">Submit Talk</a> -->
@@ -13,7 +11,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <!-- <li class="nav-item">
             <a class="nav-link text-dark" href="/sessions">Sessions</a>
           </li>
@@ -23,6 +21,9 @@
           <li class="nav-item">
             <a class="nav-link text-dark" href="/speakers">Speakers</a>
           </li> -->
+          <li class="nav-item">
+            <a class="nav-link text-dark{{ if strings.HasPrefix .RelPermalink "/past-events" }} active{{ end }}" href="/past-events/">Past Editions</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link text-dark" href="/organisers">Organisers</a>
           </li>

@@ -1,0 +1,98 @@
+sessions:
+  - title: "Bridging the Gap: Exploring Mutual Expectations between Industry and Academia"
+    description: "A dynamic panel discussion featuring equal representation from industry and academia, exploring mutual expectations and ways to bridge the gap between these two sectors."
+    speakers: ["vivsridh4", "navinreddy20", "murali", "rajeev", "ashok"]
+    tags: ["panel", "education", "software", "technology"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "Open Source: Whats for you?"
+    description: "A thought-provoking discussion on the benefits of open source software for businesses, developers, and students — covering innovation, collaboration, and cost savings."
+    speakers: ["adityasharma7"]
+    tags: ["open-source", "software", "technology", "education"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "Scaling up your Java Application"
+    description: "An exploration of modern techniques and parameters that help Java applications scale from hundreds to millions of users, covering architectural decisions and performance strategies."
+    speakers: ["vaibhavchoudhary"]
+    tags: ["java", "performance", "scalability"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "The Future of Java Persistence: Cloud Native Persistent Technology"
+    description: "A look at the history, theory, and technology behind the evolution of persistence technologies for Java applications, and how cloud-native persistent technology solves modern architecture challenges."
+    speakers: ["sathishk"]
+    tags: ["java", "persistence", "cloud-native", "microservices"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "Serverless Enterprise Monoliths – The IaC and IfC way"
+    description: "Exploring the case for returning to monolithic architecture for cost and scaling benefits, with a discussion of Infrastructure as Code and Infrastructure from Code approaches."
+    speakers: ["nagkumar"]
+    tags: ["serverless", "microservices", "architecture"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "Demystifying Application Observability: Spring boot observability"
+    description: "An exploration of Application Observability as a paradigm shift in monitoring complex systems, with a focus on Spring Boot's built-in observability features."
+    speakers: ["prashant332", "bhuvanavenkataramanan"]
+    tags: ["observability", "springboot", "monitoring"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "Modernize Your Applications: A Guide to Spring Boot 3 Migration"
+    description: "A practical guide covering why and how to migrate from Spring Boot 2.x to 3.x, including steps, required changes, and new features."
+    speakers: ["indianarcher"]
+    tags: ["springboot", "java", "framework", "migration"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "[WORKSHOP] Taming Large Language Models for Real-World Use Cases"
+    description: "A comprehensive workshop on Language Models covering foundational concepts to advanced techniques for prompt design and fine-tuning for production use cases."
+    speakers: ["vagrantism"]
+    tags: ["llm", "ai", "workshop", "hands-on"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "[Student Synergy] Java: The Past, Present and Future"
+    description: "A concise journey through Java's newest features covering streamlined syntax, improved performance, and powerful tools shaping Java today."
+    speakers: ["navinreddy20"]
+    tags: ["java", "students", "education"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "Microsoft Azure Well-Architected Framework"
+    description: "An introduction to the Azure Well-Architected Framework and its pillars for designing, building, and continuously improving secure, reliable, and efficient applications."
+    speakers: ["vivsridh4"]
+    tags: ["cloud", "azure", "framework", "architecture"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "[Student Synergy] Java in Real World"
+    description: "An exploration of Java's widespread industry usage with a focus on the Spring and Hibernate frameworks for building powerful enterprise applications."
+    speakers: ["navinreddy20"]
+    tags: ["java", "students", "spring", "hibernate"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "[Student Synergy] Lets Get Funky with Functional Programming"
+    description: "A workshop introducing functional programming paradigms and lambda functions in Java, helping attendees shift from imperative to functional thinking."
+    speakers: ["ganeshsamarthyam"]
+    tags: ["java", "students", "functional-programming", "workshop"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "[Student Synergy] Building a Project and deploy on cloud"
+    description: "An interactive session where participants build a basic working Java project and learn how to deploy it on cloud infrastructure."
+    speakers: ["navinreddy20"]
+    tags: ["java", "students", "cloud", "hands-on"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
+
+  - title: "Navigating the Data Landscape: From Fundamentals to the Future"
+    description: "An exploration of data-intensive application development, reliable and scalable architectures, diverse data models, query languages, storage and retrieval strategies, and future data trends."
+    speakers: ["stevemann2705"]
+    tags: ["data", "scalability", "software", "technology"]
+    year: 2023
+    archiveUrl: "/2023/sessions/index.html"
