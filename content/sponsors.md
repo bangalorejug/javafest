@@ -46,3 +46,5 @@ By sponsoring JAVAFEST, you gain access to a quality audience, cost-effective op
 We anticipate a diverse range of developers from all over India, comprising developers from various experience levels and backgrounds. You can gain an understanding of our registered JUG members by visiting [Our Meetup Page](https://www.meetup.com/bangalorejug/members/).
 
 If you have any questions or require further information, please do not hesitate to reach out to us at our [Linkedin Page](https://www.linkedin.com/company/javafest). We truly appreciate your consideration of this invitation, and we sincerely hope to see you at JavaFest!
+
+To see the sponsors who have supported JavaFest across recent editions, visit our [Past Sponsors](/past-sponsors/) page.

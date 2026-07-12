@@ -13,5 +13,7 @@ enableInlineShortcodes = true
 [security.funcs]
 getenv = ['^HUGO_','CONTEXT','BUILD_PRODUCTION']
 
+[markup.goldmark.renderer]
+unsafe = true
 
 assetDir = "assets"

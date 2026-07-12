@@ -95,6 +95,7 @@
 
   // ── SESSIONS PAGE ──────────────────────────────────────────────────────────
   var sessionYearFilter = document.getElementById('sessionYearFilter');
+  var sessionSpeakerFilter = document.getElementById('speakerFilter');
   var sessionSearch = document.getElementById('sessionSearch');
   var sessionsGrid = document.getElementById('sessionsGrid');
   var sessionCount = document.getElementById('sessionResultCount');
@@ -102,9 +103,13 @@
   if (sessionYearFilter && sessionsGrid) {
     // Restore from URL on load
     var initSessionYear = getParam('year') || 'all';
+    var initSpeaker = getParam('speaker') || 'all';
     var initSearch = getParam('q') || '';
 
     sessionYearFilter.value = initSessionYear;
+    if (sessionSpeakerFilter) {
+      sessionSpeakerFilter.value = initSpeaker;
+    }
     if (sessionSearch) {
       sessionSearch.value = initSearch;
     }
@@ -113,16 +118,21 @@
 
     function filterSessions() {
       var selectedYear = sessionYearFilter.value;
+      var selectedSpeaker = sessionSpeakerFilter ? sessionSpeakerFilter.value : 'all';
       var searchTerm = sessionSearch ? sessionSearch.value.toLowerCase().trim() : '';
       var cards = sessionsGrid.querySelectorAll('.session-card-wrapper');
       var visible = 0;
 
       cards.forEach(function (card) {
         var cardYear = card.dataset.year;
+        var cardSpeakers = card.dataset.speakers ? card.dataset.speakers.split(',') : [];
         var searchText = card.dataset.searchText || '';
         var show = true;
 
         if (selectedYear !== 'all' && cardYear !== selectedYear) {
+          show = false;
+        }
+        if (selectedSpeaker !== 'all' && cardSpeakers.indexOf(selectedSpeaker) === -1) {
           show = false;
         }
         if (searchTerm && searchText.indexOf(searchTerm) === -1) {
@@ -139,11 +149,16 @@
 
       updateParams({
         year: sessionYearFilter.value,
+        speaker: sessionSpeakerFilter ? sessionSpeakerFilter.value : null,
         q: sessionSearch ? sessionSearch.value.trim() : null
       });
     }
 
     sessionYearFilter.addEventListener('change', filterSessions);
+
+    if (sessionSpeakerFilter) {
+      sessionSpeakerFilter.addEventListener('change', filterSessions);
+    }
 
     if (sessionSearch) {
       sessionSearch.addEventListener('input', function () {
@@ -153,7 +168,7 @@
     }
 
     // Apply on load if params were set
-    if (initSessionYear !== 'all' || initSearch) {
+    if (initSessionYear !== 'all' || initSpeaker !== 'all' || initSearch) {
       filterSessions();
     }
   }

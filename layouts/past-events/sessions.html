@@ -12,13 +12,15 @@
   {{ end }}
 {{ end }}
 
-{{/* Build speaker slug → name lookup map */}}
+{{/* Build speaker lookup from archive data so 2023/2024 speaker details render */}}
 {{ $speakerLookup := dict }}
+{{ $speakerOptions := slice }}
 {{ range $key, $data := $pastEvents }}
   {{ if and (strings.HasPrefix $key "speakers") $data.speakers }}
     {{ range $data.speakers }}
       {{ if not (index $speakerLookup .slug) }}
-        {{ $speakerLookup = merge $speakerLookup (dict .slug .name) }}
+        {{ $speakerLookup = merge $speakerLookup (dict .slug (dict "name" .name "jobTitle" .jobTitle "company" .company "photo" .photo "linkedin" .linkedin)) }}
+        {{ $speakerOptions = $speakerOptions | append (dict "slug" .slug "name" .name) }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -60,13 +62,24 @@
           </select>
         </div>
         <div>
+          <label for="speakerFilter" class="fw-semibold me-2">Speaker:</label>
+          <select id="speakerFilter"
+                  class="form-select form-select-sm d-inline-block w-auto"
+                  aria-label="Filter sessions by speaker">
+            <option value="all">All Speakers</option>
+            {{ range $speakerOptions }}
+              <option value="{{ .slug }}">{{ .name }}</option>
+            {{ end }}
+          </select>
+        </div>
+        <div>
           <label for="sessionSearch" class="fw-semibold me-2">Search:</label>
           <input type="text"
                  id="sessionSearch"
                  class="form-control form-control-sm d-inline-block"
                  style="width: 260px;"
-                 placeholder="Search title or tags..."
-                 aria-label="Search sessions by title or tags">
+                 placeholder="Search title, speaker or tags..."
+                 aria-label="Search sessions by title, speaker or tags">
         </div>
       </div>
     </div>
@@ -81,46 +94,126 @@
     <div class="row g-4" id="sessionsGrid">
       {{ range $allSessions }}
         {{ $tagsStr := delimit .tags "," }}
-        {{ $searchText := printf "%s %s" .title $tagsStr | lower }}
+        {{ $speakerNames := slice }}
+        {{ range .speakers }}
+          {{ $slug := . }}
+          {{ $speakerInfo := index $speakerLookup $slug }}
+          {{ $speakerName := $slug }}
+          {{ $speakerPhoto := "" }}
+          {{ $speakerJobTitle := "" }}
+          {{ $speakerCompany := "" }}
+          {{ if $speakerInfo }}
+            {{ $speakerName = index $speakerInfo "name" }}
+            {{ $speakerPhoto = index $speakerInfo "photo" }}
+            {{ $speakerJobTitle = index $speakerInfo "jobTitle" }}
+            {{ $speakerCompany = index $speakerInfo "company" }}
+          {{ else }}
+            {{ $speaker := $.Site.GetPage (printf "/speakers/%s" $slug) }}
+            {{ if $speaker }}
+              {{ $speakerName = $speaker.Title }}
+              {{ with $speaker.Params.profilePicture }}{{ $speakerPhoto = . }}{{ end }}
+              {{ with $speaker.Params.jobTitle }}{{ $speakerJobTitle = . }}{{ end }}
+              {{ with $speaker.Params.company }}{{ $speakerCompany = . }}{{ end }}
+            {{ end }}
+          {{ end }}
+          {{ $speakerNames = $speakerNames | append $speakerName }}
+        {{ end }}
+        {{ $speakerNamesStr := delimit $speakerNames "," | lower }}
+        {{ $searchText := printf "%s %s %s" .title $tagsStr $speakerNamesStr | lower }}
         {{ $yearStr := printf "%d" .year }}
-        <div class="col-12 col-md-6 session-card-wrapper"
+        {{ $speakerSlugsStr := delimit .speakers "," }}
+        <div class="col-12 col-md-6 col-xl-4 session-card-wrapper"
              data-year="{{ $yearStr }}"
+             data-speakers="{{ $speakerSlugsStr }}"
              data-search-text="{{ $searchText }}">
-          <div class="card archive-session-card h-100">
-            <div class="card-body">
+          <div class="card archive-session-card h-100 shadow-sm border-0">
+            <div class="card-header bg-dark text-white">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge archive-year-badge{{ if eq .year 2025 }} badge-current{{ else }} badge-past{{ end }}">
+                  {{ .year }}
+                </span>
+                <span class="badge bg-light text-dark">Archived</span>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-dark mb-3">{{ .title }}</h5>
 
-              <!-- Year badge -->
-              <span class="badge archive-year-badge{{ if eq .year 2025 }} badge-current{{ else }} badge-past{{ end }} mb-2">
-                {{ .year }}
-              </span>
-
-              <!-- Title -->
-              {{ if .archiveUrl }}
-                <h5 class="card-title mt-1">
-                  <a href="{{ .archiveUrl }}" class="text-decoration-none">{{ .title }}</a>
-                </h5>
-              {{ else }}
-                <h5 class="card-title mt-1">{{ .title }}</h5>
+              {{ if .speakers }}
+              <div class="mb-3">
+                <h6 class="text-muted mb-2">Speaker{{ if gt (len .speakers) 1 }}s{{ end }}:</h6>
+                {{ range .speakers }}
+                  {{ $slug := . }}
+                  {{ $speakerInfo := index $speakerLookup $slug }}
+                  {{ $speakerName := $slug }}
+                  {{ $speakerPhoto := "" }}
+                  {{ $speakerJobTitle := "" }}
+                  {{ $speakerCompany := "" }}
+                  {{ if $speakerInfo }}
+                    {{ $speakerName = index $speakerInfo "name" }}
+                    {{ $speakerPhoto = index $speakerInfo "photo" }}
+                    {{ $speakerJobTitle = index $speakerInfo "jobTitle" }}
+                    {{ $speakerCompany = index $speakerInfo "company" }}
+                  {{ else }}
+                    {{ $speaker := $.Site.GetPage (printf "/speakers/%s" $slug) }}
+                    {{ if $speaker }}
+                      {{ $speakerName = $speaker.Title }}
+                      {{ with $speaker.Params.profilePicture }}{{ $speakerPhoto = . }}{{ end }}
+                      {{ with $speaker.Params.jobTitle }}{{ $speakerJobTitle = . }}{{ end }}
+                      {{ with $speaker.Params.company }}{{ $speakerCompany = . }}{{ end }}
+                    {{ end }}
+                  {{ end }}
+                  <div class="d-flex align-items-center mb-2 speaker-link">
+                    {{ if $speakerPhoto }}
+                    <img src="{{ $speakerPhoto }}"
+                         class="rounded-circle me-2"
+                         width="44" height="44"
+                         alt="{{ $speakerName }}">
+                    {{ else if not $speakerInfo }}
+                    {{ $speaker := $.Site.GetPage (printf "/speakers/%s" $slug) }}
+                    {{ if $speaker }}
+                    <img src="{{ $speaker.Params.profilePicture | default (printf "https://github.com/%s.png" $speaker.File.BaseFileName) }}"
+                         class="rounded-circle me-2"
+                         width="44" height="44"
+                         alt="{{ $speakerName }}">
+                    {{ else }}
+                    <img src="https://github.com/{{ $slug }}.png"
+                         class="rounded-circle me-2"
+                         width="44" height="44"
+                         alt="{{ $speakerName }}">
+                    {{ end }}
+                    {{ else }}
+                    <img src="https://github.com/{{ $slug }}.png"
+                         class="rounded-circle me-2"
+                         width="44" height="44"
+                         alt="{{ $speakerName }}">
+                    {{ end }}
+                    <div>
+                      <small class="fw-bold text-dark d-block">{{ $speakerName }}</small>
+                      {{ if $speakerJobTitle }}
+                      <small class="text-muted d-block" style="font-size: 0.85rem;">{{ $speakerJobTitle }}</small>
+                      {{ end }}
+                      {{ if $speakerCompany }}
+                      <small class="text-muted d-block" style="font-size: 0.85rem;">{{ $speakerCompany }}</small>
+                      {{ end }}
+                    </div>
+                  </div>
+                {{ end }}
+              </div>
               {{ end }}
 
-              <!-- Speaker names (resolved from lookup map) -->
-              <p class="card-subtitle text-muted mb-2">
-                By:
-                {{ range $i, $slug := .speakers }}
-                  {{- if $i }}, {{ end -}}
-                  {{ index $speakerLookup $slug | default $slug }}
-                {{- end }}
+              {{ if .description }}
+              <p class="card-text text-muted flex-grow-1 mb-3">
+                {{ .description | plainify | strings.Truncate 160 }}
               </p>
+              {{ end }}
 
-              <!-- Tags -->
               {{ if .tags }}
-              <div class="archive-session-tags">
+              <div class="archive-session-tags mt-auto">
                 {{ range .tags }}
                   <span class="badge bg-secondary me-1 mb-1">{{ . }}</span>
                 {{ end }}
               </div>
               {{ end }}
-
             </div>
           </div>
         </div>
@@ -129,6 +222,28 @@
 
   </div>
 </main>
+
+<style>
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-header {
+    border-bottom: none;
+}
+
+.speaker-link:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}
+
+.speaker-link:hover .rounded-circle {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    transition: box-shadow 0.2s ease-in-out;
+}
+</style>
 
 {{ $js := resources.Get "js/archive-filters.js" | minify }}
 <script src="{{ $js.RelPermalink }}"></script>
