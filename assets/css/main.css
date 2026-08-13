@@ -125,9 +125,13 @@ header {
 }
 
 .navbar-logo {
-    width: 120px;
-    height: 100px;
+    width: 100px;
+    height: 80px;
     vertical-align: top;
+}
+
+.cfp-button {
+    width: 120px;
 }
 
 /* ─── Social icons ────────────────────────────────────────────────────────── */
@@ -674,6 +678,7 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+
     .speaker-info-card,
     .session-details-card {
         padding: 1.25rem;
