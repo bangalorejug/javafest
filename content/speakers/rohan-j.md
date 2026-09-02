@@ -1,11 +1,13 @@
 ---
-title: 'Rohan J'
-jobTitle: 'Devops'
-company: 'SAP'
+title: Rohan J
+jobTitle: Devops
+company: SAP
 date: 2017-03-23
 weight: 1
-linkedin: 'https://www.linkedin.com/in/rohan-j-ba489b19b/'
-profilePicture: '/images/rohan-j.jpeg'
+linkedin: https://www.linkedin.com/in/rohan-j-ba489b19b/
+profilePicture: /images/rohan-j.jpeg
+years:
+- 2025
 ---
 
 I am a Software Engineer specializing in full-stack development, DevOps, and AI-driven enterprise solutions, with hands-on expertise in Spring Boot, SAP UI5, and Angular. Currently, I work on SAP Business Network – NextGen Products at SAP Ariba, focusing on performance engineering and testing using Gatling for load testing and optimization. My role involves building high-performance microservices, crafting intuitive frontends, managing deployments on SAP BTP Kyma, and implementing CI/CD pipelines via Azure DevOps. I ensure application stability and scalability through rigorous performance testing before production releases.

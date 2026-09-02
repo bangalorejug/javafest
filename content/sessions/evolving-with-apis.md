@@ -1,13 +1,14 @@
 ---
-title: 'Evolving with APIs, GraphQL and Generative AI'
+title: Evolving with APIs, GraphQL and Generative AI
 speakers:
-  - vipin-menon
+- vipin-menon
 topics:
-  - Enterprise Java
+- Enterprise Java
 time: 10:15 AM - 11:00 AM
 weight: 2
 sessionType: Talk
 duration: 45 min
+year: 2025
 ---
 
 Java has long been the backbone of enterprise development, However, the landscape of modern software architecture is rapidly evolving and they demand real time responsiveness, flexibility and adaptive capabilities that are beyond the traditional REST architecture. This is where GraphQL is taking its shape by offering a more flexible, query-driven alternative that gives our clients a greater control over the data.  

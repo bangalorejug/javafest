@@ -1,11 +1,14 @@
 ---
-title: 'Hari Nikesh R'
-jobTitle: 'Software Engineer'
+title: Hari Nikesh R
+jobTitle: Software Engineer
 company: '@Quinbay | Blibli.com'
 date: 2017-03-23
 weight: 8
-linkedin: 'https://www.linkedin.com/in/hari-nikesh-r-930bb723a/'
-profilePicture: '/images/hari.png'
+linkedin: https://www.linkedin.com/in/hari-nikesh-r-930bb723a/
+profilePicture: /images/hari.png
+years:
+- 2024
+- 2025
 ---
 
 Highly Skilled Software Developer with a Passion for Programming.

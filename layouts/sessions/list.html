@@ -9,7 +9,7 @@
                 
                 <!-- Sessions Grid -->
                 <div class="row g-4">
-                    {{ range .Pages }}
+                    {{ range where .Pages "Params.year" 2025 }}
                     <div class="col-lg-6 col-xl-4">
                         <div class="card h-100 shadow-sm border-0" style="transition: transform 0.2s ease-in-out;">
                             <div class="card-header {{ if .Params.topics }}{{ $topics := .Params.topics }}{{ if in $topics "Core Java" }}bg-primary{{ else if in $topics "Enterprise Java" }}bg-success{{ else if in $topics "Devops Java" }}bg-warning{{ else }}bg-secondary{{ end }}{{ else }}bg-secondary{{ end }} text-white">

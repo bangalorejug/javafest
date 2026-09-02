@@ -1,11 +1,13 @@
 ---
-title: 'Venkata Subba Rao'
-jobTitle: 'Freelancer, Corporate Trainer'
-company: 'Ignithra Technologies'
+title: Venkata Subba Rao
+jobTitle: Freelancer, Corporate Trainer
+company: Ignithra Technologies
 date: 2017-03-23
 weight: 1
-linkedin: 'https://www.linkedin.com/in/bvsrao-venkat-4014133b/'
-profilePicture: '/images/Venkata-Subba-Rao.jpeg'
+linkedin: https://www.linkedin.com/in/bvsrao-venkat-4014133b/
+profilePicture: /images/Venkata-Subba-Rao.jpeg
+years:
+- 2025
 ---
 
 With over 20 years of industry experience spanning diverse technologies, I am a seasoned Corporate Trainer, Developer, and Architect specializing in building, scaling, and securing enterprise-grade applications. My career journey covers the full spectrum of modern software development — from UI/UX design and full-stack engineering to microservices architecture, micro frontends, DevSecOps, SRE practices, and multi-cloud deployments.

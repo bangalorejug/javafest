@@ -1,11 +1,13 @@
 ---
-title: 'Manish Jhanwar'
-jobTitle: 'Tech Evangelist & IT Consultant'
-company: 'Freelancer'
+title: Manish Jhanwar
+jobTitle: Tech Evangelist & IT Consultant
+company: Freelancer
 date: 2017-03-23
 weight: 1
-linkedin: 'https://www.linkedin.com/in/manish-jhanwar/'
-profilePicture: '/images/manish-jhawar.png'
+linkedin: https://www.linkedin.com/in/manish-jhanwar/
+profilePicture: /images/manish-jhawar.png
+years:
+- 2025
 ---
 
 Manish Jhanwar is a Software Architect and IT Consultant with 15 years of core software development experience in Operating System, Mobile Application and Cloud/Backend technologies. 

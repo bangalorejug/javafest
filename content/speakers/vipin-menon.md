@@ -1,11 +1,13 @@
 ---
-title: 'Vipin Menon'
-jobTitle: 'Software Engineer'
-company: 'IBM'
+title: Vipin Menon
+jobTitle: Software Engineer
+company: IBM
 date: 2017-03-23
 weight: 1
-linkedin: 'https://www.linkedin.com/in/vipin-menon-ab434941/'
-profilePicture: '/images/vipin-menon.jpeg'
+linkedin: https://www.linkedin.com/in/vipin-menon-ab434941/
+profilePicture: /images/vipin-menon.jpeg
+years:
+- 2025
 ---
 
 An individual with 13+ years of experience in the software industry, showcasing proficiency across a spectrum of technologies that includes Java, react, nodejs, javascript including various web and cloud technologies. He is now part of design and development of Application Performance Monitoring for Instana at IBM.

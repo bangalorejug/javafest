@@ -1,13 +1,14 @@
 ---
-title: 'Modern Frontend Development with Java — Beyond the Hype'
+title: Modern Frontend Development with Java — Beyond the Hype
 speakers:
-  - sathishk
+- sathishk
 topics:
-  - Core Java
+- Core Java
 time: 03:10 PM - 03:40 PM
 weight: 5
 sessionType: Talk
 duration: 30 min
+year: 2025
 ---
 
 In today’s fast-changing frontend world, choices are often driven by the “latest is greatest” mindset. But behind every modern framework lies a set of timeless principles that define scalability, performance, and developer productivity.

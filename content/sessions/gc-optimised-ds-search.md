@@ -1,13 +1,14 @@
 ---
-title: 'GC Optimized Data Structures for Search'
+title: GC Optimized Data Structures for Search
 speakers:
-  - atrisharma
+- atrisharma
 topics:
-  - Devops Java
+- Devops Java
 time: 1:45 PM - 2:15 PM
 weight: 3
 sessionType: Talk
 duration: 30 min
+year: 2025
 ---
 
 In large-scale search engines, the enemy is often the JVM garbage collector. Millions of objects per second, long-lived postings data, and heavy vector processing can stall even the best-tuned system.

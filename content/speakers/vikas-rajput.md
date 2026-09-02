@@ -1,11 +1,14 @@
 ---
-title: 'Vikas Rajput'
-jobTitle: 'Founder'
-company: 'Techxplore IT Solutions'
+title: Vikas Rajput
+jobTitle: Founder
+company: Techxplore IT Solutions
 date: 2017-03-23
 weight: 2
-linkedin: 'https://www.linkedin.com/in/vikasrajputin/'
-profilePicture: '/images/vikas-rajput.png'
+linkedin: https://www.linkedin.com/in/vikasrajputin/
+profilePicture: /images/vikas-rajput.png
+years:
+- 2024
+- 2025
 ---
 
 Vikas Rajput is the Founder of Techxplore IT Solutions and a Java Full Stack Engineer with over 11 years of experience in building cloud-native, scalable, and resilient Java applications. Throughout his career, he has specialized in designing enterprise-grade solutions using modern Java frameworks and cloud technologies.

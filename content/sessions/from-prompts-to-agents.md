@@ -1,14 +1,15 @@
 ---
 title: 'From Prompts to Agents: Supercharging Spring Boot with AI and MCP'
 speakers:
-  - thamaraip
-  - udayani
+- thamaraip
+- udayani
 topics:
-  - Enterprise Java
+- Enterprise Java
 time: 11:05 AM - 12:45 PM
 weight: 1
 sessionType: Workshop
 duration: 100 min
+year: 2025
 ---
 
 AI in modern applications must go beyond simple prompts to deliver real value—it needs to reason over your data, respect context, and integrate with external systems. In this fast-paced 90-minute workshop, you’ll learn how to power Spring Boot applications with Spring AI.

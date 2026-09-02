@@ -1,12 +1,13 @@
 ---
-title: 'Thriving in the Age of AI-Powered Software Development'
+title: Thriving in the Age of AI-Powered Software Development
 speakers:
-  - sivaprasadreddy
+- sivaprasadreddy
 topics:
-  - Enterprise Java
+- Enterprise Java
 time: 1:45 PM - 2:15 PM
 weight: 3
 sessionType: Talk
+year: 2025
 ---
 
 AI isn’t replacing developers. It’s redefining what “competent” means.

@@ -1,12 +1,14 @@
 ---
-title: '[Beginner Level] Basics to Best Practices: Building Better Java for 2025 and Beyond'
+title: '[Beginner Level] Basics to Best Practices: Building Better Java for 2025 and
+  Beyond'
 speakers:
-  - hari-nikesh
+- hari-nikesh
 topics:
-  - Devops Java
+- Devops Java
 time: 03:40 PM - 05:10 PM
 weight: 6
 sessionType: Workshop
+year: 2025
 ---
 
 PLEASE NOTE: This is Beginner Level workshop for College grads, Freshers and Junior Engineers.

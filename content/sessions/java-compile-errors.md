@@ -1,13 +1,15 @@
 ---
-title: 'From Syntax Trees to Smart IDEs: How Java Compiler Complexity Powers Developer Productivity'
+title: 'From Syntax Trees to Smart IDEs: How Java Compiler Complexity Powers Developer
+  Productivity'
 speakers:
-  - manoj-nalledathu
+- manoj-nalledathu
 topics:
-  - Core Java
+- Core Java
 time: 1:45 PM - 2:15 PM
 weight: 3
 sessionType: Talk
 duration: 30 min
+year: 2025
 ---
 
 An interactive session on understanding Java Compiler Errors

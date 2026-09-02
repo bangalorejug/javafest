@@ -136,7 +136,9 @@
               </div>
             </div>
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title text-dark mb-3">{{ .title }}</h5>
+              <h5 class="card-title text-dark mb-3">
+                <a href="/sessions/{{ .slug }}/" class="text-decoration-none text-dark">{{ .title }}</a>
+              </h5>
 
               {{ if .speakers }}
               <div class="mb-3">
@@ -162,41 +164,43 @@
                       {{ with $speaker.Params.company }}{{ $speakerCompany = . }}{{ end }}
                     {{ end }}
                   {{ end }}
-                  <div class="d-flex align-items-center mb-2 speaker-link">
-                    {{ if $speakerPhoto }}
-                    <img src="{{ $speakerPhoto }}"
-                         class="rounded-circle me-2"
-                         width="44" height="44"
-                         alt="{{ $speakerName }}">
-                    {{ else if not $speakerInfo }}
-                    {{ $speaker := $.Site.GetPage (printf "/speakers/%s" $slug) }}
-                    {{ if $speaker }}
-                    <img src="{{ $speaker.Params.profilePicture | default (printf "https://github.com/%s.png" $speaker.File.BaseFileName) }}"
-                         class="rounded-circle me-2"
-                         width="44" height="44"
-                         alt="{{ $speakerName }}">
-                    {{ else }}
-                    <img src="https://github.com/{{ $slug }}.png"
-                         class="rounded-circle me-2"
-                         width="44" height="44"
-                         alt="{{ $speakerName }}">
-                    {{ end }}
-                    {{ else }}
-                    <img src="https://github.com/{{ $slug }}.png"
-                         class="rounded-circle me-2"
-                         width="44" height="44"
-                         alt="{{ $speakerName }}">
-                    {{ end }}
-                    <div>
-                      <small class="fw-bold text-dark d-block">{{ $speakerName }}</small>
-                      {{ if $speakerJobTitle }}
-                      <small class="text-muted d-block" style="font-size: 0.85rem;">{{ $speakerJobTitle }}</small>
+                  <a href="/speakers/{{ $slug }}/" class="text-decoration-none text-reset speaker-link">
+                    <div class="d-flex align-items-center mb-2">
+                      {{ if $speakerPhoto }}
+                      <img src="{{ $speakerPhoto }}"
+                           class="rounded-circle me-2"
+                           width="44" height="44"
+                           alt="{{ $speakerName }}">
+                      {{ else if not $speakerInfo }}
+                      {{ $speaker := $.Site.GetPage (printf "/speakers/%s" $slug) }}
+                      {{ if $speaker }}
+                      <img src="{{ $speaker.Params.profilePicture | default (printf "https://github.com/%s.png" $speaker.File.BaseFileName) }}"
+                           class="rounded-circle me-2"
+                           width="44" height="44"
+                           alt="{{ $speakerName }}">
+                      {{ else }}
+                      <img src="https://github.com/{{ $slug }}.png"
+                           class="rounded-circle me-2"
+                           width="44" height="44"
+                           alt="{{ $speakerName }}">
                       {{ end }}
-                      {{ if $speakerCompany }}
-                      <small class="text-muted d-block" style="font-size: 0.85rem;">{{ $speakerCompany }}</small>
+                      {{ else }}
+                      <img src="https://github.com/{{ $slug }}.png"
+                           class="rounded-circle me-2"
+                           width="44" height="44"
+                           alt="{{ $speakerName }}">
                       {{ end }}
+                      <div>
+                        <small class="fw-bold text-dark d-block">{{ $speakerName }}</small>
+                        {{ if $speakerJobTitle }}
+                        <small class="text-muted d-block" style="font-size: 0.85rem;">{{ $speakerJobTitle }}</small>
+                        {{ end }}
+                        {{ if $speakerCompany }}
+                        <small class="text-muted d-block" style="font-size: 0.85rem;">{{ $speakerCompany }}</small>
+                        {{ end }}
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 {{ end }}
               </div>
               {{ end }}

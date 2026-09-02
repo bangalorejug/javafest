@@ -72,8 +72,7 @@
           <div class="card archive-speaker-card h-100{{ if $isMultiYear }} multi-year-speaker{{ end }}">
 
             <!-- Photo -->
-            <a href="{{ with $speaker.linkedin }}{{ . }}{{ else }}#{{ end }}"
-               {{ if $speaker.linkedin }}target="_blank" rel="noopener noreferrer"{{ end }}
+            <a href="/speakers/{{ $speaker.slug }}/"
                class="text-decoration-none">
               <img src="{{ $speaker.photo }}"
                    class="card-img-top rounded-circle speaker-img p-3"
@@ -82,7 +81,9 @@
             </a>
 
             <div class="card-body text-center pb-1">
-              <h5 class="card-title fw-bold text-dark mb-1 text-break">{{ $speaker.name }}</h5>
+              <h5 class="card-title fw-bold text-dark mb-1 text-break">
+                <a href="/speakers/{{ $speaker.slug }}/" class="text-decoration-none text-dark">{{ $speaker.name }}</a>
+              </h5>
               {{ with $speaker.jobTitle }}
                 <p class="speaker-job-title mb-1">{{ . }}</p>
               {{ end }}

@@ -1,11 +1,13 @@
 ---
-title: 'Rajasekaran S'
-jobTitle: 'Senior Technology Architect'
-company: 'Infosys'
+title: Rajasekaran S
+jobTitle: Senior Technology Architect
+company: Infosys
 date: 2017-03-23
 weight: 1
-linkedin: 'https://www.linkedin.com/in/rajasekaran-s-2847125'
-profilePicture: '/images/raja1.png'
+linkedin: https://www.linkedin.com/in/rajasekaran-s-2847125
+profilePicture: /images/raja1.png
+years:
+- 2025
 ---
 
 Rajasekaran is an Architect at Infosys, where he leads the transformation of a reactive infrastructure automation platform into a proactive, agent-based AI system. His work focuses on architecting multi-agent frameworks, integrating Large Language Models (LLMs) and vector databases, and implementing Retrieval-Augmented Generation (RAG) to enable autonomous infrastructure management and blueprint creation across hybrid cloud environments.

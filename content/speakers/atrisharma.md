@@ -1,11 +1,14 @@
 ---
-title: 'Atri Sharma'
-jobTitle: 'Senior Engineering Manager'
-company: 'Apple'
+title: Atri Sharma
+jobTitle: Senior Engineering Manager
+company: Apple
 date: 2017-03-23
 weight: 1
-linkedin: 'http://www.linkedin.com/atrisharma'
-profilePicture: '/images/atri-sharma.png'
+linkedin: http://www.linkedin.com/atrisharma
+profilePicture: /images/atri-sharma.png
+years:
+- 2024
+- 2025
 ---
 
 Atri Sharma is an experienced technical leader in the space of distributed databases and have worked on multiple database engines. He has been a major contributor to PostgreSQL, where he implemented major features like JDBC Foreign Data Wrapper, Ordered Set Aggregates, ROLLUP, CUBE, GROUPING and GROUPING SETS. He has implemented major features in Greenplum, such as large objects support, complex numbers datatype, resource management and miscellaneous improvements in query optimiser. 

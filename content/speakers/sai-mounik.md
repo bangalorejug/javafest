@@ -1,11 +1,13 @@
 ---
-title: 'Sai Mounik A'
-jobTitle: 'Software Engineer'
-company: 'Quinbay'
+title: Sai Mounik A
+jobTitle: Software Engineer
+company: Quinbay
 date: 2017-03-23
 weight: 1
-linkedin: 'https://www.linkedin.com/in/sai-mounik/'
-profilePicture: '/images/Sai-Mounik.jpeg'
+linkedin: https://www.linkedin.com/in/sai-mounik/
+profilePicture: /images/Sai-Mounik.jpeg
+years:
+- 2025
 ---
 
 I am an Software Engineer, specializing in Java,and AI-driven enterprise solutions with a strong background in building and scaling applications in the e-commerce domain. With a B.Tech in Information Technology.

@@ -1,13 +1,14 @@
 ---
 title: 'Pinning issues with Virtual Threads: Differences between JDK21 and JDK24'
 speakers:
-  - sreevidhya
+- sreevidhya
 topics:
-  - Core Java
+- Core Java
 time: 02:15 PM - 03:00 PM
 weight: 3
 sessionType: Talk
 duration: 45 min
+year: 2025
 ---
 
 JDK 21 introduced the concept of virtual threads based on JEP 444. They provide scale(higher throughput) and not speed(lower latency). The threads can be categorized into 2 types – virtual and platform. The platform threads are the traditional threads which are a thin wrapper around the OS threads. These are also called carrier thread as well because the virtual thread run on top of or mounts on these threads. Virtual threads are used in use cases which requires blocking I/O operations and need to wait. The idea is that the virtual thread gets suspended when it encounters an I/O operation or when it sleeps, and the carrier thread is free to work on other virtual threads.

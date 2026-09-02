@@ -14,7 +14,8 @@
     <div class="col-lg-4 col-xl-3 mb-4 speaker-info-column">
       <div class="speaker-info-card">
         {{- range $index, $element := .Params.speakers }}
-          {{ $speaker := site.GetPage (printf "speakers/%s" $element) }}
+          {{ $speaker := site.GetPage (printf "/speakers/%s" $element) }}
+          {{ if $speaker }}
           <div class="speaker-item {{ if gt $index 0 }}mt-4{{ end }}">
             <!-- Speaker Image -->
             <div class="speaker-image-container">
@@ -50,6 +51,7 @@
               {{ end }}
             </div>
           </div>
+          {{ end }}
         {{ end }}
       </div>
     </div>

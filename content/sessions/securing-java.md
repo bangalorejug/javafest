@@ -1,13 +1,15 @@
 ---
-title: 'Securing Java in the Age of AI-Powered Attacks: Modern Defenses for Intelligent Threats'
+title: 'Securing Java in the Age of AI-Powered Attacks: Modern Defenses for Intelligent
+  Threats'
 speakers:
-  - bvsrao-venkat
+- bvsrao-venkat
 topics:
-  - Devops Java
+- Devops Java
 time: 02:15 PM - 03:00 PM
 weight: 2
 sessionType: Talk
-duration: 45 min 
+duration: 45 min
+year: 2025
 ---
 
 Learn how to fortify Java applications against AI-powered cyberattacks using modern authentication, anomaly detection, and runtime defenses — with live attack and mitigation demos.

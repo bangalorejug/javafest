@@ -1,15 +1,15 @@
 ---
-title: " RAG (Retrieval-Augmented Generation) in Java"
+title: ' RAG (Retrieval-Augmented Generation) in Java'
 speakers:
-  - sai-mounik
-  - rohan-j
+- sai-mounik
+- rohan-j
 topics:
-  - Enterprise Java
-duration: 45 min 
+- Enterprise Java
+duration: 45 min
 time: 02:15 PM - 03:00 PM
 weight: 4
 sessionType: Talk
-duration: 45 min 
+year: 2025
 ---
 
 While Large Language Models (LLMs) are powerful, they often lack domain-specific knowledge and may produce hallucinations. Retrieval-Augmented Generation (RAG) bridges this gap by allowing AI systems to reference trusted, up-to-date data sources when generating responses.

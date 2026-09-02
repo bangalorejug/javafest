@@ -1,14 +1,15 @@
 ---
-title: "MCP Internals, Security, and Cloud Deployments"
+title: MCP Internals, Security, and Cloud Deployments
 speakers:
-  - muthukumaran
-  - shaama
+- muthukumaran
+- shaama
 topics:
-  - Enterprise Java
+- Enterprise Java
 time: 03:40 PM - 05:10 PM
 weight: 6
 sessionType: Workshop
-duration: 90 min 
+duration: 90 min
+year: 2025
 ---
 
 The Model Context Protocol (MCP) is transforming how AI systems connect with external tools and data through a simple, secure standard. In this session, we’ll dive into how MCP works under the hood—examining the JSON-RPC flow, how servers, clients, and tools communicate, and what really happens behind the scenes.

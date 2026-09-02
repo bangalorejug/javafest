@@ -1,11 +1,13 @@
 ---
-title: 'Udayani V'
-jobTitle: 'Senior Member Of Technical Staff'
-company: 'Broadcom'
+title: Udayani V
+jobTitle: Senior Member Of Technical Staff
+company: Broadcom
 date: 2017-03-23
 weight: 7
-linkedin: 'https://www.linkedin.com/in/udayani-v-56261a147/'
-profilePicture: '/images/Udayani.jpeg'
+linkedin: https://www.linkedin.com/in/udayani-v-56261a147/
+profilePicture: /images/Udayani.jpeg
+years:
+- 2025
 ---
 
 I am a software engineer working with Spring Boot, developer tooling, and AI-powered application development. Over the years, I have gained experience building and deploying cloud-native spring boot applications. I am passionate about developer tooling, OpenRewrite, and everything Spring.
