@@ -243,6 +243,11 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid rgba(251, 88, 80, 0.35);
+    border-radius: 999px;
+    background: rgba(251, 88, 80, 0.08);
+    box-shadow: 0 0 18px rgba(251, 88, 80, 0.14);
 }
 
 /* ─── Conference info cards ───────────────────────────────────────────────── */
