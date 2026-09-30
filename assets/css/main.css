@@ -226,6 +226,100 @@ header {
     margin-top: 1.5rem;
 }
 
+/* Bright animated JavaFest hero */
+.hero--animated {
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(92, 190, 255, 0.25), transparent 26%),
+        radial-gradient(circle at 85% 75%, rgba(255, 174, 77, 0.20), transparent 24%),
+        linear-gradient(135deg, #f9fdff, #eaf8ff 52%, #f8f2ff);
+}
+
+.hero--animated::before {
+    background-image:
+        radial-gradient(rgba(0, 102, 204, 0.14) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.55;
+}
+
+.hero-bubbles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.hero-bubble {
+    position: absolute;
+    padding: 0.55rem 0.8rem;
+    border: 1px solid rgba(0, 102, 204, 0.18);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.76);
+    box-shadow: 0 10px 24px rgba(0, 102, 204, 0.10);
+    backdrop-filter: blur(8px);
+    color: #16436e;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    animation: hero-bubble-float 5s ease-in-out infinite;
+}
+
+.hero-bubble--date {
+    top: 16%;
+    left: 8%;
+}
+
+.hero-bubble--venue {
+    top: 58%;
+    right: 7%;
+    animation-delay: -1.4s;
+}
+
+.hero-bubble--complete {
+    bottom: 15%;
+    left: 10%;
+    color: #167046;
+    animation-delay: -2.5s;
+}
+
+.hero-bubble--register {
+    right: 12%;
+    bottom: 8%;
+    color: #b35b00;
+    animation-delay: -3.5s;
+}
+
+@keyframes hero-bubble-float {
+    0%, 100% {
+        transform: translateY(0) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-bubbles {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.55rem;
+        margin: 1.5rem auto 0;
+    }
+
+    .hero-bubble {
+        position: static;
+        animation: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-bubble {
+        animation: none;
+    }
+}
+
 /* ─── Event meta (date + venue) ───────────────────────────────────────────── */
 
 .event-meta {
