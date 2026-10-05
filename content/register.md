@@ -7,6 +7,8 @@ title: 'Register'
 
 {{< rawhtml >}}
 
-<iframe src="https://konfhub.com/widget/javafest-2026?desc=true&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10" id="konfhub-widget" title="Register for JavaFest 2024" width="100%" height="500"></iframe>
+Opening Soon
+
+<!-- <iframe src="https://konfhub.com/widget/javafest-2026?desc=true&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=572148&ticketCl=572148&btnColor=fb5850&fontFamily=Prompt&borderRadius=10" id="konfhub-widget" title="Register for JavaFest 2024" width="100%" height="500"></iframe> -->
 
 {{< /rawhtml >}}
