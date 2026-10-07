@@ -22,7 +22,7 @@
               {{ if $speaker.Params.profilePicture }}
                 <img src="{{ $speaker.Params.profilePicture }}" alt="{{ $speaker.Title }}" class="speaker-image">
               {{ else }}
-                <img src="https://github.com/{{ $speaker.File.BaseFileName }}.png" alt="{{ $speaker.Title }}" class="speaker-image">
+                <img src="/images/default-avatar.svg" alt="{{ $speaker.Title }}" class="speaker-image">
               {{ end }}
             </div>
             

@@ -8,7 +8,7 @@
     {{ if .Params.profilePicture }}
     <img src="{{ .Params.profilePicture }}" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 200px; height: 200px;">
     {{ else }}
-    <img src="https://github.com/{{ .File.BaseFileName }}.png" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 200px; height: 200px;">
+    <img src="/images/default-avatar.svg" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 200px; height: 200px;">
     {{ end }}
     <h3 class="mb-1">{{- .Title -}}</h3>
     {{ $meta := slice }}
@@ -30,7 +30,7 @@
       {{ if .Params.profilePicture }}
       <img src="{{ .Params.profilePicture }}" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 250px; height: 250px;">
       {{ else }}
-      <img src="https://github.com/{{ .File.BaseFileName }}.png" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 250px; height: 250px;">
+      <img src="/images/default-avatar.svg" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 250px; height: 250px;">
       {{ end }}
 
       <h3 class="mb-1">{{- .Title -}}</h3>

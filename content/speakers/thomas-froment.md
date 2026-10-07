@@ -5,6 +5,7 @@ company: Eclipse Foundation
 date: 2026-10-07
 weight: 3
 linkedin: https://www.linkedin.com/in/tfroment
+profilePicture: /images/ThomasFroment.jpeg
 years:
 - 2026
 ---

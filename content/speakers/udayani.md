@@ -5,7 +5,7 @@ company: Broadcom
 date: 2017-03-23
 weight: 7
 linkedin: https://www.linkedin.com/in/udayani-v-56261a147/
-profilePicture: /images/Udayani.jpeg
+profilePicture: /images/Udayani.png
 years:
 - 2025
 - 2026

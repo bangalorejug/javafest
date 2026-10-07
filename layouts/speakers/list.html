@@ -11,7 +11,7 @@
 					{{ if .Params.profilePicture }}
 						<img src="{{ .Params.profilePicture }}" class="card-img-top rounded-circle speaker-img" alt="Profile picture of {{ .Title }}">
 					{{ else }}
-						<img src="https://github.com/{{.File.BaseFileName}}.png" class="card-img-top rounded-circle speaker-img" alt="Profile picture of {{ .Title }}">
+						<img src="/images/default-avatar.svg" class="card-img-top rounded-circle speaker-img" alt="Profile picture of {{ .Title }}">
 					{{ end }}
 				</a>
 				<div class="card-body text-black">
