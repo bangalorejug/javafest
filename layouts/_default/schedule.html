@@ -44,7 +44,7 @@
 
                 <!-- Track Content -->
                 <div class="tab-content" id="trackTabsContent">
-                    {{ $allSessions := where (where .Site.Pages "Type" "sessions") "Params.year" 2025 }}
+                    {{ $allSessions := where (where .Site.Pages "Type" "sessions") "Params.year" 2026 }}
                     {{ $coreJavaSessions := where $allSessions "Params.topics" "intersect" (slice "Core Java") }}
                     {{ $enterpriseJavaSessions := where $allSessions "Params.topics" "intersect" (slice "Enterprise Java") }}
                     {{ $devopsJavaSessions := where $allSessions "Params.topics" "intersect" (slice "Devops Java") }}

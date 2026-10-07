@@ -3,7 +3,7 @@
 <div class="container mt-3">
 	<div class="row">
 
-		{{ range where .Pages "Params.years" "intersect" (slice 2025) }}
+		{{ range where .Pages "Params.years" "intersect" (slice 2026) }}
 
 		<div class="col-6 col-lg-3 mb-4">
 			<div class="card border-0 ">
@@ -17,7 +17,7 @@
 				<div class="card-body text-black">
 					<a class="text-decoration-none" href="/speakers/{{.File.BaseFileName}}">
 						<h5 class="d-none d-md-block card-title mb-2 text-black fw-bold text-center text-break break-all">{{ .Title }}</h5>
-						<h6 class="d-block d-md-none card-title mb-2 text-black fw-bold text-center text-break break-all">{{ .Title }}</h5>
+						<h6 class="d-block d-md-none card-title mb-2 text-black fw-bold text-center text-break break-all">{{ .Title }}</h6>
 						<div class="card-text text-center">
 							{{ with .Params.jobTitle }}
 							  <p class="speaker-job-title">{{ . }}</p>

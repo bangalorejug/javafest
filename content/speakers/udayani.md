@@ -1,6 +1,6 @@
 ---
 title: Udayani V
-jobTitle: Senior Member Of Technical Staff
+jobTitle: Senior Member of Technical Staff
 company: Broadcom
 date: 2017-03-23
 weight: 7
@@ -8,13 +8,9 @@ linkedin: https://www.linkedin.com/in/udayani-v-56261a147/
 profilePicture: /images/Udayani.jpeg
 years:
 - 2025
+- 2026
 ---
 
-I am a software engineer working with Spring Boot, developer tooling, and AI-powered application development. Over the years, I have gained experience building and deploying cloud-native spring boot applications. I am passionate about developer tooling, OpenRewrite, and everything Spring.
-I have previously worked on Spring IDE support for VS Code and Eclipse, improving developer productivity when working with Spring boot applications in IDEs.
+Udayani V is a software engineer focused on Spring Boot, developer tooling, and AI-powered application development. Over the years, she has built and deployed cloud-native Spring Boot applications, developing a strong focus on developer productivity, OpenRewrite, and the broader Spring ecosystem, including Spring AI.
 
-In my current role, I contribute to commercial products in the Tanzu portfolio at Broadcom, write OpenRewrite migration recipes to help teams upgrade Spring Boot projects to newer versions seamlessly, and have contributed to the OpenRewrite open-source project.
-
-Talks:
-- I have presented at Spring I/O 2023 in Las Vegas on enhancing developer productivity with the Spring Tools extension for VS Code
-- I also had the opportunity to speak at Java User Group AI Day in Bengaluru, introducing developers to Spring AI, its capabilities, and how it simplifies large language model integration into Spring applications
+In previous roles, she worked on Spring IDE support for VS Code and Eclipse. Currently, she contributes to commercial products within the Tanzu portfolio at Broadcom, building scalable distributed enterprise systems and writing OpenRewrite migration recipes to help teams upgrade Spring Boot projects seamlessly.

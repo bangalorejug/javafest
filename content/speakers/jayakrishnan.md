@@ -6,9 +6,10 @@ date: 2017-03-23
 weight: 1
 linkedin: https://www.linkedin.com/in/jayakrishnan-ramakumar-32050b2b
 profilePicture: /images/jayakrishnan.jpeg
-draft: true
 years:
+- 2024
 - 2025
+- 2026
 ---
 
-Jay is a senior data engineer using Java and Python, with 18+ years of experience. He has worked on full stack of Java using swing, core Java, spring and  Java enterprise edition. Recently he has been working on Apache Spark, Generative AI, Agentic AI and LLMOps.
+Jayakrishnan Ramakumar is a Senior Technologist at Infosys with over 20 years of experience across Java Microservices, Data Engineering, Generative AI, and LLMOps. He has spoken previously at the Bangalore Java User Group on Deep Java Library (DJL) for model inference and is passionate about exploring native Java AI capabilities without foreign dependencies.
