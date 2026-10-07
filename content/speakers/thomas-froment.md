@@ -2,7 +2,7 @@
 title: Thomas Froment
 jobTitle: Program Lead for Developer Tools
 company: Eclipse Foundation
-date: 2026-10-07
+date: 2026-01-01
 weight: 3
 linkedin: https://www.linkedin.com/in/tfroment
 profilePicture: /images/ThomasFroment.jpeg

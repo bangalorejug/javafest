@@ -2,7 +2,7 @@
 title: Margi Shah
 jobTitle: Java Developer
 company: IBM
-date: 2026-10-07
+date: 2026-01-01
 weight: 9
 linkedin: https://www.linkedin.com/in/margi212
 profilePicture: /images/margi-shah.png

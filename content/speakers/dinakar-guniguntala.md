@@ -2,7 +2,7 @@
 title: Dinakar Guniguntala
 jobTitle: Open Source Architect
 company: IBM
-date: 2026-10-07
+date: 2026-01-01
 weight: 8
 linkedin: https://www.linkedin.com/in/dinogun/
 years:

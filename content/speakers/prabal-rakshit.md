@@ -2,7 +2,7 @@
 title: Prabal Rakshit
 jobTitle: Cloud-Native Architect
 company: Infosys
-date: 2026-10-07
+date: 2026-01-01
 weight: 5
 linkedin: https://in.linkedin.com/in/prabal-rakshit-a62162b
 years:

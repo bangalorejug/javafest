@@ -2,7 +2,7 @@
 title: Ravi Gupta
 jobTitle: Principal Quality Engineer / Tech Lead
 company: Oracle
-date: 2026-10-07
+date: 2026-01-01
 weight: 10
 linkedin: https://www.linkedin.com/in/ravi-gupta-41593b215/
 years:

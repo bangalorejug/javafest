@@ -2,7 +2,7 @@
 title: Siddharth Srinivasan
 jobTitle: Language Tools Dev Engineer
 company: Oracle
-date: 2026-10-07
+date: 2026-01-01
 weight: 7
 linkedin: https://www.linkedin.com/in/sid-s-a5b89222
 years:

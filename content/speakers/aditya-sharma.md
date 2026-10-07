@@ -2,7 +2,7 @@
 title: Aditya Sharma
 jobTitle: Senior Computer Scientist
 company: Adobe
-date: 2026-10-07
+date: 2026-01-01
 weight: 2
 linkedin: https://www.linkedin.com/in/aditya-sharma-26b20920/
 profilePicture: /images/aditya-sharma.png

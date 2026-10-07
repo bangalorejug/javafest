@@ -2,7 +2,7 @@
 title: Pushkar Kulkarni
 jobTitle: Open Source Developer
 company: Canonical
-date: 2026-10-07
+date: 2026-01-01
 weight: 11
 linkedin: https://www.linkedin.com/in/pushkarnk/
 years:

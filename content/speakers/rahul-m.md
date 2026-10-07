@@ -2,7 +2,7 @@
 title: Rahul Mohan
 jobTitle: Product Manager
 company: Digitap.ai
-date: 2026-10-07
+date: 2026-01-01
 weight: 6
 linkedin: https://www.linkedin.com/in/therahul-mohan/
 profilePicture: /images/rahul-m.png

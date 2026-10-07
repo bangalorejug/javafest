@@ -2,7 +2,7 @@
 title: Ivar Grimstad
 jobTitle: Jakarta EE Developer Advocate
 company: Eclipse Foundation
-date: 2026-10-07
+date: 2026-01-01
 weight: 4
 linkedin: https://www.linkedin.com/in/ivargrimstad/
 profilePicture: /images/ivar-grimstad.png

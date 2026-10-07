@@ -2,7 +2,7 @@
 title: Varsha Das
 jobTitle: Developer Advocate
 company: AWS
-date: 2026-10-07
+date: 2026-01-01
 weight: 1
 linkedin: https://in.linkedin.com/in/varsha-das-se
 years:
