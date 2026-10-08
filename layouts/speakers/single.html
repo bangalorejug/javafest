@@ -107,7 +107,7 @@
 
           {{ $pastEditionSessions := where $speakerSessions "Params.year" "ne" $currentEditionYear }}
           {{ if gt (len $pastEditionSessions) 0 }}
-            <div class="mt-5">
+            <div id="past-edition-section" class="mt-5" hidden>
               <h5>Past Edition</h5>
               <div class="row g-3">
                 {{ range $pastEditionSessions }}
@@ -144,6 +144,25 @@
   </div>
 
 </div>
+
+<script>
+  (function () {
+    const shouldShowPastEdition = (() => {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('source') === 'past') {
+        return true;
+      }
+
+      const referrer = document.referrer || '';
+      return referrer.includes('/speakers/past/') || referrer.includes('/speakers/past');
+    })();
+
+    const block = document.getElementById('past-edition-section');
+    if (block) {
+      block.hidden = !shouldShowPastEdition;
+    }
+  })();
+</script>
 {{ end }}
 
 
