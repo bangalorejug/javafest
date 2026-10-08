@@ -549,13 +549,38 @@ header {
 /* ─── Session cards ───────────────────────────────────────────────────────── */
 
 .session-card {
+    position: relative;
     border: 1px solid #eee;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
 }
 
 .session-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.session-card .card-body {
+    padding-top: 2.6rem;
+}
+
+.session-card-year {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 0.55rem;
+    border: 1px solid #e9e9e9;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.96);
+    color: var(--primary-black);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1.2;
 }
 
 .session-card .card-title {
@@ -571,6 +596,20 @@ header {
     color: var(--primary-black);
     margin-bottom: 0;
     line-height: 1.2;
+}
+
+.session-year-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(16, 103, 214, 0.08);
+    border: 1px solid rgba(16, 103, 214, 0.2);
+    color: var(--blue-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .session-layout {

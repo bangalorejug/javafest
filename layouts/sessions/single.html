@@ -2,9 +2,12 @@
 <div class="container-fluid">
 
   <!-- Session Title -->
-  <div class="row mb-4">
-    <div class="col-12">
-      <h1 class="session-title">{{- .Title -}}</h1>
+  <div class="row mb-4 align-items-center">
+    <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+      <h1 class="session-title mb-0">{{- .Title -}}</h1>
+      {{ with .Params.year }}
+        <span class="session-year-badge">JavaFest {{ . }}</span>
+      {{ end }}
     </div>
   </div>
 
@@ -74,6 +77,11 @@
           {{ with .Params.sessionType }}
             <div class="session-meta-item">
               <strong>Session Type:</strong> {{ . }}
+            </div>
+          {{ end }}
+          {{ with .Params.year }}
+            <div class="session-meta-item">
+              <strong>Edition:</strong> JavaFest {{ . }}
             </div>
           {{ end }}
         </div>

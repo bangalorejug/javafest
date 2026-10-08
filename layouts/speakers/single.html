@@ -1,15 +1,26 @@
 
 
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
+{{ $username := .File.BaseFileName }}
+{{ $hasCurrentEditionSession := false }}
+{{ range (where .Site.Pages "Section" "sessions") }}
+  {{ range .Pages }}
+    {{ if and (in .Params.speakers $username) (eq .Params.year 2026) }}
+      {{ $hasCurrentEditionSession = true }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 <div class="container-fluid">
 
   <!-- Mobile header: image, name, LinkedIn -->
   <div class="d-block d-lg-none text-center mb-4">
+    {{ $fallbackImage := "/images/default-avatar.svg" }}
     {{ if .Params.profilePicture }}
-    <img src="{{ .Params.profilePicture }}" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 200px; height: 200px;">
-    {{ else }}
-    <img src="/images/default-avatar.svg" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 200px; height: 200px;">
+      {{ $fallbackImage = .Params.profilePicture }}
+    {{ else if and (not $hasCurrentEditionSession) (ne .File.BaseFileName "") }}
+      {{ $fallbackImage = printf "https://github.com/%s.png?size=400" .File.BaseFileName }}
     {{ end }}
+    <img src="{{ $fallbackImage }}" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 200px; height: 200px;">
     <h3 class="mb-1">{{- .Title -}}</h3>
     {{ $meta := slice }}
     {{ with .Params.jobTitle }}{{ $meta = $meta | append . }}{{ end }}
@@ -27,11 +38,13 @@
   <div class="row speaker-layout">
     <!-- Sidebar: visible only on large screens -->
     <div class="col-lg-4 col-xl-3 mb-4 speaker-sidebar d-none d-lg-block text-center">
+      {{ $desktopFallbackImage := "/images/default-avatar.svg" }}
       {{ if .Params.profilePicture }}
-      <img src="{{ .Params.profilePicture }}" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 250px; height: 250px;">
-      {{ else }}
-      <img src="/images/default-avatar.svg" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 250px; height: 250px;">
+        {{ $desktopFallbackImage = .Params.profilePicture }}
+      {{ else if and (not $hasCurrentEditionSession) (ne .File.BaseFileName "") }}
+        {{ $desktopFallbackImage = printf "https://github.com/%s.png?size=400" .File.BaseFileName }}
       {{ end }}
+      <img src="{{ $desktopFallbackImage }}" alt="{{ .Title }}" class="img-fluid mb-3 rounded-circle speaker-avatar" style="width: 250px; height: 250px;">
 
       <h3 class="mb-1">{{- .Title -}}</h3>
       {{ $metaDesk := slice }}
@@ -55,14 +68,27 @@
 
       <!-- Sessions cards under summary (all screens) -->
       <div class="speaker-sessions mt-4">
-        <h5>Sessions</h5>
-        <div class="row g-3">
-          {{ $username := .File.BaseFileName }}
-          {{ range (where .Site.Pages "Section" "sessions") }}
-            {{ range .Pages }}
-              {{ if in .Params.speakers $username }}
+        {{ $speakerSessions := slice }}
+        {{ range (where .Site.Pages "Section" "sessions") }}
+          {{ range .Pages }}
+            {{ if in .Params.speakers $username }}
+              {{ $speakerSessions = $speakerSessions | append . }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if gt (len $speakerSessions) 0 }}
+          {{ $speakerSessions = sort $speakerSessions "Params.year" "desc" }}
+          {{ $currentEditionYear := 2026 }}
+          {{ $currentEditionSessions := where $speakerSessions "Params.year" "eq" $currentEditionYear }}
+
+          {{ if gt (len $currentEditionSessions) 0 }}
+            <h5>2026 Sessions</h5>
+            <div class="row g-3">
+              {{ range $currentEditionSessions }}
                 <div class="col-md-6 col-xl-4">
-                  <a href="{{ .Permalink }}" class="card h-100 session-card text-reset text-decoration-none">
+                  <a href="{{ .Permalink }}" class="card h-100 session-card text-reset text-decoration-none position-relative">
+                    <span class="session-card-year">{{ .Params.year }}</span>
                     <div class="card-body">
                       <h6 class="card-title mb-2">{{ .Title }}</h6>
                       <p class="card-text text-muted small mb-0">
@@ -76,9 +102,43 @@
                   </a>
                 </div>
               {{ end }}
-            {{ end }}
+            </div>
           {{ end }}
-        </div>
+
+          {{ $pastEditionSessions := where $speakerSessions "Params.year" "ne" $currentEditionYear }}
+          {{ if gt (len $pastEditionSessions) 0 }}
+            <div class="mt-5">
+              <h5>Past Edition</h5>
+              <div class="row g-3">
+                {{ range $pastEditionSessions }}
+                  <div class="col-md-6 col-xl-4">
+                    <a href="{{ .Permalink }}" class="card h-100 session-card text-reset text-decoration-none position-relative">
+                      <span class="session-card-year">{{ .Params.year }}</span>
+                      <div class="card-body">
+                        <h6 class="card-title mb-2">{{ .Title }}</h6>
+                        <p class="card-text text-muted small mb-0">
+                          {{ with .Params.description }}
+                            {{ . | plainify | truncate 140 }}
+                          {{ else }}
+                            {{ .Summary | plainify | truncate 140 }}
+                          {{ end }}
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+
+          {{ if and (eq (len $currentEditionSessions) 0) (eq (len $pastEditionSessions) 0) }}
+            <h5>Sessions</h5>
+            <p class="text-muted mb-0">No sessions available yet.</p>
+          {{ end }}
+        {{ else }}
+          <h5>Sessions</h5>
+          <p class="text-muted mb-0">No sessions available yet.</p>
+        {{ end }}
       </div>
     </div>
   </div>
