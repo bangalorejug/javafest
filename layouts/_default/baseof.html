@@ -10,17 +10,23 @@
     <!-- Open Graph Tags -->
 
     {{ if strings.HasPrefix .RelPermalink "/speakers" }}
+    {{ $speakerImage := "/images/Logo.png" }}
+    {{ if .Params.profilePicture }}
+      {{ $speakerImage = .Params.profilePicture }}
+    {{ else if and (ne .File.BaseFileName "") (not (eq .File.BaseFileName "")) }}
+      {{ $speakerImage = printf "https://github.com/%s.png?size=400" .File.BaseFileName }}
+    {{ end }}
     <meta
       property="og:image"
-      content="https://github.com/{{.File.BaseFileName}}.png?v=4?s=400"
+      content="{{ $speakerImage }}"
     />
     <meta
       property="og:image:alt"
-      content="Lead Software Developer. sathishk has 22 repositories available. Follow their code on GitHub."
+      content="{{ .Title }} at JavaFest"
     />
     <meta property="og:site_name" content="Javafest" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="{{ .Title }} @ JavaFest'25" />
+    <meta property="og:title" content="{{ .Title }} @ JavaFest" />
     <meta property="og:url" content="https://javafest.org/speakers/{{.File.BaseFileName}}" />
     {{ $username := .File.BaseFileName  }}
 {{ range (where .Site.Pages "Section" "sessions") }}
@@ -35,7 +41,7 @@
    {{ end }}
 {{ end }}
     
-    <meta property="profile:username" content="sathishk" />
+    <meta property="profile:username" content="{{ .File.BaseFileName }}" />
 
     {{ else }}
     <meta property="og:locale" content="en_US" />
