@@ -1,5 +1,5 @@
 ---
-title: "The Hidden JVM Tax of Running AI Agents in Java: A Production Survival Guide"
+title: "The hidden JVM tax of running AI agents in Java"
 speakers:
 - prabal-rakshit
 topics:

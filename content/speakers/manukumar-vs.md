@@ -5,7 +5,7 @@ company: Oracle
 date: 2017-03-23
 weight: 1
 linkedin: https://www.linkedin.com/in/manukumarvs
-profilePicture: /images/manukumar-vs.jpeg
+profilePicture: /images/manukumar-vs.png
 years:
 - 2025
 - 2026

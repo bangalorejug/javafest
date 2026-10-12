@@ -5,6 +5,7 @@ company: Infosys
 date: 2026-01-01
 weight: 5
 linkedin: https://in.linkedin.com/in/prabal-rakshit-a62162b
+profilePicture: /images/prabal-rakshit.png
 years:
 - 2026
 ---
