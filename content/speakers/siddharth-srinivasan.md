@@ -5,6 +5,7 @@ company: Oracle
 date: 2026-01-01
 weight: 7
 linkedin: https://www.linkedin.com/in/sid-s-a5b89222
+profilePicture: /images/Sid.png
 years:
 - 2026
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Experimenting in Java: From Snippets to Running Everywhere"
+title: "Experimenting in Modern Java for Data Science and AI"
 speakers:
 - siddharth-srinivasan
 topics:

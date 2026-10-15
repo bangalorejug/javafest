@@ -5,6 +5,7 @@ company: Canonical
 date: 2026-01-01
 weight: 11
 linkedin: https://www.linkedin.com/in/pushkarnk/
+profilePicture: /images/Pushkar.png
 years:
 - 2026
 ---

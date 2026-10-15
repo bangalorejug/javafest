@@ -1,5 +1,5 @@
 ---
-title: "Agentic Patterns with Spring AI: Building Smarter AI Applications in Java"
+title: "Building Smarter Enterprise AI Applications in Java: Agentic Patterns"
 speakers:
 - udayani
 topics:
