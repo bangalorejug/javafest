@@ -5,6 +5,7 @@ company: Oracle
 date: 2026-01-01
 weight: 10
 linkedin: https://www.linkedin.com/in/ravi-gupta-41593b215/
+profilePicture: /images/Ravi.png
 years:
 - 2026
 ---
