@@ -1,6 +1,6 @@
 ---
 title: Siddharth Srinivasan
-jobTitle: Language Tools Dev Engineer
+jobTitle: Lead Principal Platform Software Engineer
 company: Oracle
 date: 2026-01-01
 weight: 7
