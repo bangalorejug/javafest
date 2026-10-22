@@ -5,6 +5,7 @@ company: AWS
 date: 2026-01-01
 weight: 1
 linkedin: https://in.linkedin.com/in/varsha-das-se
+profilePicture: /images/varsha-das.png
 years:
 - 2026
 ---

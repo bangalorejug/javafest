@@ -5,6 +5,7 @@ company: Canonical
 date: 2026-01-01
 weight: 12
 linkedin: https://www.linkedin.com/in/samirkamerkar/
+profilePicture: /images/samir-kamerker.png
 years:
 - 2026
 ---
