@@ -1,5 +1,7 @@
 ---
 title: 'Hari Nikesh R'
+hidden: true
+pastVolunteer: true
 jobTitle: 'Software Engineer'
 company: '@Quinbay | Blibli.com'
 date: 2017-03-23

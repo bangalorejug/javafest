@@ -1,6 +1,7 @@
 ---
 title: 'Vikas Rajput'
 hidden: true
+pastVolunteer: true
 jobTitle: 'Sr. Backend Engineer'
 company: 'Gujarat JUG'
 date: 2017-03-23

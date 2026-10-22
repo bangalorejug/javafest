@@ -1,6 +1,7 @@
 ---
 title: 'Rajadurai Krishnamoorthy'
 hidden: true
+pastVolunteer: true
 jobTitle: 'Solution Architect'
 company: 'Ourkadai| Member - Board Of Studies VIT'
 date: 2017-03-23
