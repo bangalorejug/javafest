@@ -5,6 +5,7 @@ company: IBM
 date: 2026-01-01
 weight: 8
 linkedin: https://www.linkedin.com/in/dinogun/
+profilePicture: /images/dinakar-guniguntala.png
 years:
 - 2026
 ---

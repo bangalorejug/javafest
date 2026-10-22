@@ -1,5 +1,5 @@
 ---
-title: "From Production Failure to Code Fix: AI-Powered Root Cause Analysis for Java"
+title: "CausaAI: Java Root Cause Analysis with Agentic AI"
 speakers:
 - dinakar-guniguntala
 topics:
