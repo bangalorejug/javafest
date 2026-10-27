@@ -1,5 +1,5 @@
 ---
-title: "How AI Coding Agents Actually Work?"
+title: "Don’t Trust the Prompt: Secure AI with Java from Code to Agent"
 speakers:
 - thamaraip
 topics:
