@@ -5,6 +5,7 @@ company: lastminute.com group
 date: 2017-03-23
 weight: 7
 linkedin: https://www.linkedin.com/in/thamaraikanni-panneerselvam-951031107/
+profilePicture: /images/thamari.png
 years:
 - 2024
 - 2025
