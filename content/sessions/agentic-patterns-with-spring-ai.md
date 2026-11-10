@@ -9,12 +9,12 @@ sessionType: Talk
 year: 2026
 ---
 
-Spring AI makes it straightforward to connect an LLM to a Java application. But building a truly useful AI system requires moving beyond simple question-and-answer prompts toward **Agentic Design Patterns** — architectures where LLMs can reason, plan, invoke functions, and collaborate.
+Connecting an LLM to Spring Boot is straightforward. But running agents in production quickly hits real-world walls: exploding token bills, context window bloat, task forgetting, and the complexity of coordinating multiple agents across microservices.
 
-In this session, we will explore practical agentic patterns using Spring AI and Spring Boot:
-- **Function calling & Tool integration:** Exposing Java services and Spring components as callable tools
-- **Planning and reflection loops:** Implementing ReAct, reflection, and multi-step reasoning workflows
-- **Memory & conversation management:** Managing short-term and persistent conversational state
-- **Multi-agent coordination:** Structuring specialized agents that collaborate to solve complex enterprise problems
+In this session, we move beyond basic prompt-and-response interactions to explore production-grade Agentic Design Patterns in Spring AI:
+- Efficiency & Cost Optimization: Slash token overhead using Dynamic Tool Discovery (on-demand tool search) and Prompt Caching.
+- Observability: Eliminate LLM blind guessing with Human-in-the-Loop Clarification (AskUserQuestion) and explainable tool execution with Tool Argument Augmentation.
+- Reasoning & Planning: Solve the "lost-in-the-middle" problem using Self-Governing Planning (TodoWrite) and modular Agent Skills with progressive disclosure.
+- Scale Through Collaboration: Decompose complex workflows into In-Process Hierarchical Subagents and distributed multi-agent systems via the open Agent-to-Agent (A2A) Protocol.
 
-Through live demos and code walkthroughs, you will discover how to build modular, maintainable, and intelligent applications using the familiar Spring programming model.
+Through live demos and code walkthrough, you will discover how to build modular, maintainable, and intelligent applications using the familiar Spring programming model.
