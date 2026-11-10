@@ -1,0 +1,6 @@
+{{- $session := .Site.GetPage (printf "/sessions/%s" (.Get 0)) -}}
+{{- if not $session -}}
+  {{- errorf "session-title shortcode could not find session %q at %s" (.Get 0) .Position -}}
+{{- else -}}
+  <a class="schedule-session-title" href="{{ $session.RelPermalink }}">{{ $session.Title }}</a>
+{{- end -}}

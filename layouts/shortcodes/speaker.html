@@ -1,0 +1,10 @@
+{{- $speaker := .Site.GetPage (printf "/speakers/%s" (.Get 0)) -}}
+{{- if not $speaker -}}
+  {{- errorf "speaker shortcode could not find speaker %q at %s" (.Get 0) .Position -}}
+{{- else -}}
+  {{- $picture := $speaker.Params.profilePicture | default "/images/default-avatar.svg" -}}
+  {{- if not (hasPrefix $picture "http") -}}
+    {{- $picture = $picture | relURL -}}
+  {{- end -}}
+  <a class="schedule-speaker" href="{{ $speaker.RelPermalink }}"><img src="{{ $picture }}" alt="{{ $speaker.Title }}"><span>{{ $speaker.Title }}</span></a>
+{{- end -}}
