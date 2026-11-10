@@ -30,7 +30,7 @@ Join us for a full day across the Core, Enterprise, and DevOps tracks.
     <tr>
       <th scope="row">10:00 HRS</th>
       <td>15 minutes</td>
-      <td colspan="3">Move to respective tracks / Coffee Break</td>
+      <td colspan="3">Coffee Break</td>
     </tr>
     <tr>
       <th scope="row">10:15 HRS</th>
@@ -66,9 +66,7 @@ Join us for a full day across the Core, Enterprise, and DevOps tracks.
       <span class="schedule-session-title">JDK Features/API are evolving for the ever-changing world</span></div> -->
       </td>
       <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "ranganaths" >}}</div>{{< session-title "system-models-jev" >}}</div></td>
-      <td>TBD
-      <!-- <div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "thamaraip" >}}</div><span class="schedule-session-title">Security in Java Agents</span></div> -->
-      </td>
+      <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "thamaraip" >}}</div>{{< session-title "dont-trust-the-prompt" >}}</div></td>
     </tr>
     <tr>
       <th scope="row">15:30 HRS</th>
