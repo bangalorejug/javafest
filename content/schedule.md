@@ -30,21 +30,21 @@ Join us for a full day across the Core, Enterprise, and DevOps tracks.
     <tr>
       <th scope="row">10:00 HRS</th>
       <td>15 minutes</td>
-      <td colspan="3">Coffee Break</td>
+      <td colspan="3">Java Breakout: Walk to the Next Byte</td>
     </tr>
     <tr>
       <th scope="row">10:15 HRS</th>
       <td>45 minutes</td>
-      <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "varsha-das" >}}</div>{{< session-title "resilient-ai-agents-in-java" >}}</div></td>
       <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "prabal-rakshit" >}}</div>{{< session-title "hidden-jvm-tax-of-ai-agents" >}}</div></td>
+      <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "varsha-das" >}}</div>{{< session-title "resilient-ai-agents-in-java" >}}</div></td>
       <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "nishant-kumar-thakur" >}}{{< speaker "aditya-sharma" >}}</div>{{< session-title "cutting-hidden-cost-of-ai-agents" >}}</div></td>
     </tr>
     <tr>
       <th scope="row">11:00 HRS</th>
       <td>90 minutes</td>
+      <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "thomas-froment" >}}{{< speaker "ivar-grimstad" >}}</div>{{< session-title "agentic-java-development-eclipse-theia" >}}</div></td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "pushkar-kulkarni" >}}{{< speaker "samir-kamerkar" >}}</div>{{< session-title "building-mcp-applications-with-spring-ai" >}}</div></td>
       <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "margi-shah" >}}</div>{{< session-title "black-friday-meltdown-java-production-war-game" >}}</div></td>
-      <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "pushkar-kulkarni" >}}{{< speaker "samir-kamerkar" >}}</div>{{< session-title "building-mcp-applications-with-spring-ai" >}}</div></td>
-      <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "thomas-froment" >}}{{< speaker "ivar-grimstad" >}}</div>{{< session-title "agentic-java-development-eclipse-theia" >}}</div></td>
+      <td>
     </tr>
     <tr>
       <th scope="row">12:30 HRS</th>
@@ -61,10 +61,8 @@ Join us for a full day across the Core, Enterprise, and DevOps tracks.
     <tr>
       <th scope="row">14:30 HRS</th>
       <td>60 minutes</td>
-      <td>TBD
-      <!-- <div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "jsk" >}}{{< speaker "vaibhavchoudhary" >}}</div>
-      <span class="schedule-session-title">JDK Features/API are evolving for the ever-changing world</span></div> -->
-      </td>
+      <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "jsk" >}}{{< speaker "vaibhavchoudhary" >}}</div>
+      <span class="schedule-session-title">scale-more-spend-less</span></div> </td>
       <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "ranganaths" >}}</div>{{< session-title "system-models-jev" >}}</div></td>
       <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "thamaraip" >}}</div>{{< session-title "dont-trust-the-prompt" >}}</div></td>
     </tr>
@@ -77,8 +75,8 @@ Join us for a full day across the Core, Enterprise, and DevOps tracks.
       <th scope="row">15:45 HRS</th>
       <td>45 minutes</td>
       <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "jayakrishnan" >}}</div>{{< session-title "native-llm-inference-just-java" >}}</div></td>
-      <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "dinakar-guniguntala" >}}</div>{{< session-title "from-production-failure-to-code-fix" >}}</div></td>
       <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "udayani" >}}</div>{{< session-title "agentic-patterns-with-spring-ai" >}}</div></td>
+      <td><div class="schedule-session-cell"><div class="schedule-speakers">{{< speaker "dinakar-guniguntala" >}}</div>{{< session-title "from-production-failure-to-code-fix" >}}</div></td>
     </tr>
     <tr>
       <th scope="row">16:30 HRS</th>
