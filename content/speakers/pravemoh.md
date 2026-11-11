@@ -6,8 +6,8 @@ date: '2017-03-23'
 weight: 1
 years:
 - 2024
+- 2026
 linkedin: https://www.linkedin.com/in/mohanpraveen/
-profilePicture: https://github.com/pravemoh.png
+profilePicture: /images/praveenmohan.jpg
 ---
-
-<p>A versatile and skilled professional having 24+ years of experience in the software industry with an excellent hands-on exposure in development and quality engineering domains. An assertive person with outstanding interpersonal, communication, people and product management skills. Spent last 8+ years leading various globally distributed teams having professionals of varied experience, expertise and culture. An active evangelist of various technologies/products in renowned conferences, tech-fests and forums.</p>
+Praveen Mohan brings over 28 years of software industry experience, including more than two decades with the Java Platform Group across Sun Microsystems and Oracle. His career spans hands-on development, quality engineering, and technical leadership. For the past 15 years, he has led globally distributed teams across diverse disciplines and cultures. Passionate about community engagement, Praveen brings developers together to exchange ideas, share knowledge, and shape the future of Java through collaboration.
