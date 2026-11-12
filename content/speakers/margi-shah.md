@@ -1,6 +1,6 @@
 ---
 title: Margi Shah
-jobTitle: Java Developer
+jobTitle: Senior Java Developer
 company: IBM
 date: 2026-01-01
 weight: 9
