@@ -6,7 +6,7 @@ speakers:
 topics:
 - Enterprise Java
 - Core Java
-sessionType: Talk
+sessionType: Deep Talk
 year: 2026
 ---
 Can your Java application handle twice the traffic without doubling your infrastructure bill?
