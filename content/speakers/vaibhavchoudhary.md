@@ -10,6 +10,7 @@ years:
 - 2023
 - 2024
 - 2025
+- 2026
 ---
 
 Vaibhav Choudhary is a JVM Engineer at Salesforce. He has worked in Java Platforms team for more than a decade. His expertize are in Garbage Collector, Runtime Compilers, Performace Optimization and JVM. Prior to Salesforce, he was a JVM Engineer in Oracle, India.
