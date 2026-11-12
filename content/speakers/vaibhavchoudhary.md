@@ -5,6 +5,7 @@ company: Salesforce
 date: 2017-03-23
 weight: 2
 linkedin: https://www.linkedin.com/in/vaibhavchoudhary/
+profilePicture: https://github.com/vaibhavchoudhary.png
 years:
 - 2023
 - 2024

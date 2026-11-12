@@ -25,7 +25,7 @@ Join us for a full day across the Core, Enterprise, and DevOps tracks.
     <tr>
       <th scope="row">09:30 HRS</th>
       <td>25 minutes</td>
-      <td colspan="3"><div class="schedule-session-cell schedule-keynote-cell"><span class="schedule-session-title">Keynote</span><div class="schedule-speakers">{{< speaker "pravemoh" >}}</div></div></td>
+      <td colspan="3"><div class="schedule-session-cell schedule-keynote-cell"><span class="schedule-session-title">Keynote: </span><div class="schedule-speakers">{{< speaker "pravemoh" >}}</div>{{< session-title "java-for-an-ai-world" >}}</div></td>
     </tr>
     <tr>
       <th scope="row">10:00 HRS</th>
