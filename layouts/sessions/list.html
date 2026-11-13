@@ -1,129 +1,317 @@
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
 
-<div class="container-xxl bd-gutter">
+{{ $sessions := where .Pages "Params.year" 2026 }}
+{{ $knownTypes := slice "Keynote" "Workshop" "Work-a-thon" "Workthon" "Deep Talk" "Lightning Talk" "Talk" }}
+{{ $groups := slice
+    (dict "id" "keynote" "label" "Keynote" "types" (slice "Keynote") "colour" "bg-secondary text-white" "duration" 25)
+    (dict "id" "workshops" "label" "Workshops / Work-a-thon" "types" (slice "Workshop" "Work-a-thon" "Workthon") "colour" "bg-success text-white" "duration" 90)
+    (dict "id" "deep-talks" "label" "Deep Talks" "types" (slice "Deep Talk") "colour" "bg-danger text-white" "duration" 60)
+    (dict "id" "lightning-talks" "label" "Lightning Talks" "types" (slice "Lightning Talk") "colour" "bg-warning text-dark" "duration" 30)
+    (dict "id" "talks" "label" "Talks" "types" (slice "Talk") "colour" "bg-primary text-white" "duration" 45)
+    (dict "id" "other" "label" "Other Sessions" "types" (slice) "colour" "bg-secondary text-white" "duration" 0)
+}}
 
+<div class="container-xxl bd-gutter" id="conference-sessions">
     <div class="container py-5">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-center mb-5">Conference Sessions</h2>
-                
-                <!-- Sessions Grid -->
-                <div class="row g-4">
-                    {{ range where .Pages "Params.year" 2026 }}
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="card h-100 shadow-sm border-0" style="transition: transform 0.2s ease-in-out;">
-                            {{ $type := lower (.Params.sessionType | default "") }}
-                            {{ $colour := "bg-secondary text-white" }}
-                            {{ if in (slice "workshop" "work-a-thon" "workthon") $type }}
-                                {{ $colour = "bg-success text-white" }}
-                            {{ else if eq $type "deep talk" }}
-                                {{ $colour = "bg-danger text-white" }}
-                            {{ else if eq $type "lightning talk" }}
-                                {{ $colour = "bg-warning text-dark" }}
-                            {{ else if eq $type "talk" }}
-                                {{ $colour = "bg-primary text-white" }}
-                            {{ end }}
-                            <div class="card-header {{ $colour }}">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="badge bg-light text-dark">{{ .Params.sessionType }}</span>
-                                    <!-- <small class="text-white-50">{{ .Params.time }}</small> -->
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">
-                                    <a href="{{ .Permalink }}" class="text-decoration-none text-dark">{{ .Title }}</a>
-                                </h5>
-                                
-                                <!-- Topics -->
-                                {{ if .Params.topics }}
-                                <div class="mb-3">
-                                    {{ range .Params.topics }}
-                                    <span class="badge bg-secondary me-1 mb-1">{{ . }}</span>
-                                    {{ end }}
-                                </div>
-                                {{ end }}
-                                
-                                <!-- Speakers -->
-                                {{ if .Params.speakers }}
-                                <div class="mb-3">
-                                    <h6 class="text-muted mb-2">Speaker{{ if gt (len .Params.speakers) 1 }}s{{ end }}:</h6>
-                                    {{ range .Params.speakers }}
-                                    {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
-                                    {{ if $speaker }}
-                                    <a href="{{ $speaker.Permalink }}" class="text-decoration-none text-reset speaker-link">
-                                        <div class="d-flex align-items-center mb-1">
-                                            {{ if $speaker.Params.profilePicture }}
-                                            <img src="{{ $speaker.Params.profilePicture | relURL }}" 
-                                                 class="rounded-circle me-2" 
-                                                 width="50" height="50" 
-                                                 alt="{{ $speaker.Title }}">
-                                            {{ else }}
-                                            <img src="/images/default-avatar.svg" 
-                                                 class="rounded-circle me-2" 
-                                                 width="50" height="50" 
-                                                 alt="{{ $speaker.Title }}">
-                                            {{ end }}
-                                            <div>
-                                                <small class="fw-bold text-dark">{{ $speaker.Title }}</small>
-                                                {{ if $speaker.Params.jobTitle }}
-                                                <small class="text-muted d-block" style="font-size: 0.9rem;">{{ $speaker.Params.jobTitle }}</small>
-                                                {{ end }}
-                                                {{ if $speaker.Params.company }}
-                                                <small class="text-muted" style="font-size: 0.9rem;">{{ $speaker.Params.company }}</small>
-                                                {{ end }}
-                                            </div>
-                                        </div>
-                                    </a>
-                                    {{ end }}
-                                    {{ end }}
-                                </div>
-                                {{ end }}
-                                
-                                <!-- Content Preview -->
-                                <p class="card-text text-muted flex-grow-1">
-                                    {{ .Content | strings.Truncate 150 }}
-                                </p>
-                            </div>
-                            <div class="card-footer bg-transparent border-0">
-                                <a href="{{ .Permalink }}" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    {{ end }}
-                </div>
-                
-                
-                </div>
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+            <h2 class="mb-0">Conference Sessions</h2>
+            <a href="{{ "schedule/" | relURL }}" class="btn btn-outline-primary">
+                View schedule
+            </a>
+        </div>
+
+        <!-- Search and filters appear when JavaScript is available -->
+        <div class="session-controls mb-4" hidden>
+            <label for="session-search" class="form-label">
+                Search sessions, speakers or topics
+            </label>
+            <input type="search"
+                   id="session-search"
+                   class="form-control mb-3"
+                   placeholder="Search sessions"
+                   autocomplete="off">
+
+            <div class="d-flex flex-wrap gap-2"
+                 role="group"
+                 aria-label="Filter sessions by type">
+                <button type="button"
+                        class="btn btn-outline-primary active"
+                        data-session-filter="all"
+                        aria-pressed="true">
+                    All
+                </button>
+
+                {{ range $groups }}
+                {{ $pages := where $sessions "Params.sessionType" "in" .types }}
+                {{ if eq .id "other" }}
+                    {{ $pages = where $sessions "Params.sessionType" "not in" $knownTypes }}
+                {{ end }}
+                {{ if $pages }}
+                <button type="button"
+                        class="btn btn-outline-primary"
+                        data-session-filter="{{ .id }}"
+                        aria-pressed="false">
+                    {{ .label }}
+                </button>
+                {{ end }}
+                {{ end }}
             </div>
         </div>
+
+        <p class="text-muted session-results"
+           role="status"
+           aria-live="polite"
+           aria-atomic="true"
+           hidden></p>
+
+        <!-- Session groups: keynote first -->
+        {{ range $groups }}
+        {{ $group := . }}
+        {{ $pages := where $sessions "Params.sessionType" "in" $group.types }}
+        {{ if eq $group.id "other" }}
+            {{ $pages = where $sessions "Params.sessionType" "not in" $knownTypes }}
+        {{ end }}
+
+        {{ if $pages }}
+        <section class="session-group mb-5"
+                 data-session-group="{{ $group.id }}"
+                 aria-labelledby="heading-{{ $group.id }}">
+            <h3 id="heading-{{ $group.id }}" class="h4 mb-3">
+                {{ $group.label }}
+            </h3>
+
+            <div class="row g-4">
+                {{ range $pages.ByTitle }}
+                <div class="col-lg-6 col-xl-4 session-item">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-header {{ $group.colour }}">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-light text-dark">
+                                    {{ .Params.sessionType }}
+                                </span>
+                                {{ with $group.duration }}
+                                <span class="session-duration">{{ . }} minutes</span>
+                                {{ end }}
+                            </div>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <a href="{{ .Permalink }}"
+                                   class="text-decoration-none text-dark">
+                                    {{ .Title }}
+                                </a>
+                            </h5>
+
+                            <!-- Topics -->
+                            {{ if .Params.topics }}
+                            <div class="mb-3">
+                                {{ range .Params.topics }}
+                                <span class="badge bg-secondary me-1 mb-1">
+                                    {{ . }}
+                                </span>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+
+                            <!-- Speakers -->
+                            {{ if .Params.speakers }}
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-2">
+                                    Speaker{{ if gt (len .Params.speakers) 1 }}s{{ end }}:
+                                </h6>
+
+                                {{ range .Params.speakers }}
+                                {{ $speaker := $.Site.GetPage (printf "/speakers/%s" .) }}
+                                {{ if $speaker }}
+                                <a href="{{ $speaker.Permalink }}"
+                                   class="text-decoration-none text-reset speaker-link">
+                                    <div class="d-flex align-items-center mb-1">
+                                        {{ if $speaker.Params.profilePicture }}
+                                        <img src="{{ $speaker.Params.profilePicture | relURL }}"
+                                             class="rounded-circle me-2"
+                                             width="50"
+                                             height="50"
+                                             alt="{{ $speaker.Title }}">
+                                        {{ else }}
+                                        <img src="/images/default-avatar.svg"
+                                             class="rounded-circle me-2"
+                                             width="50"
+                                             height="50"
+                                             alt="{{ $speaker.Title }}">
+                                        {{ end }}
+
+                                        <div>
+                                            <small class="fw-bold text-dark">
+                                                {{ $speaker.Title }}
+                                            </small>
+                                            {{ if $speaker.Params.jobTitle }}
+                                            <small class="text-muted d-block"
+                                                   style="font-size: 0.9rem;">
+                                                {{ $speaker.Params.jobTitle }}
+                                            </small>
+                                            {{ end }}
+                                            {{ if $speaker.Params.company }}
+                                            <small class="text-muted"
+                                                   style="font-size: 0.9rem;">
+                                                {{ $speaker.Params.company }}
+                                            </small>
+                                            {{ end }}
+                                        </div>
+                                    </div>
+                                </a>
+                                {{ end }}
+                                {{ end }}
+                            </div>
+                            {{ end }}
+
+                            <!-- Plain-text content preview -->
+                            <p class="card-text text-muted flex-grow-1">
+                                {{ .Plain | strings.Truncate 180 }}
+                            </p>
+                        </div>
+
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="{{ .Permalink }}"
+                               class="btn btn-outline-primary btn-sm">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </section>
+        {{ end }}
+        {{ end }}
+
+        <p class="session-empty alert alert-light" hidden>
+            No sessions match your search. Try another term or select All.
+        </p>
     </div>
 </div>
 
 <style>
-.card:hover {
+#conference-sessions [hidden] {
+    display: none !important;
+}
+
+#conference-sessions .card {
+    transition: transform 0.2s ease-in-out;
+}
+
+#conference-sessions .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.card-header {
+#conference-sessions .card-header {
     border-bottom: none;
 }
 
-.badge {
+#conference-sessions .badge {
     font-size: 0.75em;
 }
 
-/* Speaker link hover effects */
-.speaker-link:hover {
+#conference-sessions .session-duration {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+#conference-sessions .speaker-link:hover {
     opacity: 0.8;
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
 }
 
-.speaker-link:hover .rounded-circle {
+#conference-sessions .speaker-link:hover .rounded-circle {
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
     transition: box-shadow 0.2s ease-in-out;
 }
+
+@media (prefers-reduced-motion: reduce) {
+    #conference-sessions .card,
+    #conference-sessions .speaker-link,
+    #conference-sessions .speaker-link .rounded-circle {
+        transition: none !important;
+        transform: none !important;
+    }
+}
 </style>
+
+<script>
+(() => {
+    const root = document.getElementById('conference-sessions');
+    if (!root) return;
+
+    const controls = root.querySelector('.session-controls');
+    const search = root.querySelector('#session-search');
+    const buttons = [...root.querySelectorAll('[data-session-filter]')];
+    const groups = [...root.querySelectorAll('[data-session-group]')];
+    const status = root.querySelector('.session-results');
+    const empty = root.querySelector('.session-empty');
+
+    const normalize = value => value
+        .normalize('NFKC')
+        .toLocaleLowerCase()
+        .replace(/\s+/g, ' ')
+        .trim();
+
+    const items = groups.map(group => ({
+        element: group,
+        cards: [...group.querySelectorAll('.session-item')].map(element => ({
+            element,
+            text: normalize(element.textContent)
+        }))
+    }));
+
+    let selected = 'all';
+
+    function update() {
+        const terms = normalize(search.value).split(' ').filter(Boolean);
+        let visible = 0;
+
+        for (const group of items) {
+            let groupVisible = 0;
+
+            for (const card of group.cards) {
+                const matches =
+                    (selected === 'all' ||
+                     group.element.dataset.sessionGroup === selected) &&
+                    terms.every(term => card.text.includes(term));
+
+                card.element.hidden = !matches;
+                if (matches) groupVisible++;
+            }
+
+            group.element.hidden = groupVisible === 0;
+            visible += groupVisible;
+        }
+
+        for (const button of buttons) {
+            const active = button.dataset.sessionFilter === selected;
+            button.classList.toggle('active', active);
+            button.setAttribute('aria-pressed', String(active));
+        }
+
+        status.textContent =
+            `${visible} ${visible === 1 ? 'session' : 'sessions'} shown`;
+
+        empty.hidden = visible > 0;
+    }
+
+    for (const button of buttons) {
+        button.addEventListener('click', () => {
+            selected = button.dataset.sessionFilter;
+            update();
+        });
+    }
+
+    search.addEventListener('input', update);
+    controls.hidden = false;
+    status.hidden = false;
+    update();
+})();
+</script>
 
 {{ end }}
