@@ -20,6 +20,39 @@
           <span class="event-meta-item">📅 Saturday, 5th December 2026</span>
         </div>
 
+        <!-- Countdown -->
+        <div class="javafest-countdown"
+             id="javafest-countdown"
+             data-start="2026-12-05T09:15:00+05:30">
+          <p class="javafest-countdown-heading">JavaFest 2026 starts in</p>
+
+          <div class="javafest-countdown-units"
+               role="group"
+               aria-label="Time remaining until JavaFest 2026"
+               hidden>
+            <div>
+              <strong data-unit="days">00</strong>
+              <span>Days</span>
+            </div>
+            <div>
+              <strong data-unit="hours">00</strong>
+              <span>Hours</span>
+            </div>
+            <div>
+              <strong data-unit="minutes">00</strong>
+              <span>Minutes</span>
+            </div>
+            <div>
+              <strong data-unit="seconds">00</strong>
+              <span>Seconds</span>
+            </div>
+          </div>
+
+          <p class="javafest-countdown-date">
+            5 December 2026 · 9:15 AM IST
+          </p>
+        </div>
+
       </div>
       <aside class="hero-bubbles" aria-label="Conference updates">
         <span class="hero-bubble hero-bubble--date">05 DEC 2026</span>
@@ -189,4 +222,109 @@
 
   </div>
 </main>
+
+<style>
+.javafest-countdown {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  text-align: center;
+  background: #fff5f5;
+  border: 1px solid #f8d7da;
+  border-radius: 16px;
+  color: #572148;
+}
+
+.javafest-countdown .javafest-countdown-heading {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: inherit;
+}
+
+.javafest-countdown-units {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.javafest-countdown-units[hidden] {
+  display: none !important;
+}
+
+.javafest-countdown-units > div {
+  min-width: 65px;
+  padding: 0.75rem;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.javafest-countdown-units strong {
+  display: block;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.javafest-countdown-units span {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.javafest-countdown .javafest-countdown-date {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+  color: inherit;
+}
+</style>
+
+<script>
+(() => {
+  const countdown = document.getElementById('javafest-countdown');
+  if (!countdown) return;
+
+  const target = Date.parse(countdown.dataset.start);
+  if (!Number.isFinite(target)) return;
+
+  const units = countdown.querySelector('.javafest-countdown-units');
+  const heading = countdown.querySelector('.javafest-countdown-heading');
+
+  function updateCountdown() {
+    const remaining = Math.max(
+      0,
+      Math.ceil((target - Date.now()) / 1000)
+    );
+
+    if (remaining === 0) {
+      heading.textContent =
+        'The countdown is complete—welcome to JavaFest 2026!';
+      units.hidden = true;
+      return false;
+    }
+
+    const values = {
+      days: Math.floor(remaining / 86400),
+      hours: Math.floor((remaining % 86400) / 3600),
+      minutes: Math.floor((remaining % 3600) / 60),
+      seconds: remaining % 60
+    };
+
+    for (const [unit, value] of Object.entries(values)) {
+      countdown.querySelector(`[data-unit="${unit}"]`).textContent =
+        String(value).padStart(2, '0');
+    }
+
+    units.hidden = false;
+    return true;
+  }
+
+  if (updateCountdown()) {
+    const timer = setInterval(() => {
+      if (!updateCountdown()) clearInterval(timer);
+    }, 1000);
+  }
+})();
+</script>
+
 {{ end }}
